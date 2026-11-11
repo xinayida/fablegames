@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="FableGames - 炫酷暗黑风微游戏聚合门户，畅玩国产3A高保真猫咪大作、元素法师等极速即点即玩原生HTML5网页游戏！">
+  <meta name="theme-color" content="#0b0e14">
+  <title>FableGames · 潮玩微游戏聚合门户 | CrazyGames 极速即玩体验</title>
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Top Navigation & Header
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#/" class="brand-logo" id="logoLink" title="FableGames Lobby">
+        <div class="logo-icon-wrap">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+          </svg>
+        </div>
+        <span class="logo-text">FableGames</span>
+        <span class="logo-badge">3A PORTAL</span>
+      </a>
+
+      <!-- Realtime Search Bar -->
+      <div class="search-container">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="搜索游戏... (按 / 快捷键)" autocomplete="off">
+          <button id="searchClearBtn" class="search-clear-btn" title="清空搜索">&times;</button>
+          <kbd class="search-kbd">/</kbd>
+        </div>
+        <!-- Live Search Dropdown -->
+        <div id="searchDropdown" class="search-dropdown"></div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Random Play -->
+        <button id="btnRandomGame" class="action-btn btn-random" title="随机挑一款游戏畅玩">
+          <span class="action-btn-icon">🎲</span>
+          <span class="action-btn-text" data-i18n="randomPlay">随机一玩</span>
+        </button>
+
+        <!-- Favorites Filter -->
+        <button id="btnFavorites" class="action-btn" title="查看我收藏的游戏">
+          <span class="action-btn-icon">❤️</span>
+          <span class="action-btn-text" data-i18n="favorites">我的收藏</span>
+          <span id="favCountBadge" class="fav-counter-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="btnThemeToggle" class="action-btn btn-icon-only" title="切换暗黑/明亮主题">
+          <span id="themeIcon">🌙</span>
+        </button>
+
+        <!-- Language Toggle -->
+        <button id="btnLangToggle" class="action-btn btn-icon-only" title="切换语言 / Switch Language">
+          <span id="langText" style="font-weight: 700; font-size: 0.8rem;">EN</span>
+        </button>
+
+        <!-- Fullscreen Browser -->
+        <button id="btnFullscreenToggle" class="action-btn btn-icon-only" title="切换浏览器全屏">
+          <span>⛶</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Category Navigation Pills Bar
+       ======================================================================== -->
+  <nav class="categories-nav">
+    <div class="categories-inner" id="categoriesContainer">
+      <!-- Dynamic Category Pills Injected by app.js -->
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       Main Content Area
+       ======================================================================== -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- --------------------------------------------------------------------
+           VIEW 1: LOBBY VIEW
+           -------------------------------------------------------------------- -->
+      <div id="lobbyView" class="lobby-view">
+        
+        <!-- Top Hero Showcase Banner -->
+        <section id="heroSection" class="hero-section">
+          <!-- Dynamic Hero Banner Injected by app.js -->
+        </section>
+
+        <!-- Main Filtered Games Grid Section -->
+        <section class="section-container" id="gridSection">
+          <div class="section-header">
+            <div class="section-title-wrap">
+              <span class="section-icon" id="gridIcon">🔥</span>
+              <h2 class="section-title" id="gridTitle" data-i18n="trendingNow">热门推荐</h2>
+              <span class="section-count-badge" id="gridCountBadge">0 款游戏</span>
+            </div>
+            <div id="gridFiltersExtra" class="grid-filters-extra"></div>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="games-grid" id="gamesGrid">
+            <!-- Game Cards Injected by app.js -->
+          </div>
+        </section>
+
+      </div>
+
+      <!-- --------------------------------------------------------------------
+           VIEW 2: IMMERSIVE GAME PLAYER EXPERIENCE (THE ARENA)
+           -------------------------------------------------------------------- -->
+      <div id="arenaView" class="arena-view">
+
+        <!-- Top Arena Control Bar -->
+        <div class="arena-control-bar">
+          <div class="arena-left-controls">
+            <button id="btnBackLobby" class="btn-back-lobby">
+              <span>⬅️</span>
+              <span data-i18n="backToLobby">返回大厅</span>
+            </button>
+            <div class="arena-game-meta-mini">
+              <span id="arenaGameTitleMini" class="arena-game-title-mini">几猫3A大作</span>
+              <span id="arenaGameCategoryMini" class="badge badge-category">3A冒险</span>
+              <span id="arenaGameRatingMini" class="badge badge-rating">★ 4.9</span>
+            </div>
+          </div>
+
+          <div class="arena-right-controls">
+            <!-- Theater Mode -->
+            <button id="btnTheaterMode" class="control-icon-btn" title="剧场模式 (扩展窗口并聚焦)">
+              <span>🎬</span>
+              <span class="control-btn-text" data-i18n="theaterMode">剧场模式</span>
+            </button>
+
+            <!-- Game Fullscreen -->
+            <button id="btnFullscreenGame" class="control-icon-btn" title="全屏沉浸式游玩">
+              <span>⛶</span>
+              <span class="control-btn-text" data-i18n="fullscreenGame">全屏</span>
+            </button>
+
+            <!-- Reload Game Frame -->
+            <button id="btnReloadGame" class="control-icon-btn" title="重新加载游戏">
+              <span>🔄</span>
+              <span class="control-btn-text" data-i18n="reloadGame">重置</span>
+            </button>
+
+            <!-- Favorite Toggle in Player -->
+            <button id="btnFavGame" class="control-icon-btn btn-fav" title="加入收藏">
+              <span id="arenaFavIcon">🤍</span>
+              <span class="control-btn-text" data-i18n="favorites">收藏</span>
+            </button>
+
+            <!-- Share Game Link -->
+            <button id="btnShareGame" class="control-icon-btn" title="复制游戏直接链接">
+              <span>🔗</span>
+              <span class="control-btn-text" data-i18n="shareGame">分享</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Game Iframe Container -->
+        <div id="arenaFrameContainer" class="arena-frame-container">
+          <!-- Loading Overlay -->
+          <div id="arenaLoadingOverlay" class="arena-loading-overlay">
+            <div class="game-loader-spinner"></div>
+            <div class="game-loader-text" data-i18n="loadingGame">正在加载游戏核心资产...</div>
+          </div>
+          <!-- Game Iframe -->
+          <iframe 
+            id="gameIframe" 
+            class="game-iframe" 
+            src="about:blank"
+            allow="fullscreen; autoplay; gamepad; camera; microphone; accelerometer; gyroscope"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Arena Details Below Frame -->
+        <div class="arena-details-grid">
+          <!-- Left Column: Controls & Game Details -->
+          <div class="arena-main-info">
+
+            <!-- Controls Card -->
+            <div class="arena-card" id="arenaControlsCard">
+              <h3 class="arena-card-title">
+                <span>🎮</span>
+                <span data-i18n="controlsTitle">操作说明</span>
+              </h3>
+              <div class="controls-list" id="arenaControlsList">
+                <!-- Controls list injected by app.js -->
+              </div>
+            </div>
+
+            <!-- About Game Card -->
+            <div class="arena-card" id="arenaAboutCard">
+              <h3 class="arena-card-title">
+                <span>📖</span>
+                <span data-i18n="aboutTitle">游戏简介</span>
+              </h3>
+              <p class="about-game-text" id="arenaAboutText"></p>
+              <ul class="game-features-list" id="arenaFeaturesList"></ul>
+              <div style="margin-top: 18px; display: flex; gap: 20px; font-size: 0.85rem; color: var(--text-muted);" id="arenaDevMeta">
+                <div><strong style="color: var(--text-primary);" data-i18n="developer">开发团队</strong>: <span id="arenaDevName"></span></div>
+                <div><strong style="color: var(--text-primary);" data-i18n="releaseDate">发布时间</strong>: <span id="arenaReleaseDate"></span></div>
+              </div>
+            </div>
+
+            <!-- Rating & Player Feedback Card -->
+            <div class="arena-card" id="arenaFeedbackCard">
+              <h3 class="arena-card-title">
+                <span>💬</span>
+                <span data-i18n="feedbackTitle">玩家反馈与快捷评价</span>
+              </h3>
+              <div class="feedback-box">
+                <button id="btnVoteLike" class="btn-vote" title="觉得好玩点个赞">
+                  <span>👍</span>
+                  <span id="voteLikeCount">1542</span>
+                  <span data-i18n="voteCount">人觉得好玩</span>
+                </button>
+                <div class="feedback-tags" id="feedbackTags">
+                  <button class="tag-pill-btn">🔥 3A画面震撼</button>
+                  <button class="tag-pill-btn">⚡ 操作丝滑</button>
+                  <button class="tag-pill-btn">🐱 猫咪太可爱了</button>
+                  <button class="tag-pill-btn">💥 特效拉满</button>
+                  <button class="tag-pill-btn">🏆 满分神作</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Recommended Games Shelf -->
+          <div class="arena-sidebar">
+            <div class="arena-card">
+              <h3 class="arena-card-title">
+                <span>✨</span>
+                <span data-i18n="recommendedTitle">猜你喜欢</span>
+              </h3>
+              <div class="recommended-list" id="recommendedList">
+                <!-- Recommended games injected by app.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       Site Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 10px;">
+            <div class="logo-icon-wrap" style="width: 36px; height: 36px;">
+              <svg viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+                <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+              </svg>
+            </div>
+            <span class="logo-text">FableGames</span>
+          </div>
+          <p class="footer-desc">
+            次世代潮玩网页微游戏聚合中心。纯原生 Web 技术驱动，无需安装插件，即点即玩！体验 3A 开放世界、魔法动作射击等无限畅快乐趣。
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">热门分类</h4>
+          <ul class="footer-links">
+            <li><a href="#/category/adventure">🧭 3A冒险</a></li>
+            <li><a href="#/category/action">⚡ 动作射击</a></li>
+            <li><a href="#/category/rpg">🛡️ 角色扮演</a></li>
+            <li><a href="#/category/casual">🧩 休闲益智</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">开发者与平台</h4>
+          <ul class="footer-links">
+            <li><a href="HOW_TO_ADD_GAMES.md" target="_blank">📖 接入新游戏 (1分钟极速指南)</a></li>
+            <li><a href="#/" id="footerRandomLink">🎲 随机好玩</a></li>
+            <li><a href="https://github.com/xinayida/fablegames" target="_blank">💻 GitHub 开源仓库</a></li>
+            <li><a href="#/">🛡️ 隐私与安全</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2024 FableGames Portal. Crafted with passion &amp; high performance.</div>
+        <div style="display: flex; gap: 16px;">
+          <span>⚡ HTML5 60FPS</span>
+          <span>🎮 WebGL 3D</span>
+          <span>🚀 Zero Latency</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/games-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

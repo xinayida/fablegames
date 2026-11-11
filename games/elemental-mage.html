@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>元素法师 · 火球 / 闪电 / 爆炸</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #14151a; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { display: block; background: #1f2128; touch-action: none; cursor: crosshair;
+           -webkit-user-select: none; user-select: none; outline: none; }
+</style>
+</head>
+<body>
+<canvas id="game" tabindex="0"></canvas>
+<noscript>需要启用 JavaScript 才能游玩。</noscript>
+<script>
+(function () {
+'use strict';
+
+/* ---------- 基础 ---------- */
+var W = 960, H = 540, GY = 440;          // 逻辑分辨率与地面高度
+var TAU = Math.PI * 2;
+var FONT = '"PingFang SC","Microsoft YaHei","Noto Sans SC","Hiragino Sans GB",sans-serif';
+var canvas = document.getElementById('game');
+var ctx = canvas.getContext('2d');
+var scale = 1;
+
+function resize() {
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var s = Math.min(window.innerWidth / W, window.innerHeight / H);
+  canvas.style.width = Math.floor(W * s) + 'px';
+  canvas.style.height = Math.floor(H * s) + 'px';
+  canvas.width = Math.floor(W * s * dpr);
+  canvas.height = Math.floor(H * s * dpr);
+  scale = s * dpr;
+}
+window.addEventListener('resize', resize);
+resize();
+
+function rand(a, b) { return a + Math.random() * (b - a); }
+function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
+function lerp(a, b, t) { return a + (b - a) * t; }
+function pick(arr) { return arr[(Math.random() * arr.length) | 0]; }
+
+/* ---------- 音效(WebAudio 合成,无外部资源) ---------- */
+var AC = null, muted = false, noiseBuf = null;
+function audio() {
+  if (muted) return null;
+  try {
+    if (!AC) {
+      var C = window.AudioContext || window.webkitAudioContext;
+      if (!C) return null;
+      AC = new C();
+      noiseBuf = AC.createBuffer(1, AC.sampleRate, AC.sampleRate);
+      var d = noiseBuf.getChannelData(0);
+      for (var i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+    }
+    if (AC.state === 'suspended') AC.resume();
+    return AC;
+  } catch (e) { return null; }
+}
+function noise(dur, f0, f1, vol, type) {
+  var a = audio(); if (!a) return;
+  try {
+    var t = a.currentTime, src = a.createBufferSource(), flt = a.createBiquadFilter(), g = a.createGain();
+    src.buffer = noiseBuf; flt.type = type || 'lowpass';
+    flt.frequency.setValueAtTime(f0, t); flt.frequency.exponentialRampToValueAtTime(Math.max(20, f1), t + dur);
+    g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+    src.connect(flt); flt.connect(g); g.connect(a.destination); src.start(t); src.stop(t + dur);
+  } catch (e) {}
+}
+function tone(dur, f0, f1, vol, type) {
+  var a = audio(); if (!a) return;
+  try {
+    var t = a.currentTime, o = a.createOscillator(), g = a.createGain();
+    o.type = type || 'sine';
+    o.frequency.setValueAtTime(f0, t); o.frequency.exponentialRampToValueAtTime(Math.max(20, f1), t + dur);
+    g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(0.001, t + dur);
+    o.connect(g); g.connect(a.destination); o.start(t); o.stop(t + dur);
+  } catch (e) {}
+}
+function sfx(k) {
+  if (state === 'menu') return;          // 菜单演示静音(浏览器也不允许在用户操作前发声)
+  if (k === 'fire') noise(0.16, 900, 300, 0.10, 'bandpass');
+  else if (k === 'burst') noise(0.22, 700, 120, 0.14);
+  else if (k === 'bolt') { tone(0.2, 1400, 70, 0.10, 'sawtooth'); noise(0.3, 5000, 400, 0.16, 'highpass'); }
+  else if (k === 'boom') { noise(0.7, 900, 40, 0.34); tone(0.5, 110, 28, 0.3); }
+  else if (k === 'hurt') tone(0.18, 160, 60, 0.2, 'square');
+  else if (k === 'up') { tone(0.12, 520, 780, 0.1, 'triangle'); setTimeout(function () { tone(0.18, 780, 1040, 0.1, 'triangle'); }, 90); }
+  else if (k === 'no') tone(0.07, 180, 150, 0.06, 'square');
+}
+
+/* ---------- 游戏状态 ---------- */
+var state = 'menu';            // menu | play | upgrade | over
+var paused = false;
+var time = 0, shake = 0, demoT = 0;
+var S, hp, maxHp, mana, score, wave, kills, best = 0;
+var cds = { fire: 0, bolt: 0, boom: 0 };
+var sel = 'fire';
+var enemies = [], shots = [], parts = [], fxs = [], texts = [];
+var queue = [], spawnT = 0, waveClearT = 0, banner = 0, choices = [];
+var buttons = [];              // 每帧重建的可点击区域
+var mouse = { x: W * 0.6, y: GY - 80, down: false };
+var ORIGIN = { x: 132, y: GY - 152 };   // 法杖顶端
+
+try { best = +localStorage.getItem('elemage_best') || 0; } catch (e) {}
+
+var SPELL = {
+  fire: { name: '火球', key: '1', col: '#f76f1a' },
+  bolt: { name: '闪电', key: '2', col: '#58c8ff' },
+  boom: { name: '爆炸', key: '3', col: '#fcd552' }
+};
+
+function newGame() {
+  S = { fireDmg: 24, fireCd: 0.30, fireCost: 5, fireR: 44, fireN: 1, burn: 0,
+        boltDmg: 70, boltCd: 1.6, boltCost: 22, chain: 2,
+        boomDmg: 130, boomCd: 6, boomCost: 42, boomR: 115,
+        maxMana: 100, regen: 10 };
+  hp = maxHp = 100; mana = 100; score = 0; wave = 0; kills = 0;
+  cds.fire = cds.bolt = cds.boom = 0; sel = 'fire';
+  enemies = []; shots = []; parts = []; fxs = []; texts = [];
+  state = 'play'; paused = false;
+  nextWave();
+}
+
+var TYPES = {
+  grunt:  { hp: 40,  sp: 36, r: 16, dmg: 5,  pts: 10 },
+  runner: { hp: 22,  sp: 82, r: 12, dmg: 3,  pts: 12 },
+  bat:    { hp: 28,  sp: 58, r: 12, dmg: 8,  pts: 15, fly: true },
+  brute:  { hp: 150, sp: 21, r: 24, dmg: 10, pts: 30 },
+  boss:   { hp: 700, sp: 13, r: 44, dmg: 20, pts: 200 }
+};
+
+function nextWave() {
+  wave++;
+  queue = [];
+  var n = Math.min(60, 5 + wave * 3), pool = ['grunt', 'grunt', 'grunt'];
+  if (wave >= 2) pool.push('runner', 'runner');
+  if (wave >= 3) pool.push('bat', 'bat');
+  if (wave >= 4) pool.push('brute');
+  if (wave >= 7) pool.push('brute', 'runner');
+  for (var i = 0; i < n; i++) queue.push(pick(pool));
+  if (wave % 5 === 0) queue.splice((queue.length / 2) | 0, 0, 'boss');
+  spawnT = 1.2; waveClearT = 0; banner = 2.4;
+  state = 'play';
+}
+
+function spawn(type) {
+  var T = TYPES[type], hs = 1 + 0.14 * (wave - 1), ss = 1 + Math.min(0.5, 0.02 * (wave - 1));
+  var e = { type: type, x: W + 40, r: T.r, hp: T.hp * hs, maxHp: T.hp * hs, sp: T.sp * ss * rand(0.9, 1.1),
+            dmg: T.dmg, pts: T.pts, fly: !!T.fly, flash: 0, stun: 0, burn: 0, atk: 0, ph: rand(0, TAU), dead: false };
+  e.baseY = e.fly ? rand(150, 290) : GY - T.r;
+  e.y = e.baseY;
+  enemies.push(e);
+}
+
+/* ---------- 粒子与特效 ---------- */
+function part(o) { if (parts.length < 700) { o.t = 0; parts.push(o); } }
+
+function embers(x, y, n, pw, cols) {
+  for (var i = 0; i < n; i++) {
+    var a = rand(0, TAU), v = rand(0.3, 1) * pw;
+    part({ k: 'ember', x: x, y: y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - pw * 0.3, g: 420,
+           life: rand(0.3, 0.75), s: rand(2, 4.5), c: pick(cols) });
+  }
+}
+function smoke(x, y, n, spread) {
+  for (var i = 0; i < n; i++)
+    part({ k: 'smoke', x: x + rand(-spread, spread), y: y + rand(-spread, spread) * 0.6, vx: rand(-18, 18),
+           vy: rand(-70, -25), g: 0, life: rand(0.7, 1.3), s: rand(10, 22), c: pick(['#6c727b', '#45474e', '#8a8f98']) });
+}
+var FIRE_COLS = ['#fcd552', '#f6d874', '#f76f1a', '#f76f1a', '#c9480f'];
+var BOLT_COLS = ['#fcd552', '#ffffff', '#bfeaff', '#f6d874'];
+
+function fireBurst(x, y, R) {
+  fxs.push({ k: 'burst', x: x, y: y, R: R, t: 0, life: 0.3 });
+  embers(x, y, 14, 240, FIRE_COLS);
+  shake = Math.max(shake, 2.5);
+  sfx('burst');
+}
+function boomFx(x, y, R) {
+  fxs.push({ k: 'boom', x: x, y: y, R: R, t: 0, life: 0.5 });
+  embers(x, y, 34, 430, FIRE_COLS);
+  smoke(x, y - 10, 12, R * 0.45);
+  shake = Math.max(shake, 12);
+  sfx('boom');
+}
+function boltFx(x0, y0, x1, y1, main) {
+  fxs.push({ k: 'bolt', x0: x0, y0: y0, x1: x1, y1: y1, t: 0, life: main ? 0.42 : 0.26, main: main, path: null, br: null, re: 0 });
+  if (main) { embers(x1, y1, 16, 300, BOLT_COLS); shake = Math.max(shake, 6); sfx('bolt'); }
+}
+function floatText(x, y, s, c, big) { texts.push({ x: x, y: y, s: s, c: c, t: 0, big: big }); }
+
+/* ---------- 伤害 ---------- */
+function hurt(e, d, kind) {
+  if (e.dead) return;
+  var m = 1;
+  if (e.type === 'brute') { if (kind === 'fire') m = 0.5; else if (kind === 'bolt') m = 2; }
+  if (e.type === 'bat' && kind === 'bolt') m = 1.5;
+  d *= m;
+  e.hp -= d; e.flash = 0.12;
+  if (kind !== 'burn') floatText(e.x + rand(-8, 8), e.y - e.r - 6, Math.round(d) + (m > 1 ? '!' : ''), m > 1 ? '#fcd552' : m < 1 ? '#8a8f98' : '#fff', m > 1);
+  if (e.hp <= 0) {
+    e.dead = true; kills++; score += e.pts * wave;
+    embers(e.x, e.y, e.type === 'boss' ? 40 : 8, 200, ['#e1e1e6', '#6c727b', '#fcd552']);
+    smoke(e.x, e.y, e.type === 'boss' ? 10 : 2, e.r * 0.6);
+    mana = Math.min(S.maxMana, mana + 1.5);
+  }
+}
+function aoe(x, y, R, dmg, kind, push) {
+  for (var i = 0; i < enemies.length; i++) {
+    var e = enemies[i], d = Math.hypot(e.x - x, e.y - y) - e.r;
+    if (d < R) {
+      hurt(e, dmg * (1 - 0.5 * clamp(d / R, 0, 1)), kind);
+      if (kind === 'fire' && S.burn > 0) e.burn = 3;
+      if (push && e.type !== 'boss') { e.x += push; e.stun = Math.max(e.stun, 0.35); }
+    }
+  }
+}
+
+/* ---------- 施法 ---------- */
+function cast(kind, x, y) {
+  if (state !== 'play' || paused) return false;
+  var cost = S[kind + 'Cost'];
+  if (cds[kind] > 0) return false;
+  if (mana < cost) { if (kind !== 'fire' || !mouse.down) floatText(ORIGIN.x + 10, ORIGIN.y - 30, '法力不足', '#7fb4ff'); sfx('no'); cds[kind] = Math.max(cds[kind], 0.25); return false; }
+  x = clamp(x, 0, W); y = clamp(y, 20, GY);
+  mana -= cost; cds[kind] = S[kind + 'Cd'];
+  if (kind === 'fire') {
+    var a0 = Math.atan2(y - ORIGIN.y, Math.max(x, ORIGIN.x + 12) - ORIGIN.x);
+    for (var i = 0; i < S.fireN; i++) {
+      var a = a0 + (i - (S.fireN - 1) / 2) * 0.13;
+      shots.push({ x: ORIGIN.x, y: ORIGIN.y, vx: Math.cos(a) * 640, vy: Math.sin(a) * 640, t: 0 });
+    }
+    sfx('fire');
+  } else if (kind === 'bolt') {
+    boltFx(x + rand(-50, 50), -10, x, GY, true);
+    var hit = [], i2, e;
+    for (i2 = 0; i2 < enemies.length; i2++) {
+      e = enemies[i2];
+      if (!e.dead && Math.abs(e.x - x) < 30 + e.r) { hit.push(e); }
+    }
+    for (i2 = 0; i2 < hit.length; i2++) { hurt(hit[i2], S.boltDmg, 'bolt'); hit[i2].stun = 0.6; }
+    // 连锁:从落点向附近未命中的敌人弹跳
+    var from = hit.length ? hit[0] : { x: x, y: GY - 10 }, left = S.chain;
+    while (left-- > 0) {
+      var bestE = null, bd = 170;
+      for (i2 = 0; i2 < enemies.length; i2++) {
+        e = enemies[i2];
+        if (e.dead || hit.indexOf(e) >= 0) continue;
+        var d = Math.hypot(e.x - from.x, e.y - from.y);
+        if (d < bd) { bd = d; bestE = e; }
+      }
+      if (!bestE) break;
+      boltFx(from.x, from.y, bestE.x, bestE.y, false);
+      hurt(bestE, S.boltDmg * 0.55, 'bolt'); bestE.stun = 0.4;
+      hit.push(bestE); from = bestE;
+    }
+  } else {
+    boomFx(x, y, S.boomR);
+    aoe(x, y, S.boomR, S.boomDmg, 'boom', 22);
+  }
+  return true;
+}
+
+/* ---------- 强化 ---------- */
+var UPS = [
+  { n: '烈焰强化', d: '火球伤害 +35%', k: 'fire', f: function () { S.fireDmg *= 1.35; } },
+  { n: '连珠火球', d: '火球冷却 -22%', k: 'fire', f: function () { S.fireCd *= 0.78; } },
+  { n: '分裂火球', d: '每次多发射 1 枚火球', k: 'fire', ok: function () { return S.fireN < 4; }, f: function () { S.fireN++; } },
+  { n: '灼烧', d: '火球点燃敌人持续掉血', k: 'fire', f: function () { S.burn += 9; } },
+  { n: '雷霆之怒', d: '闪电伤害 +40%', k: 'bolt', f: function () { S.boltDmg *= 1.4; } },
+  { n: '连锁闪电', d: '闪电额外弹跳 +2 个目标', k: 'bolt', f: function () { S.chain += 2; } },
+  { n: '静电充能', d: '闪电冷却 -25%', k: 'bolt', f: function () { S.boltCd *= 0.75; } },
+  { n: '烈性炸药', d: '爆炸伤害 +40%', k: 'boom', f: function () { S.boomDmg *= 1.4; } },
+  { n: '冲击扩散', d: '爆炸范围 +22%', k: 'boom', ok: function () { return S.boomR < 240; }, f: function () { S.boomR *= 1.22; } },
+  { n: '快速装填', d: '爆炸冷却 -25%', k: 'boom', f: function () { S.boomCd *= 0.75; } },
+  { n: '魔力之泉', d: '法力上限 +30,回复 +20%', k: 'mana', f: function () { S.maxMana += 30; S.regen *= 1.2; mana = S.maxMana; } },
+  { n: '修复城塔', d: '修复 40 耐久,上限 +10', k: 'hp', f: function () { maxHp += 10; hp = Math.min(maxHp, hp + 40); } }
+];
+function openUpgrade() {
+  var pool = UPS.filter(function (u) { return !u.ok || u.ok(); });
+  choices = [];
+  while (choices.length < 3 && pool.length) choices.push(pool.splice((Math.random() * pool.length) | 0, 1)[0]);
+  state = 'upgrade'; mouse.down = false;
+}
+function choose(i) {
+  if (state !== 'upgrade' || !choices[i]) return;
+  choices[i].f(); sfx('up'); nextWave();
+}
+
+/* ---------- 更新 ---------- */
+function gameOver() {
+  state = 'over'; mouse.down = false;
+  if (score > best) { best = score; try { localStorage.setItem('elemage_best', String(best)); } catch (e) {} }
+  boomFx(95, GY - 70, 130);
+}
+
+function update(dt) {
+  time += dt;
+  shake = Math.max(0, shake - dt * 30);
+  var i, e, p;
+
+  if (state === 'menu') {             // 菜单里循环演示三种特效(对应原图三格)
+    demoT -= dt;
+    if (demoT <= 0) {
+      demoT = 1.7;
+      fireBurst(200, 300, 46); boltFx(480 + rand(-30, 30), 150, 480, 350, true); boomFx(760, 300, 62);
+      shake = 0;
+    }
+  }
+
+  if (state === 'play') {
+    mana = Math.min(S.maxMana, mana + S.regen * dt);
+    for (var k in cds) cds[k] = Math.max(0, cds[k] - dt);
+    banner = Math.max(0, banner - dt);
+    if (mouse.down && sel === 'fire') cast('fire', mouse.x, mouse.y);
+
+    // 刷怪
+    if (queue.length) {
+      spawnT -= dt;
+      if (spawnT <= 0) { spawn(queue.shift()); spawnT = Math.max(0.32, 1.45 - wave * 0.07) * rand(0.6, 1.3); }
+    } else if (!enemies.length) {
+      waveClearT += dt;
+      if (waveClearT > 1.1) openUpgrade();
+    }
+
+    // 敌人
+    for (i = 0; i < enemies.length; i++) {
+      e = enemies[i];
+      e.flash = Math.max(0, e.flash - dt);
+      if (e.burn > 0) { e.burn -= dt; hurt(e, S.burn * dt, 'burn'); if (Math.random() < dt * 8) part({ k: 'flame', x: e.x + rand(-e.r, e.r) * 0.6, y: e.y - e.r * 0.4, vx: 0, vy: -50, g: 0, life: 0.35, s: 5, c: '' }); }
+      if (e.dead) continue;
+      if (e.stun > 0) { e.stun -= dt; continue; }
+      var wall = 146 + e.r;
+      if (e.fly) {
+        if (e.x < 330) e.baseY = lerp(e.baseY, GY - 110, dt * 2.2);
+        e.y = e.baseY + Math.sin(time * 3 + e.ph) * 14;
+        e.x -= e.sp * dt;
+        if (e.x < 138) { damageTower(e.dmg); e.dead = true; embers(e.x, e.y, 8, 160, ['#e1e1e6', '#8a6cc9']); }
+      } else if (e.x > wall) {
+        e.x = Math.max(wall, e.x - e.sp * dt);
+      } else {
+        e.atk -= dt;
+        if (e.atk <= 0) { e.atk = 1; damageTower(e.dmg); }
+      }
+    }
+    enemies = enemies.filter(function (q) { return !q.dead; });
+    if (hp <= 0 && state === 'play') gameOver();
+  }
+
+  // 火球
+  for (i = shots.length - 1; i >= 0; i--) {
+    p = shots[i]; p.t += dt; p.x += p.vx * dt; p.y += p.vy * dt;
+    part({ k: 'flame', x: p.x + rand(-3, 3), y: p.y + rand(-3, 3), vx: -p.vx * 0.12 + rand(-20, 20), vy: -p.vy * 0.12 + rand(-30, 10), g: -60, life: rand(0.18, 0.34), s: rand(5, 9), c: '' });
+    var boomHere = p.y >= GY - 4;
+    for (var j = 0; j < enemies.length && !boomHere; j++) {
+      e = enemies[j];
+      if (Math.hypot(e.x - p.x, e.y - p.y) < e.r + 9) boomHere = true;
+    }
+    if (boomHere) {
+      fireBurst(p.x, Math.min(p.y, GY - 4), S.fireR);
+      aoe(p.x, p.y, S.fireR, S.fireDmg, 'fire', 0);
+      shots.splice(i, 1);
+    } else if (p.x > W + 30 || p.y < -30 || p.x < -30) shots.splice(i, 1);
+  }
+
+  // 粒子
+  for (i = parts.length - 1; i >= 0; i--) {
+    p = parts[i]; p.t += dt;
+    if (p.t >= p.life) { parts.splice(i, 1); continue; }
+    p.vy += p.g * dt; p.x += p.vx * dt; p.y += p.vy * dt;
+    if (p.k === 'ember' && p.y > GY) { p.y = GY; p.vy *= -0.35; p.vx *= 0.6; }
+    if (p.k === 'smoke') p.s += 14 * dt;
+  }
+  for (i = fxs.length - 1; i >= 0; i--) { fxs[i].t += dt; if (fxs[i].t >= fxs[i].life) fxs.splice(i, 1); }
+  for (i = texts.length - 1; i >= 0; i--) { texts[i].t += dt; texts[i].y -= 34 * dt; if (texts[i].t > 0.8) texts.splice(i, 1); }
+}
+
+function damageTower(d) {
+  hp -= d; shake = Math.max(shake, 5); sfx('hurt');
+  floatText(110 + rand(-10, 10), GY - 170, '-' + d, '#ff6b5e', true);
+}
+
+/* ---------- 绘制工具 ---------- */
+function txt(s, x, y, size, col, align, bold) {
+  ctx.font = (bold ? '700 ' : '500 ') + size + 'px ' + FONT;
+  ctx.textAlign = align || 'left'; ctx.textBaseline = 'middle';
+  ctx.fillStyle = col; ctx.fillText(s, x, y);
+}
+function rr(x, y, w, h, r) {
+  ctx.beginPath(); ctx.moveTo(x + r, y); ctx.lineTo(x + w - r, y); ctx.arcTo(x + w, y, x + w, y + r, r);
+  ctx.lineTo(x + w, y + h - r); ctx.arcTo(x + w, y + h, x + w - r, y + h, r); ctx.lineTo(x + r, y + h);
+  ctx.arcTo(x, y + h, x, y + h - r, r); ctx.lineTo(x, y + r); ctx.arcTo(x, y, x + r, y, r); ctx.closePath();
+}
+function glow(x, y, r, stops, alpha) {
+  if (r <= 0.5) return;
+  var g = ctx.createRadialGradient(x, y, 0, x, y, r);
+  for (var i = 0; i < stops.length; i++) g.addColorStop(stops[i][0], stops[i][1]);
+  ctx.globalAlpha = alpha == null ? 1 : alpha; ctx.fillStyle = g;
+  ctx.beginPath(); ctx.arc(x, y, r, 0, TAU); ctx.fill(); ctx.globalAlpha = 1;
+}
+var G_FIRE = [[0, 'rgba(255,240,170,1)'], [0.28, 'rgba(252,213,82,.95)'], [0.55, 'rgba(247,111,26,.85)'], [0.82, 'rgba(135,50,12,.45)'], [1, 'rgba(135,50,12,0)']];
+var G_BOOM = [[0, 'rgba(255,255,255,1)'], [0.2, 'rgba(255,244,190,1)'], [0.42, 'rgba(252,213,82,.95)'], [0.66, 'rgba(247,111,26,.9)'], [0.88, 'rgba(150,40,10,.5)'], [1, 'rgba(120,30,8,0)']];
+var G_BOLT = [[0, 'rgba(255,255,255,.95)'], [0.3, 'rgba(120,210,255,.6)'], [1, 'rgba(40,110,220,0)']];
+
+function drawFireball(x, y, r) {
+  // 外焰 + 上窜的火舌 + 黄色焰心(还原原图“火球”)
+  glow(x, y, r * 2.4, G_FIRE, 0.9);
+  for (var i = 0; i < 3; i++) {
+    var a = time * 9 + i * 2.1, fx = x + Math.sin(a) * r * 0.35, fy = y - r * (0.7 + 0.35 * Math.sin(a * 1.3 + i));
+    glow(fx, fy, r * 0.9, G_FIRE, 0.55);
+  }
+  glow(x, y + r * 0.15, r * 0.9, [[0, '#fff6c8'], [0.6, 'rgba(252,213,82,.9)'], [1, 'rgba(252,213,82,0)']], 1);
+}
+
+function jag(x0, y0, x1, y1, amp) {
+  var len = Math.hypot(x1 - x0, y1 - y0), n = Math.max(3, Math.round(len / 20)), pts = [[x0, y0]];
+  var nx = -(y1 - y0) / (len || 1), ny = (x1 - x0) / (len || 1);
+  for (var i = 1; i < n; i++) {
+    var t = i / n, o = rand(-amp, amp);
+    pts.push([lerp(x0, x1, t) + nx * o, lerp(y0, y1, t) + ny * o]);
+  }
+  pts.push([x1, y1]);
+  return pts;
+}
+function strokePts(pts, w, a) {
+  var pass = [[w * 3.4, 'rgba(50,120,230,' + 0.28 * a + ')'], [w * 1.7, 'rgba(88,200,255,' + 0.9 * a + ')'], [w * 0.7, 'rgba(255,255,255,' + a + ')']];
+  ctx.lineJoin = 'miter'; ctx.lineCap = 'round';
+  for (var k = 0; k < 3; k++) {
+    ctx.lineWidth = pass[k][0]; ctx.strokeStyle = pass[k][1];
+    ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]);
+    for (var i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+    ctx.stroke();
+  }
+}
+function drawBolt(f) {
+  var p = f.t / f.life;
+  if (!f.path || f.t >= f.re) {            // 每 50ms 重新抖动,形成闪烁
+    f.re = f.t + 0.05;
+    f.path = jag(f.x0, f.y0, f.x1, f.y1, f.main ? 16 : 9);
+    f.br = [];
+    if (f.main && p > 0.12 && p < 0.62) {
+      for (var b = 0; b < 3; b++) {
+        var q = f.path[1 + ((Math.random() * (f.path.length - 2)) | 0)], dir = Math.random() < 0.5 ? -1 : 1;
+        f.br.push(jag(q[0], q[1], q[0] + dir * rand(40, 110), Math.min(GY, q[1] + rand(50, 130)), 10));
+      }
+    }
+  }
+  // 细 → 粗(带分叉)→ 细并消散,对应原图“闪电”的帧序
+  var w = f.main ? (p < 0.12 ? 2 : p < 0.62 ? 6.5 : 2.6 * (1 - p) / 0.38 + 0.6) : 2.4 * (1 - p) + 0.6;
+  var a = p < 0.62 ? 1 : (1 - p) / 0.38;
+  strokePts(f.path, w, a);
+  for (var i = 0; i < f.br.length; i++) strokePts(f.br[i], w * 0.45, a * 0.9);
+  if (f.main && p > 0.1 && p < 0.7) {       // 落地闪光
+    var k = 1 - Math.abs(p - 0.4) / 0.3;
+    glow(f.x1, f.y1, 60 * k + 10, G_BOLT, 0.9);
+    ctx.fillStyle = 'rgba(190,235,255,' + 0.8 * k + ')';
+    ctx.fillRect(f.x1 - 85 * k, f.y1 - 2, 170 * k, 3);
+  }
+}
+function drawBoom(f) {
+  var p = f.t / f.life, grow = Math.min(1, p / 0.32), R = f.R * (1 - Math.pow(1 - grow, 3));
+  var a = p < 0.45 ? 1 : (1 - p) / 0.55;
+  if (f.k === 'burst') { glow(f.x, f.y, R * 1.15, G_FIRE, a); return; }
+  glow(f.x, f.y, R * 1.2, G_BOOM, a);
+  for (var i = 0; i < 6; i++) {            // 不规则的火团边缘
+    var an = i * 1.047 + f.x * 0.01;
+    glow(f.x + Math.cos(an) * R * 0.5, f.y + Math.sin(an) * R * 0.45, R * 0.55, G_FIRE, a * 0.6);
+  }
+  if (f.y > GY - f.R) {                    // 地面冲击线
+    ctx.fillStyle = 'rgba(230,70,30,' + a * 0.9 + ')';
+    ctx.fillRect(f.x - R * 1.5, GY - 2, R * 3, 3);
+  }
+}
+
+/* ---------- 场景 ---------- */
+var stars = [];
+(function () { var s = 7; for (var i = 0; i < 70; i++) { s = (s * 9301 + 49297) % 233280; var x = s / 233280 * W; s = (s * 9301 + 49297) % 233280; var y = s / 233280 * 300; stars.push([x, y, (i % 3) + 1]); } })();
+
+function drawBg() {
+  var g = ctx.createLinearGradient(0, 0, 0, GY);
+  g.addColorStop(0, '#15161c'); g.addColorStop(1, '#262a36');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, GY);
+  for (var i = 0; i < stars.length; i++) {
+    ctx.globalAlpha = 0.25 + 0.3 * Math.abs(Math.sin(time * 0.8 + i));
+    ctx.fillStyle = '#e1e1e6'; ctx.fillRect(stars[i][0], stars[i][1], stars[i][2] > 2 ? 2 : 1, stars[i][2] > 2 ? 2 : 1);
+  }
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = '#d8d9e0'; ctx.beginPath(); ctx.arc(800, 86, 26, 0, TAU); ctx.fill();
+  ctx.fillStyle = '#1b1c23'; ctx.beginPath(); ctx.arc(790, 80, 23, 0, TAU); ctx.fill();
+  // 远山
+  ctx.fillStyle = '#1b1d25'; ctx.beginPath(); ctx.moveTo(0, GY);
+  for (var x = 0; x <= W; x += 40) ctx.lineTo(x, GY - 60 - 38 * Math.sin(x * 0.011) - 22 * Math.sin(x * 0.027 + 1));
+  ctx.lineTo(W, GY); ctx.fill();
+  // 地面
+  ctx.fillStyle = '#2b2620'; ctx.fillRect(0, GY, W, H - GY);
+  ctx.fillStyle = '#3d3226'; ctx.fillRect(0, GY, W, 5);
+  ctx.fillStyle = '#231f1a';
+  for (x = 20; x < W; x += 67) ctx.fillRect(x, GY + 12 + (x * 7) % 14, 14, 3);
+}
+
+function drawTower() {
+  var x = 62, w = 78, top = GY - 118;
+  ctx.fillStyle = '#4a4e5a'; ctx.fillRect(x, top, w, 118);
+  ctx.fillStyle = '#3a3d48';
+  for (var r = 0; r < 6; r++) for (var c = 0; c < 3; c++) ctx.fillRect(x + 4 + c * 26 + (r % 2) * 10 - 6, top + 8 + r * 19, 20, 2);
+  ctx.fillStyle = '#5a5f6c'; ctx.fillRect(x - 6, top - 10, w + 12, 12);
+  for (var i = 0; i < 4; i++) ctx.fillRect(x - 6 + i * 24.5, top - 22, 16, 12);
+  ctx.fillStyle = '#1b1c23'; rr(x + 28, GY - 44, 22, 44, 10); ctx.fill();
+  // 法师
+  var wx = 100, wy = top - 22, bob = Math.sin(time * 2.4) * 1.5;
+  ctx.fillStyle = '#4b3a8c'; ctx.beginPath(); ctx.moveTo(wx - 12, wy + 12); ctx.lineTo(wx + 12, wy + 12); ctx.lineTo(wx + 7, wy - 16 + bob); ctx.lineTo(wx - 7, wy - 16 + bob); ctx.fill();
+  ctx.fillStyle = '#e8c9a0'; ctx.beginPath(); ctx.arc(wx, wy - 22 + bob, 7, 0, TAU); ctx.fill();
+  ctx.fillStyle = '#6a52c4'; ctx.beginPath(); ctx.moveTo(wx - 13, wy - 26 + bob); ctx.lineTo(wx + 13, wy - 26 + bob); ctx.lineTo(wx + 3, wy - 50 + bob); ctx.fill();
+  ctx.strokeStyle = '#87480c'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(wx + 16, wy + 12); ctx.lineTo(ORIGIN.x - 2, ORIGIN.y + 8); ctx.stroke();
+  // 法杖顶端显示当前法术
+  ctx.globalCompositeOperation = 'lighter';
+  if (sel === 'fire') drawFireball(ORIGIN.x, ORIGIN.y, 7);
+  else if (sel === 'bolt') glow(ORIGIN.x, ORIGIN.y, 15 + Math.sin(time * 20) * 3, G_BOLT, 1);
+  else glow(ORIGIN.x, ORIGIN.y, 15 + Math.sin(time * 6) * 2, G_BOOM, 0.9);
+  ctx.globalCompositeOperation = 'source-over';
+}
+
+function drawEnemy(e) {
+  var x = e.x, y = e.y, r = e.r, sq = 1 + Math.sin(time * 7 + e.ph) * 0.07, fl = e.flash > 0;
+  ctx.save(); ctx.translate(x, y);
+  if (e.type === 'grunt' || e.type === 'boss') {
+    ctx.fillStyle = fl ? '#fff' : e.type === 'boss' ? '#b3342a' : '#5fae4e';
+    ctx.beginPath(); ctx.ellipse(0, r - r * sq * 0.95, r * (2 - sq) * 1.05, r * sq * 0.95, 0, Math.PI, 0); ctx.lineTo(r * 1.05, r); ctx.lineTo(-r * 1.05, r); ctx.fill();
+    if (e.type === 'boss') {
+      ctx.fillStyle = fl ? '#fff' : '#e1e1e6';
+      ctx.beginPath(); ctx.moveTo(-r * 0.7, -r * 0.55); ctx.lineTo(-r * 0.95, -r * 1.3); ctx.lineTo(-r * 0.35, -r * 0.8); ctx.fill();
+      ctx.beginPath(); ctx.moveTo(r * 0.7, -r * 0.55); ctx.lineTo(r * 0.95, -r * 1.3); ctx.lineTo(r * 0.35, -r * 0.8); ctx.fill();
+    }
+    ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(-r * 0.42, -r * 0.05, r * 0.2, 0, TAU); ctx.arc(r * 0.12, -r * 0.05, r * 0.2, 0, TAU); ctx.fill();
+    ctx.fillStyle = '#1b1c23'; ctx.beginPath(); ctx.arc(-r * 0.48, -r * 0.03, r * 0.09, 0, TAU); ctx.arc(r * 0.06, -r * 0.03, r * 0.09, 0, TAU); ctx.fill();
+  } else if (e.type === 'runner') {
+    ctx.fillStyle = fl ? '#fff' : '#c9569b';
+    ctx.beginPath(); ctx.ellipse(0, 0, r, r * sq, 0, 0, TAU); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(-r * 0.7, -r * 0.5); ctx.lineTo(-r * 0.9, -r * 1.5); ctx.lineTo(-r * 0.1, -r * 0.85); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(r * 0.7, -r * 0.5); ctx.lineTo(r * 0.9, -r * 1.5); ctx.lineTo(r * 0.1, -r * 0.85); ctx.fill();
+    var lg = Math.sin(time * 18 + e.ph) * 4;
+    ctx.fillRect(-6 + lg, r - 3, 4, 5); ctx.fillRect(3 - lg, r - 3, 4, 5);
+    ctx.fillStyle = '#fcd552'; ctx.fillRect(-r * 0.6, -3, 4, 4); ctx.fillRect(-r * 0.05, -3, 4, 4);
+  } else if (e.type === 'brute') {
+    ctx.fillStyle = fl ? '#fff' : '#7d8794'; rr(-r * 0.8, -r, r * 1.6, r * 2, 6); ctx.fill();
+    ctx.fillStyle = fl ? '#fff' : '#a9b3c0'; rr(-r * 0.7, -r * 1.25, r * 1.4, r * 0.75, 6); ctx.fill();
+    ctx.fillStyle = '#1b1c23'; ctx.fillRect(-r * 0.55, -r * 0.95, r * 0.9, 4);
+    ctx.fillStyle = fl ? '#fff' : '#5b6470'; rr(-r * 1.15, -r * 0.5, r * 0.5, r * 1.3, 4); ctx.fill();
+    ctx.fillStyle = '#58c8ff'; ctx.fillRect(-r * 1.0, -r * 0.05, r * 0.2, r * 0.35);
+  } else {                                   // 蝙蝠
+    var fp = Math.sin(time * 16 + e.ph) * r * 0.9;
+    ctx.fillStyle = fl ? '#fff' : '#6b4fb0';
+    ctx.beginPath(); ctx.moveTo(-r * 0.4, 0); ctx.lineTo(-r * 2, -fp); ctx.lineTo(-r * 1.2, r * 0.5); ctx.fill();
+    ctx.beginPath(); ctx.moveTo(r * 0.4, 0); ctx.lineTo(r * 2, -fp); ctx.lineTo(r * 1.2, r * 0.5); ctx.fill();
+    ctx.fillStyle = fl ? '#fff' : '#8a6cc9'; ctx.beginPath(); ctx.arc(0, 0, r * 0.75, 0, TAU); ctx.fill();
+    ctx.fillStyle = '#ff6b5e'; ctx.fillRect(-r * 0.45, -3, 3, 3); ctx.fillRect(-r * 0.02, -3, 3, 3);
+  }
+  ctx.restore();
+  if (e.hp < e.maxHp) {
+    var bw = Math.max(26, r * 2), by = y - r * (e.type === 'boss' || e.type === 'brute' || e.type === 'runner' ? 1.7 : 1.25) - 8;
+    ctx.fillStyle = 'rgba(0,0,0,.55)'; ctx.fillRect(x - bw / 2, by, bw, 4);
+    ctx.fillStyle = e.burn > 0 ? '#f76f1a' : '#e5534b'; ctx.fillRect(x - bw / 2, by, bw * clamp(e.hp / e.maxHp, 0, 1), 4);
+  }
+}
+
+function drawWorld() {
+  var i, p, a;
+  drawBg();
+  if (state !== 'menu') { drawTower(); for (i = 0; i < enemies.length; i++) drawEnemy(enemies[i]); }
+  // 烟(普通混合)
+  for (i = 0; i < parts.length; i++) {
+    p = parts[i]; if (p.k !== 'smoke') continue;
+    a = 1 - p.t / p.life;
+    ctx.globalAlpha = a * 0.45; ctx.fillStyle = p.c; ctx.beginPath(); ctx.arc(p.x, p.y, p.s, 0, TAU); ctx.fill();
+  }
+  ctx.globalAlpha = 1;
+  // 发光特效(叠加混合)
+  ctx.globalCompositeOperation = 'lighter';
+  for (i = 0; i < parts.length; i++) {
+    p = parts[i]; a = 1 - p.t / p.life;
+    if (p.k === 'flame') glow(p.x, p.y, p.s * (0.5 + a), G_FIRE, a * 0.8);
+    else if (p.k === 'ember') { ctx.globalAlpha = Math.min(1, a * 1.6); ctx.fillStyle = p.c; ctx.fillRect(p.x - p.s / 2, p.y - p.s / 2, p.s, p.s); }
+  }
+  ctx.globalAlpha = 1;
+  for (i = 0; i < shots.length; i++) drawFireball(shots[i].x, shots[i].y, 10);
+  for (i = 0; i < fxs.length; i++) { if (fxs[i].k === 'bolt') drawBolt(fxs[i]); else drawBoom(fxs[i]); }
+  if (state === 'menu') drawFireball(200, 300, 20);
+  ctx.globalCompositeOperation = 'source-over';
+  for (i = 0; i < texts.length; i++) {
+    p = texts[i]; ctx.globalAlpha = clamp(1.6 - p.t * 2, 0, 1);
+    txt(p.s, p.x, p.y, p.big ? 17 : 13, p.c, 'center', true);
+  }
+  ctx.globalAlpha = 1;
+}
+
+/* ---------- 界面 ---------- */
+function btn(x, y, w, h, fn) { buttons.push({ x: x, y: y, w: w, h: h, fn: fn }); }
+function bar(x, y, w, h, v, col, label) {
+  ctx.fillStyle = 'rgba(0,0,0,.5)'; rr(x, y, w, h, 5); ctx.fill();
+  if (v > 0.01) { ctx.fillStyle = col; rr(x + 2, y + 2, Math.max(6, (w - 4) * clamp(v, 0, 1)), h - 4, 3); ctx.fill(); }
+  txt(label, x + w / 2, y + h / 2 + 1, 12, '#fff', 'center', true);
+}
+function icon(kind, x, y, s) {
+  ctx.globalCompositeOperation = 'lighter';
+  if (kind === 'fire') drawFireball(x, y + 2, s * 0.42);
+  else if (kind === 'bolt') { ctx.globalCompositeOperation = 'source-over'; strokePts([[x + s * 0.2, y - s * 0.7], [x - s * 0.25, y - s * 0.05], [x + s * 0.2, y], [x - s * 0.2, y + s * 0.7]], 2.6, 1); }
+  else if (kind === 'boom') glow(x, y, s * 0.85, G_BOOM, 1);
+  else if (kind === 'mana') glow(x, y, s * 0.8, [[0, '#fff'], [0.4, 'rgba(110,150,255,.9)'], [1, 'rgba(60,90,220,0)']], 1);
+  else { ctx.globalCompositeOperation = 'source-over'; ctx.fillStyle = '#7d8794'; ctx.fillRect(x - s * 0.45, y - s * 0.3, s * 0.9, s * 0.9); for (var i = 0; i < 3; i++) ctx.fillRect(x - s * 0.45 + i * s * 0.33, y - s * 0.6, s * 0.24, s * 0.3); }
+  ctx.globalCompositeOperation = 'source-over';
+}
+
+function drawHud() {
+  bar(16, 14, 210, 20, hp / maxHp, '#e5534b', '城塔 ' + Math.max(0, Math.ceil(hp)) + ' / ' + maxHp);
+  bar(16, 40, 210, 20, mana / S.maxMana, '#4f7df0', '法力 ' + Math.floor(mana) + ' / ' + S.maxMana);
+  txt('第 ' + wave + ' 波', W / 2, 24, 20, '#e1e1e6', 'center', true);
+  txt('剩余敌人 ' + (queue.length + enemies.length), W / 2, 48, 13, '#8a8f98', 'center');
+  txt('得分 ' + score, W - 16, 24, 18, '#fcd552', 'right', true);
+  txt('最高 ' + Math.max(best, score), W - 16, 48, 13, '#8a8f98', 'right');
+
+  var keys = ['fire', 'bolt', 'boom'], bw = 168, bh = 62, gap = 14, x0 = (W - bw * 3 - gap * 2) / 2, y = GY + 22;
+  keys.forEach(function (k, i) {
+    var x = x0 + i * (bw + gap), on = sel === k, cost = S[k + 'Cost'], cdMax = S[k + 'Cd'], ready = cds[k] <= 0 && mana >= cost;
+    ctx.fillStyle = on ? '#343846' : '#23252e'; rr(x, y, bw, bh, 9); ctx.fill();
+    ctx.lineWidth = on ? 2.5 : 1; ctx.strokeStyle = on ? SPELL[k].col : '#454853'; rr(x, y, bw, bh, 9); ctx.stroke();
+    icon(k, x + 32, y + bh / 2, 22);
+    txt(SPELL[k].name, x + 62, y + 22, 18, ready ? '#fff' : '#8a8f98', 'left', true);
+    txt('法力 ' + cost, x + 62, y + 44, 12, mana >= cost ? '#7fb4ff' : '#e5534b', 'left');
+    txt('[' + SPELL[k].key + ']', x + bw - 12, y + 22, 13, '#8a8f98', 'right', true);
+    if (cds[k] > 0 && cdMax > 0.5) {
+      ctx.fillStyle = 'rgba(10,11,15,.62)'; rr(x, y, bw * clamp(cds[k] / cdMax, 0, 1), bh, 9); ctx.fill();
+      txt(cds[k].toFixed(1) + 's', x + bw - 12, y + 44, 13, '#fff', 'right', true);
+    }
+    btn(x, y, bw, bh, function () { sel = k; });
+  });
+  txt(muted ? '[M] 静音' : '[M] 声音', 16, H - 14, 12, '#6c727b', 'left');
+  txt('[P] 暂停', W - 16, H - 14, 12, '#6c727b', 'right');
+  btn(0, H - 28, 90, 28, function () { muted = !muted; });
+  btn(W - 90, H - 28, 90, 28, function () { paused = !paused; });
+
+  // 准星:闪电显示打击柱,爆炸显示范围
+  if (state === 'play' && !paused && mouse.y < GY + 6) {
+    ctx.lineWidth = 1.5;
+    if (sel === 'bolt') { ctx.fillStyle = 'rgba(88,200,255,.08)'; ctx.fillRect(mouse.x - 30, 0, 60, GY); ctx.strokeStyle = 'rgba(88,200,255,.5)'; ctx.beginPath(); ctx.moveTo(mouse.x - 30, GY); ctx.lineTo(mouse.x + 30, GY); ctx.stroke(); }
+    else if (sel === 'boom') { ctx.strokeStyle = 'rgba(252,213,82,.55)'; ctx.setLineDash([6, 6]); ctx.beginPath(); ctx.arc(mouse.x, Math.min(mouse.y, GY), S.boomR, 0, TAU); ctx.stroke(); ctx.setLineDash([]); }
+    else { ctx.strokeStyle = 'rgba(247,111,26,.8)'; ctx.beginPath(); ctx.arc(mouse.x, mouse.y, 9, 0, TAU); ctx.moveTo(mouse.x - 14, mouse.y); ctx.lineTo(mouse.x + 14, mouse.y); ctx.moveTo(mouse.x, mouse.y - 14); ctx.lineTo(mouse.x, mouse.y + 14); ctx.stroke(); }
+  }
+  if (banner > 0 && state === 'play') {
+    ctx.globalAlpha = clamp(banner, 0, 1);
+    txt(wave % 5 === 0 ? '第 ' + wave + ' 波 · 首领来袭!' : '第 ' + wave + ' 波', W / 2, 150, 40, wave % 5 === 0 ? '#ff6b5e' : '#fff', 'center', true);
+    if (wave === 1) txt('点击 / 按住施放 · 1 2 3 切换法术 · 右键闪电 · 空格爆炸', W / 2, 192, 15, '#c9cbd3', 'center');
+    if (wave === 4) txt('铁甲兵:火球伤害减半,闪电伤害翻倍', W / 2, 192, 15, '#58c8ff', 'center');
+    ctx.globalAlpha = 1;
+  }
+}
+
+function dim(a) { ctx.fillStyle = 'rgba(12,13,17,' + a + ')'; ctx.fillRect(0, 0, W, H); }
+
+function drawMenu() {
+  txt('元素法师', W / 2, 78, 54, '#fff', 'center', true);
+  txt('用三种法术守住你的城塔', W / 2, 124, 17, '#8a8f98', 'center');
+  var info = [['火球', '连发 · 小范围溅射', '#f76f1a', '按住左键连射'], ['闪电', '贯穿整列 · 连锁弹跳', '#58c8ff', '克制铁甲与蝙蝠'], ['爆炸', '大范围 · 击退', '#fcd552', '清场利器,冷却较长']];
+  for (var i = 0; i < 3; i++) {
+    var x = 200 + i * 280;
+    txt(info[i][0], x, 196, 26, info[i][2], 'center', true);
+    txt(info[i][1], x, 392, 15, '#e1e1e6', 'center', true);
+    txt(info[i][3], x, 414, 13, '#8a8f98', 'center');
+  }
+  var bw = 220, bh = 54, bx = (W - bw) / 2, by = GY + 24, pulse = 0.5 + 0.5 * Math.sin(time * 4);
+  ctx.fillStyle = '#f76f1a'; rr(bx, by, bw, bh, 12); ctx.fill();
+  ctx.strokeStyle = 'rgba(252,213,82,' + (0.4 + 0.6 * pulse) + ')'; ctx.lineWidth = 3; rr(bx, by, bw, bh, 12); ctx.stroke();
+  txt('开始游戏', W / 2, by + bh / 2 + 1, 24, '#fff', 'center', true);
+  btn(0, 0, W, H, newGame);
+  if (best > 0) txt('最高分 ' + best, W - 16, 24, 15, '#fcd552', 'right', true);
+}
+
+function drawUpgrade() {
+  dim(0.72);
+  txt('第 ' + (wave) + ' 波已清除', W / 2, 92, 34, '#fff', 'center', true);
+  txt('选择一项强化(点击或按 1 / 2 / 3)', W / 2, 132, 15, '#8a8f98', 'center');
+  var cw = 240, ch = 220, gap = 26, x0 = (W - cw * choices.length - gap * (choices.length - 1)) / 2, y = 176;
+  var colOf = { fire: '#f76f1a', bolt: '#58c8ff', boom: '#fcd552', mana: '#6e96ff', hp: '#e5534b' };
+  choices.forEach(function (u, i) {
+    var x = x0 + i * (cw + gap), hov = mouse.x > x && mouse.x < x + cw && mouse.y > y && mouse.y < y + ch, oy = hov ? -6 : 0;
+    ctx.fillStyle = hov ? '#343846' : '#262831'; rr(x, y + oy, cw, ch, 12); ctx.fill();
+    ctx.strokeStyle = colOf[u.k]; ctx.lineWidth = hov ? 3 : 1.5; rr(x, y + oy, cw, ch, 12); ctx.stroke();
+    icon(u.k, x + cw / 2, y + oy + 62, 34);
+    txt(u.n, x + cw / 2, y + oy + 132, 22, '#fff', 'center', true);
+    txt(u.d, x + cw / 2, y + oy + 166, 14, '#c9cbd3', 'center');
+    txt('[' + (i + 1) + ']', x + cw / 2, y + oy + 198, 12, '#6c727b', 'center', true);
+    btn(x, y - 6, cw, ch + 6, function () { choose(i); });
+  });
+}
+
+function drawOver() {
+  dim(0.74);
+  txt('城塔陷落', W / 2, 150, 52, '#ff6b5e', 'center', true);
+  txt('坚持到第 ' + wave + ' 波 · 击败 ' + kills + ' 个敌人', W / 2, 212, 18, '#e1e1e6', 'center');
+  txt('得分 ' + score, W / 2, 262, 34, '#fcd552', 'center', true);
+  txt(score >= best && score > 0 ? '新纪录!' : '最高分 ' + best, W / 2, 302, 15, '#8a8f98', 'center');
+  var bw = 220, bh = 54, bx = (W - bw) / 2, by = 346;
+  ctx.fillStyle = '#f76f1a'; rr(bx, by, bw, bh, 12); ctx.fill();
+  txt('再来一局', W / 2, by + bh / 2 + 1, 24, '#fff', 'center', true);
+  btn(bx, by, bw, bh, newGame);
+}
+
+function draw() {
+  buttons = [];
+  ctx.setTransform(scale, 0, 0, scale, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  ctx.save();
+  if (shake > 0.2) ctx.translate(rand(-shake, shake), rand(-shake, shake) * 0.6);
+  drawWorld();
+  ctx.restore();
+  if (state === 'menu') drawMenu();
+  else {
+    drawHud();
+    if (state === 'upgrade') drawUpgrade();
+    else if (state === 'over') drawOver();
+    else if (paused) { dim(0.6); txt('已暂停', W / 2, H / 2 - 14, 44, '#fff', 'center', true); txt('按 P 或点击继续', W / 2, H / 2 + 30, 16, '#8a8f98', 'center'); btn(0, 0, W, H, function () { paused = false; }); }
+  }
+}
+
+/* ---------- 输入 ---------- */
+function setMouse(ev) {
+  var r = canvas.getBoundingClientRect();
+  mouse.x = (ev.clientX - r.left) / (r.width || 1) * W;
+  mouse.y = (ev.clientY - r.top) / (r.height || 1) * H;
+}
+function hitButton() {
+  for (var i = buttons.length - 1; i >= 0; i--) {
+    var b = buttons[i];
+    if (mouse.x >= b.x && mouse.x <= b.x + b.w && mouse.y >= b.y && mouse.y <= b.y + b.h) { b.fn(); return true; }
+  }
+  return false;
+}
+canvas.addEventListener('pointerdown', function (ev) {
+  ev.preventDefault(); setMouse(ev); audio();
+  try { canvas.focus(); } catch (e) {}
+  if (ev.button === 2) { cast('bolt', mouse.x, mouse.y); return; }
+  if (hitButton()) return;
+  if (state === 'play' && !paused) { mouse.down = true; cast(sel, mouse.x, mouse.y); }
+});
+canvas.addEventListener('pointermove', setMouse);
+window.addEventListener('pointerup', function () { mouse.down = false; });
+window.addEventListener('pointercancel', function () { mouse.down = false; });
+window.addEventListener('blur', function () { mouse.down = false; if (state === 'play') paused = true; });
+canvas.addEventListener('contextmenu', function (ev) { ev.preventDefault(); });
+window.addEventListener('keydown', function (ev) {
+  var k = ev.key;
+  if (k === ' ' || k === 'Spacebar') ev.preventDefault();
+  if (ev.repeat) return;
+  if (k === '1' || k === '2' || k === '3') {
+    if (state === 'upgrade') choose(+k - 1);
+    else sel = ['fire', 'bolt', 'boom'][+k - 1];
+  } else if (k === ' ' || k === 'Spacebar') {
+    if (state === 'menu' || state === 'over') newGame(); else cast('boom', mouse.x, mouse.y);
+  } else if (k === 'Enter') { if (state === 'menu' || state === 'over') newGame(); }
+  else if (k === 'p' || k === 'P' || k === 'Escape') { if (state === 'play') paused = !paused; }
+  else if (k === 'm' || k === 'M') muted = !muted;
+});
+
+/* ---------- 主循环 ---------- */
+var last = 0;
+function frame(ts) {
+  var dt = Math.min(0.033, (ts - last) / 1000 || 0); last = ts;
+  if (!paused) update(dt);
+  draw();
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+// 供自动化冒烟测试使用
+window.__game = { update: update, draw: draw, newGame: newGame, cast: cast, choose: choose,
+  get: function () { return { state: state, wave: wave, hp: hp, mana: mana, score: score, enemies: enemies.length, queue: queue.length, parts: parts.length, fxs: fxs.length, shots: shots.length, kills: kills, buttons: buttons.length }; } };
+})();
+</script>
+</body>
+</html>
