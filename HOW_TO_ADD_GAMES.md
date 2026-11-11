@@ -32,7 +32,7 @@ games/
   titleEn: 'Space Invaders Retro',              // 游戏英文标题
   category: '经典街机',                          // 分类名（中文）
   categoryEn: 'Arcade Classics',                // 分类名（英文）
-  categoryId: 'arcade',                         // 分类ID：adventure | action | rpg | casual | arcade
+  categoryId: 'arcade',                         // 分类ID：adventure | action | racing | rpg | casual | arcade
   tags: ['街机', '射击', '像素', '太空', '怀旧'],  // 搜索标签（中文）
   tagsEn: ['Arcade', 'Shooter', 'Pixel', 'Space'], // 搜索标签（英文）
   rating: 4.7,                                  // 评分（0.0 ~ 5.0）

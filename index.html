@@ -3,9 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="FableGames - 炫酷暗黑风微游戏聚合门户，畅玩国产3A高保真猫咪大作、元素法师等极速即点即玩原生HTML5网页游戏！">
+  <title>FableGames - Claude Fable 5.2 制作游戏中心 | 原生3D网页微游戏平台 | 即点即玩</title>
+  <meta name="description" content="FableGames 是全球首个汇聚 100% 由 Claude Fable 5.2 独立编码制作的原生 Web 网页微游戏平台。畅玩国产 3A 赛博猫咪大作、元素法师等极速即点即玩原生 HTML5 / WebGL 3D 游戏，零安装、零延迟、高帧率极致体验！">
+  <meta name="keywords" content="Claude Fable 5.2, Claude Fable, Claude Fable 5.2 游戏, Claude AI Games, Claude 制作的游戏, Claude 生成游戏, AI网页游戏, FableGames, WebGL 3D 游戏, 原生网页游戏, HTML5游戏, 网页微游戏, CrazyGames, AI Game Dev, 几猫3A大作">
+  <meta name="author" content="Claude Fable 5.2 & FableGames Team">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0b0e14">
-  <title>FableGames · 潮玩微游戏聚合门户 | CrazyGames 极速即玩体验</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://fablegames.vercel.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fablegames.vercel.app/">
+  <meta property="og:title" content="FableGames - 100% Claude Fable 5.2 制作游戏中心 | 原生3D网页微游戏">
+  <meta property="og:description" content="畅玩全部由 Claude Fable 5.2 制作生成的次世代 3D WebGL 网页微游戏，免插件免安装，即点即玩！">
+  <meta property="og:image" content="assets/covers/jimao-3a.webp">
+  <meta property="og:site_name" content="FableGames · Claude Fable 5.2 Portal">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fablegames.vercel.app/">
+  <meta name="twitter:title" content="FableGames - 100% Claude Fable 5.2 制作游戏中心">
+  <meta name="twitter:description" content="全球首个专属于 Claude Fable 5.2 生成的次世代 Web 网页微游戏平台，原生 60FPS 极速畅玩。">
+  <meta name="twitter:image" content="assets/covers/jimao-3a.webp">
+
+  <!-- JSON-LD Structured Data for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FableGames",
+    "alternateName": ["Fable Games", "Claude Fable 5.2 Games Portal", "Claude Fable 5.2 Showcase"],
+    "url": "https://fablegames.vercel.app/",
+    "description": "The world's premier web game portal showcasing games 100% crafted & coded by Claude Fable 5.2.",
+    "creator": {
+      "@type": "SoftwareApplication",
+      "name": "Claude Fable 5.2",
+      "applicationCategory": "AI Game Generator",
+      "operatingSystem": "Web"
+    },
+    "keywords": "Claude Fable 5.2, Claude AI Games, WebGL 3D, HTML5 Games, AI-Generated Games"
+  }
+  </script>
 
   <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +57,13 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PRK4XMP7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
 </head>
 <body>
 
@@ -33,7 +80,7 @@
           </svg>
         </div>
         <span class="logo-text">FableGames</span>
-        <span class="logo-badge">3A PORTAL</span>
+        <span class="logo-badge" data-i18n="logoBadge">CLAUDE FABLE 5.2</span>
       </a>
 
       <!-- Realtime Search Bar -->
@@ -83,6 +130,21 @@
       </div>
     </div>
   </header>
+
+  <!-- ========================================================================
+       Claude Fable 5.2 Special Announcement Bar
+       ======================================================================== -->
+  <aside class="announcement-bar" aria-label="Platform Announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-left">
+        <span class="announcement-tag" data-i18n="announcementBadge">✨ 100% CLAUDE FABLE 5.2</span>
+        <span class="announcement-text" data-i18n="announcementText">全网首家专注于汇聚 Claude Fable 5.2 制作的原生 3D / WebGL 网页微游戏平台 · 零安装即点即玩</span>
+      </div>
+      <a href="#/category/all" class="announcement-link">
+        <span data-i18n="playNow">立即畅玩</span> &rarr;
+      </a>
+    </div>
+  </aside>
 
   <!-- ========================================================================
        Category Navigation Pills Bar
@@ -172,6 +234,12 @@
               <span class="control-btn-text" data-i18n="favorites">收藏</span>
             </button>
 
+            <!-- Open in New Tab -->
+            <a id="btnOpenExternal" class="control-icon-btn" href="#" target="_blank" rel="noopener noreferrer" title="在独立新标签页打开 / Open in new window">
+              <span>↗️</span>
+              <span class="control-btn-text" data-i18n="openNewTab">独立窗口</span>
+            </a>
+
             <!-- Share Game Link -->
             <button id="btnShareGame" class="control-icon-btn" title="复制游戏直接链接">
               <span>🔗</span>
@@ -221,8 +289,9 @@
               </h3>
               <p class="about-game-text" id="arenaAboutText"></p>
               <ul class="game-features-list" id="arenaFeaturesList"></ul>
-              <div style="margin-top: 18px; display: flex; gap: 20px; font-size: 0.85rem; color: var(--text-muted);" id="arenaDevMeta">
+              <div style="margin-top: 18px; display: flex; gap: 20px; font-size: 0.85rem; color: var(--text-muted); flex-wrap: wrap;" id="arenaDevMeta">
                 <div><strong style="color: var(--text-primary);" data-i18n="developer">开发团队</strong>: <span id="arenaDevName"></span></div>
+                <div><strong style="color: var(--text-primary);" data-i18n="aiEngine">AI 引擎</strong>: <span id="arenaAiEngine" style="color: var(--neon-purple); font-weight: 600;">Claude Fable 5.2</span></div>
                 <div><strong style="color: var(--text-primary);" data-i18n="releaseDate">发布时间</strong>: <span id="arenaReleaseDate"></span></div>
               </div>
             </div>
@@ -240,11 +309,7 @@
                   <span data-i18n="voteCount">人觉得好玩</span>
                 </button>
                 <div class="feedback-tags" id="feedbackTags">
-                  <button class="tag-pill-btn">🔥 3A画面震撼</button>
-                  <button class="tag-pill-btn">⚡ 操作丝滑</button>
-                  <button class="tag-pill-btn">🐱 猫咪太可爱了</button>
-                  <button class="tag-pill-btn">💥 特效拉满</button>
-                  <button class="tag-pill-btn">🏆 满分神作</button>
+                  <!-- Dynamic Feedback Tags Injected by app.js based on language -->
                 </div>
               </div>
             </div>
@@ -285,35 +350,35 @@
             </div>
             <span class="logo-text">FableGames</span>
           </div>
-          <p class="footer-desc">
-            次世代潮玩网页微游戏聚合中心。纯原生 Web 技术驱动，无需安装插件，即点即玩！体验 3A 开放世界、魔法动作射击等无限畅快乐趣。
+          <p class="footer-desc" data-i18n="footerDesc">
+            全球首家专注汇聚 Claude Fable 5.2 制作游戏的聚合平台。站内所有游戏均由前沿 AI 模型 Claude Fable 5.2 纯原生 Web 代码独立打造，无需安装插件，即点即玩！尽情畅享高保真 3A 开放世界、魔法动作射击等零等待极速体验。
           </p>
         </div>
 
         <div>
-          <h4 class="footer-col-title">热门分类</h4>
+          <h4 class="footer-col-title" data-i18n="popularCategories">热门分类</h4>
           <ul class="footer-links">
-            <li><a href="#/category/adventure">🧭 3A冒险</a></li>
-            <li><a href="#/category/action">⚡ 动作射击</a></li>
-            <li><a href="#/category/rpg">🛡️ 角色扮演</a></li>
-            <li><a href="#/category/casual">🧩 休闲益智</a></li>
+            <li><a href="#/category/adventure"><span data-i18n="catAdventure">🧭 3A冒险</span></a></li>
+            <li><a href="#/category/action"><span data-i18n="catAction">⚡ 动作射击</span></a></li>
+            <li><a href="#/category/rpg"><span data-i18n="catRpg">🛡️ 角色扮演</span></a></li>
+            <li><a href="#/category/casual"><span data-i18n="catCasual">🧩 休闲益智</span></a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">开发者与平台</h4>
+          <h4 class="footer-col-title" data-i18n="footerColPlatform">平台与探索</h4>
           <ul class="footer-links">
-            <li><a href="HOW_TO_ADD_GAMES.md" target="_blank">📖 接入新游戏 (1分钟极速指南)</a></li>
-            <li><a href="#/" id="footerRandomLink">🎲 随机好玩</a></li>
-            <li><a href="https://github.com/xinayida/fablegames" target="_blank">💻 GitHub 开源仓库</a></li>
-            <li><a href="#/">🛡️ 隐私与安全</a></li>
+            <li><a href="#/" id="footerRandomLink"><span data-i18n="footerRandom">🎲 随机好玩</span></a></li>
+            <li><a href="#/category/all"><span data-i18n="footerAllGames">🎮 全部游戏库</span></a></li>
+            <li><a href="#/" id="footerPrivacyLink"><span data-i18n="footerPrivacy">🛡️ 隐私与安全</span></a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2024 FableGames Portal. Crafted with passion &amp; high performance.</div>
-        <div style="display: flex; gap: 16px;">
+        <div>&copy; 2024 FableGames. <span data-i18n="footerCopyright">100% 游戏由 Claude Fable 5.2 制作 · 极速原生即玩</span></div>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <span style="color: var(--neon-purple-light); font-weight: 600;">🤖 Claude Fable 5.2</span>
           <span>⚡ HTML5 60FPS</span>
           <span>🎮 WebGL 3D</span>
           <span>🚀 Zero Latency</span>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wukongBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120a06"/>
+      <stop offset="45%" stop-color="#211209"/>
+      <stop offset="85%" stop-color="#3b170c"/>
+      <stop offset="100%" stop-color="#0a0503"/>
+    </linearGradient>
+    <linearGradient id="fireStaff" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="30%" stop-color="#f97316"/>
+      <stop offset="70%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <radialGradient id="sunWukongAura" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#b91c1c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="wukongGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#wukongBg)"/>
+
+  <!-- Mystic Mountain Ranges & Red Clouds -->
+  <circle cx="500" cy="180" r="170" fill="url(#sunWukongAura)"/>
+  <path d="M-40,360 Q120,240 320,290 T720,220 L840,450 L-40,450 Z" fill="#180e07" opacity="0.85"/>
+  <path d="M80,390 Q280,310 540,340 T880,290 L880,450 L80,450 Z" fill="#0c0704" opacity="0.95"/>
+
+  <!-- Golden Headband Circlet (紧箍咒) Silhouette -->
+  <g transform="translate(480, 130)" filter="url(#wukongGlow)">
+    <path d="M-80,0 Q-40,-35 0,-15 Q40,-35 80,0 Q40,30 0,10 Q-40,30 -80,0 Z" fill="none" stroke="#facc15" stroke-width="6"/>
+    <circle cx="0" cy="-15" r="7" fill="#facc15"/>
+    <circle cx="0" cy="-15" r="4" fill="#dc2626"/>
+  </g>
+
+  <!-- The Ruyi Jingu Bang (如意金箍棒) Diagonally Striking -->
+  <g transform="translate(430, 200) rotate(-28)" filter="url(#wukongGlow)">
+    <!-- Central Obsidian Iron Body -->
+    <rect x="-240" y="-8" width="480" height="16" rx="4" fill="#1c1917" stroke="#78350f" stroke-width="2"/>
+    <!-- Golden Tips at Both Ends (金箍) -->
+    <rect x="-240" y="-12" width="70" height="24" rx="4" fill="#eab308" stroke="#fef08a" stroke-width="2"/>
+    <rect x="170" y="-12" width="70" height="24" rx="4" fill="#eab308" stroke="#fef08a" stroke-width="2"/>
+    <line x1="-220" y1="-10" x2="-220" y2="10" stroke="#78350f" stroke-width="2"/>
+    <line x1="190" y1="-10" x2="190" y2="10" stroke="#78350f" stroke-width="2"/>
+    <!-- Glowing Runes on Staff -->
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="url(#fireStaff)" stroke-width="3" stroke-dasharray="14 10"/>
+  </g>
+
+  <!-- Badges -->
+  <rect x="40" y="40" width="84" height="28" rx="6" fill="#f97316" fill-opacity="0.25" stroke="#f97316" stroke-width="1.5"/>
+  <text x="82" y="59" fill="#fb923c" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">天命人</text>
+
+  <rect x="134" y="40" width="90" height="28" rx="6" fill="#dc2626" fill-opacity="0.25" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="179" y="59" fill="#f87171" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">HOT 🔥</text>
+
+  <!-- Typography -->
+  <text x="40" y="375" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="900" font-size="44" letter-spacing="2">BLACK MYTH: WUKONG</text>
+  <text x="40" y="410" fill="#fed7aa" font-family="system-ui, sans-serif" font-weight="600" font-size="18" letter-spacing="1">黑神话 · 悟空 / 天命人 · 重走西行路</text>
+
+  <rect x="40" y="424" width="370" height="3" fill="url(#fireStaff)"/>
+</svg>

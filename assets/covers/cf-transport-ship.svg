@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f14"/>
+      <stop offset="50%" stop-color="#141c24"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+    <linearGradient id="cfAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5b321"/>
+      <stop offset="100%" stop-color="#e0522e"/>
+    </linearGradient>
+    <filter id="cfGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#cfBg)"/>
+
+  <!-- Cargo Ship Deck & Metal Texture Grid -->
+  <g opacity="0.25">
+    <line x1="0" y1="280" x2="800" y2="280" stroke="#f5b321" stroke-width="2"/>
+    <line x1="0" y1="340" x2="800" y2="340" stroke="#475569" stroke-width="1"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#475569" stroke-width="1"/>
+    <line x1="120" y1="280" x2="80" y2="450" stroke="#475569" stroke-width="1.5"/>
+    <line x1="260" y1="280" x2="220" y2="450" stroke="#475569" stroke-width="1.5"/>
+    <line x1="400" y1="280" x2="360" y2="450" stroke="#475569" stroke-width="1.5"/>
+    <line x1="540" y1="280" x2="500" y2="450" stroke="#475569" stroke-width="1.5"/>
+    <line x1="680" y1="280" x2="640" y2="450" stroke="#475569" stroke-width="1.5"/>
+  </g>
+
+  <!-- High Tension Containers (Transport Ship Classic) -->
+  <!-- Blue Container (Global Risk) -->
+  <rect x="100" y="160" width="180" height="120" rx="4" fill="#1e3a5f" stroke="#2f8ff0" stroke-width="3"/>
+  <line x1="130" y1="160" x2="130" y2="280" stroke="#2f8ff0" stroke-width="2" opacity="0.5"/>
+  <line x1="160" y1="160" x2="160" y2="280" stroke="#2f8ff0" stroke-width="2" opacity="0.5"/>
+  <line x1="190" y1="160" x2="190" y2="280" stroke="#2f8ff0" stroke-width="2" opacity="0.5"/>
+  <line x1="220" y1="160" x2="220" y2="280" stroke="#2f8ff0" stroke-width="2" opacity="0.5"/>
+  <line x1="250" y1="160" x2="250" y2="280" stroke="#2f8ff0" stroke-width="2" opacity="0.5"/>
+
+  <!-- Red Container (Black List) -->
+  <rect x="520" y="150" width="180" height="130" rx="4" fill="#5c1d18" stroke="#e0522e" stroke-width="3"/>
+  <line x1="550" y1="150" x2="550" y2="280" stroke="#e0522e" stroke-width="2" opacity="0.5"/>
+  <line x1="580" y1="150" x2="580" y2="280" stroke="#e0522e" stroke-width="2" opacity="0.5"/>
+  <line x1="610" y1="150" x2="610" y2="280" stroke="#e0522e" stroke-width="2" opacity="0.5"/>
+  <line x1="640" y1="150" x2="640" y2="280" stroke="#e0522e" stroke-width="2" opacity="0.5"/>
+  <line x1="670" y1="150" x2="670" y2="280" stroke="#e0522e" stroke-width="2" opacity="0.5"/>
+
+  <!-- Tactical Reticle & Sniper Scope in the Center -->
+  <g transform="translate(400, 200)" filter="url(#cfGlow)">
+    <circle cx="0" cy="0" r="64" fill="none" stroke="#f5b321" stroke-width="2"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#e0522e" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <line x1="-90" y1="0" x2="-20" y2="0" stroke="#f5b321" stroke-width="2.5"/>
+    <line x1="20" y1="0" x2="90" y2="0" stroke="#f5b321" stroke-width="2.5"/>
+    <line x1="0" y1="-90" x2="0" y2="-20" stroke="#f5b321" stroke-width="2.5"/>
+    <line x1="0" y1="20" x2="0" y2="90" stroke="#f5b321" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="4" fill="#ff4a3a"/>
+  </g>
+
+  <!-- Badges -->
+  <rect x="40" y="40" width="80" height="28" rx="6" fill="#e0522e" fill-opacity="0.25" stroke="#e0522e" stroke-width="1.5"/>
+  <text x="80" y="59" fill="#ff7a45" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">CF 经典</text>
+
+  <rect x="130" y="40" width="90" height="28" rx="6" fill="#2f8ff0" fill-opacity="0.2" stroke="#2f8ff0" stroke-width="1.5"/>
+  <text x="175" y="59" fill="#6fb6ff" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">团队竞技</text>
+
+  <!-- Typography -->
+  <text x="40" y="375" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="900" font-size="44" letter-spacing="2">CROSSFIRE 3D</text>
+  <text x="40" y="410" fill="#cbd5e1" font-family="system-ui, sans-serif" font-weight="600" font-size="18" letter-spacing="1">穿越火线 · 运输船 3D / 保卫者 vs 潜伏者</text>
+
+  <rect x="40" y="424" width="340" height="3" fill="url(#cfAccent)"/>
+</svg>

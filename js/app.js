@@ -32,6 +32,7 @@
       theaterMode: '剧场模式',
       fullscreenGame: '全屏',
       reloadGame: '重置',
+      openNewTab: '独立窗口',
       shareGame: '分享',
       controlsTitle: '操作说明',
       aboutTitle: '游戏简介',
@@ -72,6 +73,7 @@
       theaterMode: 'Theater Mode',
       fullscreenGame: 'Fullscreen',
       reloadGame: 'Reload',
+      openNewTab: 'New Tab',
       shareGame: 'Share',
       controlsTitle: 'Controls Guide',
       aboutTitle: 'About This Game',
@@ -617,6 +619,12 @@
     const loadingOverlay = document.getElementById('arenaLoadingOverlay');
     if (loadingOverlay) loadingOverlay.classList.remove('hidden');
 
+    // Update Open In New Tab button href
+    const btnOpenExternal = document.getElementById('btnOpenExternal');
+    if (btnOpenExternal) {
+      btnOpenExternal.href = game.originalUrl || game.fileUrl;
+    }
+
     if (iframe) {
       iframe.onload = () => {
         setTimeout(() => {
@@ -624,7 +632,12 @@
         }, 400);
       };
       const targetUrl = game.fileUrl;
-      const rawLoc = (iframe.contentWindow && iframe.contentWindow.location) ? iframe.contentWindow.location.href : iframe.src;
+      let rawLoc = '';
+      try {
+        rawLoc = (iframe.contentWindow && iframe.contentWindow.location && iframe.contentWindow.location.href) || iframe.src || '';
+      } catch (e) {
+        rawLoc = iframe.src || '';
+      }
       let isSame = false;
       try {
         isSame = !!rawLoc && (rawLoc.endsWith(targetUrl) || decodeURI(rawLoc).endsWith(targetUrl) || rawLoc.endsWith(encodeURI(targetUrl)));

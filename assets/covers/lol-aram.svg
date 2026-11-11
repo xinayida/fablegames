@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lolBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05121e"/>
+      <stop offset="45%" stop-color="#0a233a"/>
+      <stop offset="80%" stop-color="#113654"/>
+      <stop offset="100%" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="hextechGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c8aa6e"/>
+      <stop offset="50%" stop-color="#f0e6d2"/>
+      <stop offset="100%" stop-color="#785a28"/>
+    </linearGradient>
+    <linearGradient id="iceBeam" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0ac8b9"/>
+      <stop offset="60%" stop-color="#005a82"/>
+      <stop offset="100%" stop-color="#0397ab" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="lolGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#lolBg)"/>
+
+  <!-- Howling Abyss Icy Bridge Perspective (嚎哭深渊冰桥) -->
+  <polygon points="120,450 360,200 440,200 680,450" fill="#082032" stroke="#0ac8b9" stroke-width="1.5" opacity="0.6"/>
+  <line x1="400" y1="200" x2="400" y2="450" stroke="#0ac8b9" stroke-width="2" stroke-dasharray="16 12" opacity="0.5"/>
+
+  <!-- Hextech Crystal Nexus Core -->
+  <g transform="translate(400, 180)" filter="url(#lolGlow)">
+    <!-- Floating Hextech Arcane Ring -->
+    <circle cx="0" cy="0" r="75" fill="none" stroke="url(#hextechGold)" stroke-width="4"/>
+    <circle cx="0" cy="0" r="65" fill="none" stroke="#0ac8b9" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <!-- Nexus Gem Diamond -->
+    <polygon points="0,-45 35,0 0,45 -35,0" fill="#0ac8b9" stroke="#f0e6d2" stroke-width="2"/>
+    <polygon points="0,-30 22,0 0,30 -22,0" fill="#e0f2fe" opacity="0.8"/>
+  </g>
+
+  <!-- Arcane Sparks & Frost Shards -->
+  <polygon points="280,140 295,130 285,155" fill="#0ac8b9" opacity="0.7"/>
+  <polygon points="520,130 535,145 510,140" fill="#f0e6d2" opacity="0.8"/>
+  <polygon points="340,90 350,80 345,100" fill="#0ac8b9" opacity="0.5"/>
+  <polygon points="460,95 470,85 465,105" fill="#f0e6d2" opacity="0.6"/>
+
+  <!-- Badges -->
+  <rect x="40" y="40" width="84" height="28" rx="6" fill="#c8aa6e" fill-opacity="0.25" stroke="#c8aa6e" stroke-width="1.5"/>
+  <text x="82" y="59" fill="#f0e6d2" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">LOL 官方风</text>
+
+  <rect x="134" y="40" width="90" height="28" rx="6" fill="#0ac8b9" fill-opacity="0.2" stroke="#0ac8b9" stroke-width="1.5"/>
+  <text x="179" y="59" fill="#2dd4bf" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">海克斯大乱斗</text>
+
+  <!-- Typography -->
+  <text x="40" y="375" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="900" font-size="44" letter-spacing="2">HEXTECH ARAM</text>
+  <text x="40" y="410" fill="#94d3e2" font-family="system-ui, sans-serif" font-weight="600" font-size="18" letter-spacing="1">英雄联盟 · 海克斯大乱斗 / 嚎哭深渊极地激斗</text>
+
+  <rect x="40" y="424" width="380" height="3" fill="url(#hextechGold)"/>
+</svg>

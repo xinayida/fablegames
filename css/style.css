@@ -208,6 +208,81 @@ input {
   transition: all var(--transition-normal);
 }
 
+/* Claude Fable 5.2 Announcement Bar */
+.announcement-bar {
+  background: rgba(124, 58, 237, 0.12);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.25);
+  padding: 8px 0;
+  font-size: 0.82rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 90;
+}
+
+.announcement-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.announcement-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.announcement-tag {
+  background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.35);
+}
+
+.announcement-text {
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.announcement-link {
+  color: var(--neon-cyan);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  transition: var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.announcement-link:hover {
+  color: var(--neon-cyan-light);
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .announcement-inner {
+    justify-content: center;
+  }
+  .announcement-link {
+    display: none;
+  }
+  .announcement-text {
+    font-size: 0.75rem;
+  }
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -617,6 +692,15 @@ input {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.6px;
+}
+
+.badge-fable {
+  background: linear-gradient(135deg, #7c3aed 0%, #ec4899 50%, #f59e0b 100%);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.5px;
 }
 
 .badge-3a {
@@ -1142,6 +1226,8 @@ input {
 }
 
 .control-icon-btn {
+  display: inline-flex;
+  text-decoration: none;
   height: 38px;
   padding: 0 12px;
   border-radius: var(--radius-md);

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pelicanSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141a2e"/>
+      <stop offset="35%" stop-color="#2d2b52"/>
+      <stop offset="70%" stop-color="#a0445d"/>
+      <stop offset="90%" stop-color="#e27c59"/>
+      <stop offset="100%" stop-color="#ffb547"/>
+    </linearGradient>
+    <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4965"/>
+      <stop offset="100%" stop-color="#0b2545"/>
+    </linearGradient>
+    <linearGradient id="pelicanAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb547"/>
+      <stop offset="100%" stop-color="#3fd0c9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#pelicanSky)"/>
+
+  <!-- Glowing Sunset Sun -->
+  <circle cx="580" cy="240" r="85" fill="#ffeaa7" opacity="0.9"/>
+  <circle cx="580" cy="240" r="130" fill="#ffb547" opacity="0.25"/>
+
+  <!-- Coastal Ocean & Gentle Waves -->
+  <rect x="0" y="270" width="800" height="180" fill="url(#seaGrad)"/>
+  <path d="M0,275 Q200,265 400,275 T800,275 L800,450 L0,450 Z" fill="#133c55" opacity="0.6"/>
+  <path d="M0,290 Q200,280 400,290 T800,290 L800,450 L0,450 Z" fill="#0d2b45" opacity="0.8"/>
+
+  <!-- Leaping Fish Silhouette -->
+  <g transform="translate(680, 270) rotate(-25)">
+    <ellipse cx="0" cy="0" rx="16" ry="6" fill="#ffeaa7"/>
+    <polygon points="12,0 22,-8 22,8" fill="#ffeaa7"/>
+  </g>
+  <g transform="translate(730, 290) rotate(15)">
+    <ellipse cx="0" cy="0" rx="12" ry="5" fill="#ffeaa7"/>
+    <polygon points="10,0 18,-6 18,6" fill="#ffeaa7"/>
+  </g>
+
+  <!-- Coastal Road -->
+  <path d="M0,360 Q300,340 800,370 L800,450 L0,450 Z" fill="#1e2433"/>
+  <path d="M0,368 Q300,348 800,378" stroke="#ffb547" stroke-width="2" stroke-dasharray="25 15" opacity="0.6"/>
+
+  <!-- Retro Bicycle & White Pelican Silhouette -->
+  <g transform="translate(240, 280)">
+    <!-- Bicycle Wheels -->
+    <circle cx="-70" cy="55" r="32" fill="none" stroke="#f6f3ec" stroke-width="5"/>
+    <circle cx="70" cy="55" r="32" fill="none" stroke="#f6f3ec" stroke-width="5"/>
+    <circle cx="-70" cy="55" r="5" fill="#f6f3ec"/>
+    <circle cx="70" cy="55" r="5" fill="#f6f3ec"/>
+    <!-- Bicycle Frame -->
+    <path d="M-70,55 L-20,55 L20,15 L-30,15 Z" fill="none" stroke="#3fd0c9" stroke-width="5"/>
+    <line x1="-20" y1="55" x2="-20" y2="5" stroke="#3fd0c9" stroke-width="5"/>
+    <line x1="-35" y1="5" x2="-5" y2="5" stroke="#ffeaa7" stroke-width="6"/> <!-- Seat -->
+    <line x1="20" y1="15" x2="35" y2="-10" stroke="#3fd0c9" stroke-width="5"/>
+    <path d="M25,-10 L45,-10" stroke="#ffeaa7" stroke-width="6"/> <!-- Handlebars -->
+
+    <!-- Pelican Body -->
+    <ellipse cx="-15" cy="-10" rx="28" ry="20" fill="#f6f3ec"/>
+    <!-- Long Pelican Neck & Head -->
+    <path d="M5,-15 Q18,-35 22,-50" fill="none" stroke="#f6f3ec" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="22" cy="-52" r="12" fill="#f6f3ec"/>
+    <!-- Pelican Helmet -->
+    <path d="M12,-62 Q24,-72 34,-58" fill="#ffb547" stroke="#ff9f1c" stroke-width="3"/>
+    <!-- Big Yellow Bill / Beak -->
+    <path d="M28,-50 L75,-42 L30,-36 Z" fill="#ffb547"/>
+    <!-- Scarf Blowing in the Wind -->
+    <path d="M14,-40 Q-15,-48 -45,-38" fill="none" stroke="#ff5a6e" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Badges -->
+  <rect x="40" y="40" width="84" height="28" rx="6" fill="#3fd0c9" fill-opacity="0.25" stroke="#3fd0c9" stroke-width="1.5"/>
+  <text x="82" y="59" fill="#3fd0c9" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">治愈解压</text>
+
+  <rect x="134" y="40" width="84" height="28" rx="6" fill="#ffb547" fill-opacity="0.25" stroke="#ffb547" stroke-width="1.5"/>
+  <text x="176" y="59" fill="#ffb547" font-family="system-ui, sans-serif" font-weight="800" font-size="13" text-anchor="middle" letter-spacing="1">3D 独立</text>
+
+  <!-- Typography -->
+  <text x="40" y="375" fill="#f8fafc" font-family="system-ui, sans-serif" font-weight="900" font-size="44" letter-spacing="2">PELICAN ON A BIKE</text>
+  <text x="40" y="410" fill="#fed7aa" font-family="system-ui, sans-serif" font-weight="600" font-size="18" letter-spacing="1">鹈鹕骑单车 · 沿海追鱼 / 暮色治愈漫游</text>
+
+  <rect x="40" y="424" width="340" height="3" fill="url(#pelicanAccent)"/>
+</svg>
