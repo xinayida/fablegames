@@ -19,7 +19,8 @@
 
   const I18N = {
     zh: {
-      siteTitle: 'FableGames · 潮玩微游戏聚合门户 | 极速即点即玩',
+      siteTitle: 'FableGames - Claude Fable 5.2 制作游戏中心 | 原生3D网页微游戏平台 | 即点即玩',
+      metaDesc: 'FableGames 是全球首个汇聚 100% 由 Claude Fable 5.2 独立编码制作的原生 Web 网页微游戏平台。畅玩国产 3A 赛博猫咪大作、元素法师等极速即点即玩原生 HTML5 / WebGL 3D 游戏，零安装、零延迟、高帧率极致体验！',
       searchPlaceholder: '搜索游戏... (按 / 快捷键)',
       randomPlay: '随机一玩',
       favorites: '我的收藏',
@@ -57,10 +58,45 @@
       releaseDate: '发布时间',
       voteHelpful: '给游戏点赞',
       voteCount: '人觉得好玩',
-      quickTags: ['🔥 3A画面震撼', '⚡ 操作丝滑', '🐱 猫咪太可爱了', '💥 特效拉满', '🏆 满分神作']
+      quickTags: ['🔥 3A画面震撼', '⚡ 操作丝滑', '🐱 猫咪太可爱了', '💥 特效拉满', '🏆 满分神作'],
+      
+      // Claude Fable 5.2 & Footer i18n
+      logoBadge: 'CLAUDE FABLE 5.2',
+      announcementBadge: '✨ 100% CLAUDE FABLE 5.2',
+      announcementText: '全网首家专注于汇聚 Claude Fable 5.2 制作的原生 3D / WebGL 网页微游戏平台 · 零安装即点即玩',
+      aiEngine: 'AI 引擎',
+      aiEngineName: 'Claude Fable 5.2 (Anthropic)',
+      popularCategories: '热门分类',
+      catAdventure: '🧭 3A冒险',
+      catAction: '⚡ 动作射击',
+      catRpg: '🛡️ 角色扮演',
+      catCasual: '🧩 休闲益智',
+      catRacing: '🏎️ 竞速漂移',
+      catArcade: '👾 经典街机',
+      footerColPlatform: '平台与探索',
+      footerRandom: '🎲 随机好玩',
+      footerAllGames: '🎮 全部游戏库',
+      footerPrivacy: '🛡️ 隐私与安全',
+      footerDesc: '全球首家专注汇聚 Claude Fable 5.2 制作游戏的聚合平台。站内所有游戏均由前沿 AI 模型 Claude Fable 5.2 纯原生 Web 代码独立打造，无需安装插件，即点即玩！尽情畅享高保真 3A 开放世界、魔法动作射击等零等待极速体验。',
+      footerCopyright: '100% 游戏由 Claude Fable 5.2 制作 · 极速原生即玩',
+      privacyToast: 'FableGames 严格遵守隐私保护规范，无任何第三方追踪器与恶意插件。',
+      voteSuccessToast: '感谢点赞！已记录您的评价',
+      voteRemoveToast: '已取消点赞',
+      feedbackToastPrefix: '已提交反馈: ',
+      themeDarkToast: '已切换至暗黑电竞主题',
+      themeLightToast: '已切换至明亮主题',
+      langZhToast: '已切换为中文',
+      langEnToast: 'Switched to English',
+      clearSearchTitle: '清空搜索',
+      randomGameTitle: '随机挑一款游戏畅玩',
+      favoritesTitle: '查看我收藏的游戏',
+      themeToggleTitle: '切换暗黑/明亮主题',
+      langToggleTitle: '切换语言 / Switch Language',
+      fullscreenToggleTitle: '切换浏览器全屏'
     },
     en: {
-      siteTitle: 'FableGames · Next-Gen Web Games Aggregation Portal',
+      siteTitle: 'FableGames - 100% Claude Fable 5.2 AI-Generated Games | Play 3D Web Games Instantly',
+      metaDesc: 'FableGames is the world\'s premier web game portal showcasing games 100% crafted & coded by Claude Fable 5.2. Play stunning 3D WebGL action games, open-world feline adventures, and arcade shooters instantly with zero installs.',
       searchPlaceholder: 'Search games... (Press /)',
       randomPlay: 'Random Game',
       favorites: 'Favorites',
@@ -98,7 +134,41 @@
       releaseDate: 'Release Date',
       voteHelpful: 'Upvote Game',
       voteCount: 'players enjoyed this',
-      quickTags: ['🔥 Visual Masterpiece', '⚡ Butter Smooth', '🐱 Awesome Feline', '💥 Particle Magic', '🏆 10/10 Score']
+      quickTags: ['🔥 Visual Masterpiece', '⚡ Butter Smooth', '🐱 Awesome Feline', '💥 Particle Magic', '🏆 10/10 Score'],
+
+      // Claude Fable 5.2 & Footer i18n
+      logoBadge: 'CLAUDE FABLE 5.2',
+      announcementBadge: '✨ 100% CLAUDE FABLE 5.2',
+      announcementText: "The World's 1st Web Game Portal 100% Crafted & Coded by Claude Fable 5.2 · Zero Installs Instant Play",
+      aiEngine: 'AI Engine',
+      aiEngineName: 'Claude Fable 5.2 (Anthropic)',
+      popularCategories: 'Popular Categories',
+      catAdventure: '🧭 3A Adventure',
+      catAction: '⚡ Action & Shooting',
+      catRpg: '🛡️ RPG',
+      catCasual: '🧩 Casual & Puzzle',
+      catRacing: '🏎️ Racing & Speed',
+      catArcade: '👾 Arcade Classics',
+      footerColPlatform: 'Platform & Explore',
+      footerRandom: '🎲 Random Game',
+      footerAllGames: '🎮 All Games',
+      footerPrivacy: '🛡️ Privacy & Safety',
+      footerDesc: 'The premier web game portal 100% crafted & coded by Claude Fable 5.2. Powered by native WebGL & HTML5, play 3D open worlds and action adventures instantly with zero installs and silky 60FPS performance!',
+      footerCopyright: '100% Games Crafted by Claude Fable 5.2 · Browser Native Play',
+      privacyToast: 'FableGames strictly respects user privacy with zero malicious plugins or trackers.',
+      voteSuccessToast: 'Thanks for your upvote! Your feedback was recorded.',
+      voteRemoveToast: 'Upvote removed.',
+      feedbackToastPrefix: 'Feedback submitted: ',
+      themeDarkToast: 'Switched to Dark Theme',
+      themeLightToast: 'Switched to Light Theme',
+      langZhToast: '已切换为中文',
+      langEnToast: 'Switched to English',
+      clearSearchTitle: 'Clear Search',
+      randomGameTitle: 'Play a random game',
+      favoritesTitle: 'View my favorites',
+      themeToggleTitle: 'Toggle Dark / Light Theme',
+      langToggleTitle: 'Switch Language / 切换语言',
+      fullscreenToggleTitle: 'Toggle Fullscreen'
     }
   };
 
@@ -259,11 +329,34 @@
   }
 
   /**
+   * Render Player Feedback Tags with current language
+   */
+  function renderFeedbackTags() {
+    const container = document.getElementById('feedbackTags');
+    if (!container) return;
+    const tags = (I18N[AppState.lang] && I18N[AppState.lang].quickTags) ? I18N[AppState.lang].quickTags : I18N.zh.quickTags;
+    container.innerHTML = tags.map(tag => `<button class="tag-pill-btn">${escapeHtml(tag)}</button>`).join('');
+    container.querySelectorAll('.tag-pill-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        showToast(t('feedbackToastPrefix') + btn.textContent.trim());
+      });
+    });
+  }
+
+  /**
    * Apply Language and translate DOM elements with data-i18n
    */
   function applyLanguage() {
     document.documentElement.lang = AppState.lang === 'zh' ? 'zh-CN' : 'en';
     document.title = t('siteTitle');
+    
+    // Dynamic Meta Description for SEO
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute('content', t('metaDesc'));
+    }
+
     const langText = document.getElementById('langText');
     if (langText) {
       langText.textContent = AppState.lang === 'zh' ? 'EN' : '中';
@@ -274,6 +367,20 @@
       searchInput.placeholder = t('searchPlaceholder');
     }
 
+    // Update Action Button Titles
+    const clearBtn = document.getElementById('searchClearBtn');
+    if (clearBtn) clearBtn.title = t('clearSearchTitle');
+    const randomBtn = document.getElementById('btnRandomGame');
+    if (randomBtn) randomBtn.title = t('randomGameTitle');
+    const favHeaderBtn = document.getElementById('btnFavorites');
+    if (favHeaderBtn) favHeaderBtn.title = t('favoritesTitle');
+    const themeBtn = document.getElementById('btnThemeToggle');
+    if (themeBtn) themeBtn.title = t('themeToggleTitle');
+    const langBtn = document.getElementById('btnLangToggle');
+    if (langBtn) langBtn.title = t('langToggleTitle');
+    const fullBtn = document.getElementById('btnFullscreenToggle');
+    if (fullBtn) fullBtn.title = t('fullscreenToggleTitle');
+
     // Update all elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -281,6 +388,9 @@
         el.textContent = I18N[AppState.lang][key];
       }
     });
+
+    // Re-render feedback reaction pills with localized tags
+    renderFeedbackTags();
 
     // Re-render dynamic sections with new language strings
     renderCategories();
@@ -382,6 +492,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <div class="hero-badges-row">
+            <span class="badge badge-fable">🤖 CLAUDE FABLE 5.2</span>
             ${game.featured ? '<span class="badge badge-3a">⭐ 3A MASTERPIECE</span>' : ''}
             ${game.hot ? '<span class="badge badge-hot">🔥 HOT</span>' : ''}
             ${game.isNew ? '<span class="badge badge-new">🆕 NEW</span>' : ''}
@@ -690,7 +801,14 @@
     }
 
     const devName = document.getElementById('arenaDevName');
-    if (devName) devName.textContent = game.developer || 'FableGames Studio';
+    if (devName) {
+      devName.textContent = (AppState.lang === 'en' && game.developerEn) ? game.developerEn : (game.developer || 'Claude Fable 5.2 Studio');
+    }
+
+    const aiEngineEl = document.getElementById('arenaAiEngine');
+    if (aiEngineEl) {
+      aiEngineEl.textContent = game.aiEngine || 'Claude Fable 5.2';
+    }
 
     const relDate = document.getElementById('arenaReleaseDate');
     if (relDate) relDate.textContent = game.releaseDate || '2024-11';
@@ -904,7 +1022,7 @@
         AppState.theme = AppState.theme === 'dark' ? 'light' : 'dark';
         AppState.saveTheme();
         applyTheme();
-        showToast(AppState.theme === 'dark' ? '已切换至暗黑电竞主题' : '已切换至明亮主题');
+        showToast(AppState.theme === 'dark' ? t('themeDarkToast') : t('themeLightToast'));
       });
     }
 
@@ -915,7 +1033,7 @@
         AppState.lang = AppState.lang === 'zh' ? 'en' : 'zh';
         AppState.saveLang();
         applyLanguage();
-        showToast(AppState.lang === 'zh' ? '已切换为中文' : 'Switched to English');
+        showToast(AppState.lang === 'zh' ? t('langZhToast') : t('langEnToast'));
       });
     }
 
@@ -1049,19 +1167,13 @@
           const baseLikes = AppState.currentGame.ratingCount ? Math.floor(AppState.currentGame.ratingCount / 10) : 1542;
           countEl.textContent = isLiked ? baseLikes + 1 : baseLikes;
         }
-        showToast(isLiked ? '感谢点赞！已记录您的评价' : '已取消点赞');
+        showToast(isLiked ? t('voteSuccessToast') : t('voteRemoveToast'));
       });
     }
 
-    // 13. Feedback tags clicking
-    document.querySelectorAll('#feedbackTags .tag-pill-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('active');
-        showToast(`已提交反馈: ${btn.textContent.trim()}`);
-      });
-    });
+    // 13. Feedback tags clicking (handled by renderFeedbackTags)
 
-    // 14. Footer Random Link
+    // 14. Footer Links
     const footerRandom = document.getElementById('footerRandomLink');
     if (footerRandom && window.GAMES_DATA) {
       footerRandom.addEventListener('click', (e) => {
@@ -1070,6 +1182,14 @@
         if (games.length === 0) return;
         const randomIdx = Math.floor(Math.random() * games.length);
         window.location.hash = `#/play/${games[randomIdx].id}`;
+      });
+    }
+
+    const footerPrivacy = document.getElementById('footerPrivacyLink');
+    if (footerPrivacy) {
+      footerPrivacy.addEventListener('click', (e) => {
+        e.preventDefault();
+        showToast(t('privacyToast'));
       });
     }
 
