@@ -1,0 +1,21 @@
+{
+  "name": "fablegames",
+  "version": "1.0.0",
+  "description": "FableGames · CrazyGames-inspired Next-Gen Web Mini-Games Aggregation Portal",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 8080 .",
+    "dev": "python3 -m http.server 8080"
+  },
+  "keywords": [
+    "games",
+    "crazygames",
+    "webgl",
+    "threejs",
+    "html5",
+    "portal",
+    "fablegames"
+  ],
+  "author": "xinayida",
+  "license": "MIT"
+}
