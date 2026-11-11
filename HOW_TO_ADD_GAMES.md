@@ -43,7 +43,7 @@ games/
   releaseDate: '2024-11-12',                    // 上线日期 (YYYY-MM-DD)
   developer: 'Retro Pixel Lab',                 // 开发者 / 工作室名称
   fileUrl: 'games/space-invaders.html',         // 游戏入口文件相对路径
-  cover: 'assets/covers/space-invaders.svg',    // 游戏封面（可选，不填则自动使用默认酷炫封面）
+  cover: 'assets/covers/space-invaders.webp',   // 游戏封面（真实运行截图，可选，不填则自动使用默认封面）
   summary: '重温 80 年代经典投币机太空弹幕射击的激情对决！', // 一句话简介（中文）
   summaryEn: 'Defend Earth against endless waves of descending alien invaders!', // 一句话简介（英文）
   description: '经典街机完美重制！驾驶你的银河战机击溃一波波压境而来的外星飞船，拾取强化护盾与散射粒子炮。',
@@ -67,12 +67,23 @@ games/
 
 ## 🎨 游戏封面图规格与制作建议
 
+> **重要原则**：所有封面**必须使用游戏的真实运行画面截图**（展示实际 Gameplay、3D 渲染光影、战斗特效或核心玩法界面），杜绝任何脱离实际玩法的 AI 生成图或非游戏合成插图，以保障用户所见即所得的游玩体验。
+
 | 规格属性 | 推荐值 | 说明 |
 | :--- | :--- | :--- |
-| **推荐比例** | **16:9**（800 × 450）或 **4:3** | 适配 CrazyGames 风格的卡片缩略图与顶部焦点横幅 |
-| **推荐格式** | **SVG**、**WebP** 或 **PNG** | SVG 具有矢量超清、体积小（几 KB）、缩放无锯齿优势 |
-| **存放位置** | `assets/covers/<your-game-id>.svg` | 统一存放以便集中管理 |
-| **默认回退** | `assets/covers/default-fallback.svg` | **若未提供 `cover` 属性**，系统会自动使用带赛博发光手柄的默认精美封面，保证界面美观无破损 |
+| **画面内容** | **游戏真实运行截图** | 截取具有视觉冲击力的实机游玩画面（如法术爆炸、高光战斗、精美场景） |
+| **推荐比例** | **16:9**（1280 × 720 或 800 × 450） | 适配 CrazyGames 风格的卡片缩略图与顶部焦点横幅 |
+| **推荐格式** | **WebP** 或 **PNG** | WebP 兼具高清画质与极小体积（通常几十KB），首选推荐 |
+| **存放位置** | `assets/covers/<your-game-id>.webp` | 统一存放以便集中管理 |
+| **默认回退** | `assets/covers/default-fallback.svg` | **若未提供 `cover` 属性**，系统会自动使用带赛博发光手柄的默认封面 |
+
+### 📸 自动化截取封面脚本
+平台内置了基于无头 Chromium 的真实游戏运行截图工具，支持 Canvas 与 WebGL 3D 渲染实机画面捕获：
+
+```bash
+# 自动启动本地环境并对游戏进行实机运行截图（生成 .webp 与 .png 到 assets/covers/）
+uv run scripts/capture_covers.py
+```
 
 ---
 
