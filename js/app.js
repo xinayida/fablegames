@@ -624,8 +624,14 @@
         }, 400);
       };
       const targetUrl = game.fileUrl;
-      const currentLoc = (iframe.contentWindow && iframe.contentWindow.location) ? iframe.contentWindow.location.href : iframe.src;
-      if (!currentLoc || !currentLoc.endsWith(targetUrl)) {
+      const rawLoc = (iframe.contentWindow && iframe.contentWindow.location) ? iframe.contentWindow.location.href : iframe.src;
+      let isSame = false;
+      try {
+        isSame = !!rawLoc && (rawLoc.endsWith(targetUrl) || decodeURI(rawLoc).endsWith(targetUrl) || rawLoc.endsWith(encodeURI(targetUrl)));
+      } catch (e) {
+        isSame = !!rawLoc && rawLoc.endsWith(targetUrl);
+      }
+      if (!isSame) {
         try {
           if (iframe.contentWindow && iframe.contentWindow.location && typeof iframe.contentWindow.location.replace === 'function') {
             iframe.contentWindow.location.replace(targetUrl);
