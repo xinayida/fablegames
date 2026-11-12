@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fablegames.vercel.app/</loc>
-    <lastmod>2024-11-12</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?lang=zh"/>
@@ -1008,5 +1008,47 @@
       <image:title>Chairmageddon · 椅子大狂欢物理浩劫</image:title>
       <image:caption>Fowl Labs 出品的终极办公室解压神器：成百上千把旋转办公椅如同海啸般多米诺连锁撞击，彻底摧毁无聊！</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/#/category/all</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/#/category/action</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/#/category/racing</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/#/category/adventure</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/#/category/rpg</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/#/category/casual</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/#/category/arcade</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

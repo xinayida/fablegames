@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * FableGames - XML Sitemap Generator (Node.js)
+ * Awesome Fable 5.2 Games - XML Sitemap Generator (Node.js)
  * Automatically parses js/games-data.js and generates sitemap.xml.
  */
 
@@ -43,7 +43,7 @@ function main() {
   // 1. Homepage
   xml += `  <url>\n`;
   xml += `    <loc>${SITE_URL}/</loc>\n`;
-  xml += `    <lastmod>${latestDate}</lastmod>\n`;
+  xml += `    <lastmod>${today}</lastmod>\n`;
   xml += `    <changefreq>daily</changefreq>\n`;
   xml += `    <priority>1.0</priority>\n`;
   xml += `    <xhtml:link rel="alternate" hreflang="zh-CN" href="${SITE_URL}/?lang=zh"/>\n`;
@@ -95,6 +95,25 @@ function main() {
       if (g.summary) xml += `      <image:caption>${escapeXml(g.summary)}</image:caption>\n`;
       xml += `    </image:image>\n`;
     }
+    xml += `  </url>\n`;
+  });
+
+  // 4. Category Pages
+  const categories = [
+    { id: 'all', title: '全部游戏 / All Games' },
+    { id: 'action', title: '动作射击 / Action & Shooting' },
+    { id: 'racing', title: '竞速漂移 / Racing & Speed' },
+    { id: 'adventure', title: '3A冒险 / 3A Adventure' },
+    { id: 'rpg', title: '角色扮演 / RPG & MOBA' },
+    { id: 'casual', title: '休闲治愈 / Casual & Relaxing' },
+    { id: 'arcade', title: '经典街机 / Arcade Classics' }
+  ];
+  categories.forEach(cat => {
+    xml += `  <url>\n`;
+    xml += `    <loc>${SITE_URL}/#/category/${cat.id}</loc>\n`;
+    xml += `    <lastmod>${today}</lastmod>\n`;
+    xml += `    <changefreq>daily</changefreq>\n`;
+    xml += `    <priority>0.8</priority>\n`;
     xml += `  </url>\n`;
   });
 

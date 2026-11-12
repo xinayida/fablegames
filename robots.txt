@@ -1,7 +1,7 @@
 # ==============================================================================
-# Robots.txt for FableGames
+# Robots.txt for Awesome Fable 5.2 Games
 # Website: https://fablegames.vercel.app/
-# Description: Claude Fable 5.2 Next-Gen Native Web Mini-Games Aggregation Portal
+# Description: Awesome Fable 5.2 Games - Next-Gen Native Web Mini-Games Aggregation Portal
 # ==============================================================================
 
 User-agent: *
@@ -10,6 +10,7 @@ Allow: /games/
 Allow: /assets/
 Allow: /css/
 Allow: /js/
+Allow: /llms.txt
 
 # Disallow internal scripts, tools, and repo-level directories
 Disallow: /scripts/
@@ -38,6 +39,39 @@ User-agent: Applebot
 Allow: /
 
 User-agent: DuckDuckBot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# AI & LLM Crawlers (Full access to games, metadata, and llms.txt)
+# ------------------------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
 Allow: /
 
 # ------------------------------------------------------------------------------

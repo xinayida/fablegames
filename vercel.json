@@ -17,7 +17,7 @@
       ]
     },
     {
-      "source": "/(robots.txt|sitemap.xml|BingSiteAuth.xml)",
+      "source": "/(robots.txt|sitemap.xml|llms.txt|BingSiteAuth.xml)",
       "headers": [
         {
           "key": "Cache-Control",

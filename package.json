@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npx serve -l 8080 .",
     "dev": "npx serve -l 8080 .",
-    "sitemap": "node scripts/generate_sitemap.js"
+    "sitemap": "node scripts/generate_sitemap.js",
+    "llms": "node scripts/generate_llmstxt.js",
+    "build:seo": "node scripts/generate_sitemap.js && node scripts/generate_llmstxt.js"
   },
   "keywords": [
     "games",

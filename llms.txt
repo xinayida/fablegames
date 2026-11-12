@@ -1,0 +1,466 @@
+# Awesome Fable 5.2 Games
+
+> The world's premier web game portal showcasing games 100% crafted & coded end-to-end by Claude Fable 5.2. Instant play directly in any modern browser with zero installation, zero latency, and silky 60FPS WebGL / HTML5 performance.
+
+Awesome Fable 5.2 Games is a curated next-generation gaming hub celebrating the autonomous software engineering capabilities of Anthropic's Claude Fable 5.2. The platform aggregates 60 verified web mini-games spanning 3A open-world exploration, realistic 3D racing, competitive FPS combat, dungeon RPGs, nostalgic retro arcades, and calming indie simulations. Every single title in this catalog was conceived, programmed, and debugged without manual code intervention.
+
+## Platform Metadata
+- Platform Name: Awesome Fable 5.2 Games
+- Live Production URL: https://fablegames.vercel.app/
+- Open Source Repository: https://github.com/xinayida/fablegames
+- Total Verified Games: 60
+- Primary AI Engine: Claude Fable 5.2 (Anthropic)
+- Core Runtime Architecture: Pure Client-Side WebGL, Three.js, Canvas2D, WebAudio, Vanilla ES6+
+- Deployment: Zero-backend, edge-hosted on Vercel
+- Licensing: MIT Open Source License
+
+## Key Features & Highlights
+- **100% Claude Fable 5.2 Generated**: All source files and game mechanics were created end-to-end by Claude Fable 5.2.
+- **Zero Install, Instant Play**: Direct browser execution in sandboxed iframes or full-screen isolated tabs.
+- **High-Fidelity 3D Graphics**: Advanced shader illumination, raymarching, volumetric fog, dynamic lighting, and particle effects running natively in WebGL.
+- **Bilingual Interface**: Full internationalization supporting both Simplified Chinese (zh-CN) and English (en).
+- **Embedded Arena Player**: Built-in theater mode, hardware fullscreen, reload controls, keybinding cheatsheets, and one-click GitHub source inspection.
+
+## Game Categories
+- [Action & Shooting](https://fablegames.vercel.app/#/category/action): 16 games available.
+- [Racing & Speed](https://fablegames.vercel.app/#/category/racing): 6 games available.
+- [3A Adventure](https://fablegames.vercel.app/#/category/adventure): 14 games available.
+- [RPG & MOBA](https://fablegames.vercel.app/#/category/rpg): 3 games available.
+- [Casual & Relaxing](https://fablegames.vercel.app/#/category/casual): 12 games available.
+- [Arcade Classics](https://fablegames.vercel.app/#/category/arcade): 9 games available.
+
+## Featured Games
+
+### [Saltline: 3A Web FPS](https://fablegames.vercel.app/?game=saltline)
+- **Category**: Action & Shooting (★ 4.9)
+- **Summary**: AAA photorealistic browser FPS set in an industrial container port, 100% crafted end-to-end by Claude Fable 5.2.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=saltline) | [Source File](https://realcodebear.github.io/saltline-fable-5.2/)
+- **GitHub Repository**: https://github.com/realcodebear/saltline-fable-5.2
+
+### [QQ Speed 3D: Drift Racing](https://fablegames.vercel.app/?game=qq-speed-3d)
+- **Category**: Racing & Speed (★ 4.9)
+- **Summary**: 100% Crafted by Claude Fable 5.2: High-fidelity 3D browser drift racing homage to QQ Speed with iconic tracks and nitro combos.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=qq-speed-3d) | [Source File](https://fablegames.vercel.app/games/qq-speed-3d.html)
+- **GitHub Repository**: https://github.com/riba2534/claude-opus-5-5-demo
+
+### [CrossFire: Transport Ship 3D](https://fablegames.vercel.app/?game=cf-transport-ship)
+- **Category**: Action & Shooting (★ 4.8)
+- **Summary**: Web 3D remake of the iconic CrossFire Transport Ship cargo map, 100% crafted & coded by Claude Fable 5.2.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=cf-transport-ship) | [Source File](https://fablegames.vercel.app/games/cf-transport-ship.html)
+- **GitHub Repository**: https://github.com/riba2534/claude-opus-5-5-demo
+
+### [Black Myth: Wukong (Destined One)](https://fablegames.vercel.app/?game=black-myth-wukong)
+- **Category**: 3A Adventure (★ 4.9)
+- **Summary**: 3D Journey to the West action RPG crafted by Claude Fable 5.2. Play as the Destined One with fluid staff arts and spells.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=black-myth-wukong) | [Source File](https://wukong.cnmwx.com/)
+- **GitHub Repository**: https://github.com/oneoyn
+
+### [Black Myth: Guan Yu](https://fablegames.vercel.app/?game=black-myth-guanyu)
+- **Category**: 3A Adventure (★ 4.9)
+- **Summary**: Hardcore 3D action web game crafted by Claude Fable 5.2 featuring martial saint Guan Yu.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=black-myth-guanyu) | [Source File](https://ai-native-d9gyz4kr613a26c4f-1344763503.tcloudbaseapp.com/)
+- **GitHub Repository**: https://github.com/xinayida/fablegames
+
+### [League of Legends: Hextech ARAM](https://fablegames.vercel.app/?game=lol-aram)
+- **Category**: RPG & MOBA (★ 4.9)
+- **Summary**: Howling Abyss Hextech ARAM on the icy bridge, 100% crafted & coded by Claude Fable 5.2.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=lol-aram) | [Source File](https://lol.hanyue.io/)
+- **GitHub Repository**: https://github.com/hanyue
+
+### [Doubao Dance: 3D Rhythm & Beat](https://fablegames.vercel.app/?game=doubao-dance)
+- **Category**: Casual & Relaxing (★ 4.9)
+- **Summary**: 3D rhythm dance game generated end-to-end by Claude Fable 5.2. Hit arrows, catch the heavy beat and outdance three opponents!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=doubao-dance) | [Source File](https://fablegames.vercel.app/games/doubao-dance.html)
+- **GitHub Repository**: https://github.com/riba2534/claude-opus-5-5-demo/tree/fable-5.2-doubao/doubao-dance
+
+### [World 1-1: Super Mario Bros Classic](https://fablegames.vercel.app/?game=mario-world)
+- **Category**: Arcade Classics (★ 4.9)
+- **Summary**: Pixel-perfect standalone Canvas 2D recreation of Super Mario Bros. World 1-1, coded one-shot by Claude Fable.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=mario-world) | [Source File](https://fablegames.vercel.app/games/mario-world.html)
+- **GitHub Repository**: https://github.com/sorrycc/fable-arcade/tree/main/games/mario-1-1
+
+### [Three Games: Fable 5.2 Trio](https://fablegames.vercel.app/?game=three-games)
+- **Category**: Arcade Classics (★ 4.9)
+- **Summary**: Legendary trilogy published by Felix Rieseberg featuring Saltline, The Clockmaker's Heart and Tidewright.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=three-games) | [Source File](https://claude.ai/artifact/MXxb36zKgN261ckbGhmNin)
+- **GitHub Repository**: https://x.com/felixrieseberg
+
+### [Mirror Earth: Destructible Planet](https://fablegames.vercel.app/?game=mirror-earth)
+- **Category**: 3A Adventure (★ 4.9)
+- **Summary**: The entire planet modeled as an interactive destructible sandbox, synced with real-time global weather.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=mirror-earth) | [Source File](https://www.spawn.co/@mattshumer/earth?room=local)
+- **GitHub Repository**: https://x.com/mattshumer_
+
+### [Hogwarts Royale: Magic Battle Royale](https://fablegames.vercel.app/?game=hogwarts-royale)
+- **Category**: Action & Shooting (★ 4.9)
+- **Summary**: Wand-slinging battle royale in a mystical castle courtyard: shrinking ring, ancient spell pickups, and broomstick maneuvers.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=hogwarts-royale) | [Source File](https://www.spawn.co/@mattshumer/hogwarts-royale)
+- **GitHub Repository**: https://x.com/mattshumer_
+
+### [What the Water Keeps: Deep Narrative](https://fablegames.vercel.app/?game=what-water-keeps)
+- **Category**: 3A Adventure (★ 4.9)
+- **Summary**: A haunting poetic dive created by Kevin Ngo: delve into murky ocean depths to dredge up buried memories.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=what-water-keeps) | [Source File](https://what-the-water-keeps.vercel.app/)
+- **GitHub Repository**: https://x.com/kevin_t_ngo
+
+### [Turbo Tails Arcade Racer](https://fablegames.vercel.app/?game=turbo-tails)
+- **Category**: Racing & Speed (★ 4.8)
+- **Summary**: High-octane arcade 3D racer by Peter Yang: leave vibrant particle trails and chain corner drifts for nitrous.
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=turbo-tails) | [Source File](https://turbo-tails.vercel.app)
+- **GitHub Repository**: https://x.com/petergyang
+
+### [Feed the Backrooms](https://fablegames.vercel.app/?game=feed-backrooms)
+- **Category**: Action & Shooting (★ 4.8)
+- **Summary**: Lost in the infinite mono-yellow hallways of the Backrooms: collect sacrifices to appease entities and find the exit!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=feed-backrooms) | [Source File](https://feed-backrooms.vercel.app)
+- **GitHub Repository**: https://x.com/LexnLin
+
+### [Worm Rider: Dune Odyssey](https://fablegames.vercel.app/?game=worm-rider)
+- **Category**: 3A Adventure (★ 4.9)
+- **Summary**: Epic desert odyssey inspired by Dune: summon and ride a hundred-meter ancient sandworm across roaring sand seas!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=worm-rider) | [Source File](https://github.com/amirmushichge/worm-rider)
+- **GitHub Repository**: https://x.com/AmirMushich
+
+### [Stray Cat City Simulator](https://fablegames.vercel.app/?game=stray-cat)
+- **Category**: Casual & Relaxing (★ 4.9)
+- **Summary**: Become an agile kitten exploring city rooftops and alleys: leap onto AC units, knock cups over, and enjoy feline life!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=stray-cat) | [Source File](https://claude.ai/artifact/4nPXUKJjQWNsZEHVNmXXCt)
+- **GitHub Repository**: https://x.com/aimikoda
+
+### [VOWLORN Fantasy Code RPG](https://fablegames.vercel.app/?game=vowlorn-rpg)
+- **Category**: RPG & MOBA (★ 4.9)
+- **Summary**: Viral landmark by Higgsfield: 100% pure code generated by Fable 5.2 featuring dark fantasy dungeon crawling and deep loot builds!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=vowlorn-rpg) | [Source File](https://higgsfield.ai/@higgsfield.studio/blogs/fable-5-2-built-this-rpg-from-pure-code-here-s-every-step)
+- **GitHub Repository**: https://x.com/higgsfield_ai
+
+### [CROSSTOWN: Open-World NYC](https://fablegames.vercel.app/?game=crosstown-nyc)
+- **Category**: Action & Shooting (★ 4.9)
+- **Summary**: Matt Shumer's viral open-world epic: towering Manhattan skyscrapers, traffic simulation, and urban traversal built in days!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=crosstown-nyc) | [Source File](https://nyc.somethingbig.ai/)
+- **GitHub Repository**: https://x.com/mattshumer_
+
+### [Evensong: Souls-like Odyssey](https://fablegames.vercel.app/?game=evensong-souls)
+- **Category**: Action & Shooting (★ 4.9)
+- **Summary**: Hardcore Souls-like action crafted by Kevin Ngo: kindle bonfires, master precise parries, and fell colossal bosses!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=evensong-souls) | [Source File](https://evensong-phi.vercel.app/)
+- **GitHub Repository**: https://x.com/kevin_t_ngo
+
+### [Mist-Locked Mountain Gate 3D](https://fablegames.vercel.app/?game=mist-mountain-gate)
+- **Category**: Action & Shooting (★ 4.9)
+- **Summary**: Viral masterpiece by op7418 using 4.5B tokens: a full 30MB single-file 3D Wuxia action game with custom models and combat!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=mist-mountain-gate) | [Source File](https://op7418.github.io/guizang-game-skill/)
+- **GitHub Repository**: https://x.com/op7418
+
+### [Lumina Zombies Survival](https://fablegames.vercel.app/?game=lumina-zombies)
+- **Category**: Action & Shooting (★ 4.9)
+- **Summary**: Nightmarish zombie horde survival by LuminaBench: mow down swarms of relentless undead and upgrade your arsenal!
+- **Direct Play**: [Launch Arena](https://fablegames.vercel.app/?game=lumina-zombies) | [Source File](https://luminazombies.com/)
+- **GitHub Repository**: https://x.com/LuminaBench
+
+## Complete Games Catalog (60 Games)
+
+01. **[Saltline · 盐线 (3A第一人称射击) (Saltline: 3A Web FPS)](https://fablegames.vercel.app/?game=saltline)**
+   - **Category**: Action & Shooting | **Developer/Credit**: Claude Fable 5.2 (Anthropic)
+   - **Description**: AAA photorealistic browser FPS set in an industrial container port, 100% crafted end-to-end by Claude Fable 5.2.
+   - **URL**: https://fablegames.vercel.app/?game=saltline
+
+02. **[QQ飞车 3D · 极速漂移 (QQ Speed 3D: Drift Racing)](https://fablegames.vercel.app/?game=qq-speed-3d)**
+   - **Category**: Racing & Speed | **Developer/Credit**: Claude Fable 5.2 Studio
+   - **Description**: 100% Crafted by Claude Fable 5.2: High-fidelity 3D browser drift racing homage to QQ Speed with iconic tracks and nitro combos.
+   - **URL**: https://fablegames.vercel.app/?game=qq-speed-3d
+
+03. **[穿越火线 · 运输船 3D (CrossFire: Transport Ship 3D)](https://fablegames.vercel.app/?game=cf-transport-ship)**
+   - **Category**: Action & Shooting | **Developer/Credit**: Claude Fable 5.2 Studio
+   - **Description**: Web 3D remake of the iconic CrossFire Transport Ship cargo map, 100% crafted & coded by Claude Fable 5.2.
+   - **URL**: https://fablegames.vercel.app/?game=cf-transport-ship
+
+04. **[黑神话 · 悟空 (天命人) (Black Myth: Wukong (Destined One))](https://fablegames.vercel.app/?game=black-myth-wukong)**
+   - **Category**: 3A Adventure | **Developer/Credit**: Claude Fable 5.2 Studio
+   - **Description**: 3D Journey to the West action RPG crafted by Claude Fable 5.2. Play as the Destined One with fluid staff arts and spells.
+   - **URL**: https://fablegames.vercel.app/?game=black-myth-wukong
+
+05. **[黑神话 · 关羽 (Black Myth: Guan Yu)](https://fablegames.vercel.app/?game=black-myth-guanyu)**
+   - **Category**: 3A Adventure | **Developer/Credit**: Claude Fable 5.2 Studio
+   - **Description**: Hardcore 3D action web game crafted by Claude Fable 5.2 featuring martial saint Guan Yu.
+   - **URL**: https://fablegames.vercel.app/?game=black-myth-guanyu
+
+06. **[英雄联盟 · 海克斯大乱斗 (League of Legends: Hextech ARAM)](https://fablegames.vercel.app/?game=lol-aram)**
+   - **Category**: RPG & MOBA | **Developer/Credit**: Claude Fable 5.2 Studio
+   - **Description**: Howling Abyss Hextech ARAM on the icy bridge, 100% crafted & coded by Claude Fable 5.2.
+   - **URL**: https://fablegames.vercel.app/?game=lol-aram
+
+07. **[鹈鹕骑单车 · 沿海追鱼 (Pelican on a Bike: Coastline Cruise)](https://fablegames.vercel.app/?game=pelican-bike)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: Claude Fable 5.2 Studio
+   - **Description**: Pure zen 3D coastline cruising 100% crafted & coded by Claude Fable 5.2.
+   - **URL**: https://fablegames.vercel.app/?game=pelican-bike
+
+08. **[元素法师 · 火球与闪电 (Elemental Mage: Fire & Lightning)](https://fablegames.vercel.app/?game=elemental-mage)**
+   - **Category**: Action & Shooting | **Developer/Credit**: Claude Fable 5.2 Studio
+   - **Description**: High-octane top-down magic shooter 100% crafted & coded by Claude Fable 5.2.
+   - **URL**: https://fablegames.vercel.app/?game=elemental-mage
+
+09. **[豆包炫舞 · 3D节奏竞舞 (Doubao Dance: 3D Rhythm & Beat)](https://fablegames.vercel.app/?game=doubao-dance)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: Claude Fable 5.2 (riba2534)
+   - **Description**: 3D rhythm dance game generated end-to-end by Claude Fable 5.2. Hit arrows, catch the heavy beat and outdance three opponents!
+   - **URL**: https://fablegames.vercel.app/?game=doubao-dance
+
+10. **[像素侠盗猎车手 · 城市漫游 (Fable Theft Auto: Voxel City)](https://fablegames.vercel.app/?game=voxel-gta)**
+   - **Category**: Action & Shooting | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Voxel GTA clone generated one-shot by Claude Fable. Steal cars, cruise blocky streets, and complete the downtown snitch hit mission!
+   - **URL**: https://fablegames.vercel.app/?game=voxel-gta
+
+11. **[霜线卡丁车 · 极地冰雪竞速 (Frostline Kart: Snow Circuit)](https://fablegames.vercel.app/?game=frostline-kart)**
+   - **Category**: Racing & Speed | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Low-poly 3D snow circuit kart racer generated one-shot by Claude Fable. Battle 7 AI racers across 3 thrilling laps!
+   - **URL**: https://fablegames.vercel.app/?game=frostline-kart
+
+12. **[机器人网球 · 3D竞技场 (Robo Tennis: 3D Robot Match)](https://fablegames.vercel.app/?game=robo-tennis)**
+   - **Category**: Arcade Classics | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Third-person 3D robot tennis game generated one-shot by Claude Fable. Master positioning and timing against a challenging AI CPU!
+   - **URL**: https://fablegames.vercel.app/?game=robo-tennis
+
+13. **[铁道跑酷 · 极速冲锋 (Rail Rush: Subway Runner 3D)](https://fablegames.vercel.app/?game=rail-rush)**
+   - **Category**: Arcade Classics | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Endless 3D subway runner generated one-shot by Claude Fable. Dodge oncoming express trains, jump barriers and collect coins!
+   - **URL**: https://fablegames.vercel.app/?game=rail-rush
+
+14. **[疯狂农场斑马线 · 冲出重围 (Crossy Farm: You Are the Car)](https://fablegames.vercel.app/?game=crossy-farm)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Crossy Road inverted! You are the car dodging stampeding herds of cows, sheep and chickens across endless countryside lanes.
+   - **URL**: https://fablegames.vercel.app/?game=crossy-farm
+
+15. **[超级马里奥 · 经典1-1关卡 (World 1-1: Super Mario Bros Classic)](https://fablegames.vercel.app/?game=mario-world)**
+   - **Category**: Arcade Classics | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Pixel-perfect standalone Canvas 2D recreation of Super Mario Bros. World 1-1, coded one-shot by Claude Fable.
+   - **URL**: https://fablegames.vercel.app/?game=mario-world
+
+16. **[空洞之境 · 泰拉瑞亚沙盒生存 (Hollowmere: 2D Sandbox Survival)](https://fablegames.vercel.app/?game=hollowmere)**
+   - **Category**: 3A Adventure | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Terraria-style 2D sandbox survival game coded one-shot by Claude Fable. Mine ores, craft gear, build shelter, and summon the ancient Eye boss!
+   - **URL**: https://fablegames.vercel.app/?game=hollowmere
+
+17. **[像素小鸟 · 晴空翱翔 (Flappy Skies: High-Flying Classic)](https://fablegames.vercel.app/?game=flappy-skies)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: Claude Fable 5.1+ (sorrycc)
+   - **Description**: Polished browser recreation of Flappy Bird built one-shot by Claude Fable. Master delicate flap aerodynamics to clear endless pipe gates!
+   - **URL**: https://fablegames.vercel.app/?game=flappy-skies
+
+18. **[矢量月球着陆器 · 1970复古CRT (Descent: Vector Lunar Lander)](https://fablegames.vercel.app/?game=vector-descent)**
+   - **Category**: Arcade Classics | **Developer/Credit**: Claude Fable 5.2 (Anthropic)
+   - **Description**: Playable lunar lander drawn as a 1970s glowing vector CRT monitor with beam phosphor persistence, crafted by Claude Fable 5.2.
+   - **URL**: https://fablegames.vercel.app/?game=vector-descent
+
+19. **[悲伤岩灯塔守夜人 · 怒海孤舟 (Night Watch at Sorrow Rock)](https://fablegames.vercel.app/?game=sorrow-rock)**
+   - **Category**: 3A Adventure | **Developer/Credit**: Claude Fable 5.2 (Anthropic)
+   - **Description**: Deeply atmospheric lighthouse keeper survival arcade game crafted by Claude Fable 5.2. Keep the flame alive through stormy maritime nights.
+   - **URL**: https://fablegames.vercel.app/?game=sorrow-rock
+
+20. **[阿里阿德涅之线 · 希腊陶画迷宫 (Ariadne's Thread: Ancient Greek Labyrinth)](https://fablegames.vercel.app/?game=ariadnes-thread)**
+   - **Category**: 3A Adventure | **Developer/Credit**: Claude Fable 5.2 (Anthropic)
+   - **Description**: Labyrinth game rendered in the authentic style of ancient Greek black-figure pottery. Follow the thread home before the Minotaur catches you!
+   - **URL**: https://fablegames.vercel.app/?game=ariadnes-thread
+
+21. **[密室金库破译 · 听声辨位开锁 (The Combination: Vintage Safe Cracker)](https://fablegames.vercel.app/?game=the-combination)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: Claude Fable 5.2 (Anthropic)
+   - **Description**: Tactile audio-driven safe-cracking puzzle game crafted by Claude Fable 5.2. Rotate the heavy brass dial and listen for microscopic tumbler clicks.
+   - **URL**: https://fablegames.vercel.app/?game=the-combination
+
+22. **[意式雪糕叠叠乐 · 一键高塔 (Torre di Gelato: One-Button Scoop Stacker)](https://fablegames.vercel.app/?game=gelato-tower)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: Claude Fable 5.2 (Anthropic)
+   - **Description**: One-button physics gelato stacking game by Claude Fable 5.2. Time your drops from the swinging spade to build an enormous wobbly tower!
+   - **URL**: https://fablegames.vercel.app/?game=gelato-tower
+
+23. **[Three Games · 三合一神作合集 (Saltline / 钟表匠 / Tidewright) (Three Games: Fable 5.2 Trio)](https://fablegames.vercel.app/?game=three-games)**
+   - **Category**: Arcade Classics | **Developer/Credit**: felixrieseberg (Claude Fable 5.2)
+   - **Description**: Legendary trilogy published by Felix Rieseberg featuring Saltline, The Clockmaker's Heart and Tidewright.
+   - **URL**: https://fablegames.vercel.app/?game=three-games
+
+24. **[Mirror Earth · 镜像地球 (实时天气全境破坏模拟) (Mirror Earth: Destructible Planet)](https://fablegames.vercel.app/?game=mirror-earth)**
+   - **Category**: 3A Adventure | **Developer/Credit**: mattshumer_ (Claude Fable 5.2)
+   - **Description**: The entire planet modeled as an interactive destructible sandbox, synced with real-time global weather.
+   - **URL**: https://fablegames.vercel.app/?game=mirror-earth
+
+25. **[Voxel Engine · 纯原生 3D 体素方块沙盒 (Voxel Engine 3D Sandbox)](https://fablegames.vercel.app/?game=voxel-engine)**
+   - **Category**: 3A Adventure | **Developer/Credit**: mattshumer_ (Claude Fable 5.2)
+   - **Description**: Browser-native voxel sandbox engine by Fable 5.2 with infinite procedural terrain, dynamic lighting and block building.
+   - **URL**: https://fablegames.vercel.app/?game=voxel-engine
+
+26. **[Hogwarts Royale · 霍格沃茨魔法吃鸡大逃杀 (Hogwarts Royale: Magic Battle Royale)](https://fablegames.vercel.app/?game=hogwarts-royale)**
+   - **Category**: Action & Shooting | **Developer/Credit**: mattshumer_ (Claude Fable 5.2)
+   - **Description**: Wand-slinging battle royale in a mystical castle courtyard: shrinking ring, ancient spell pickups, and broomstick maneuvers.
+   - **URL**: https://fablegames.vercel.app/?game=hogwarts-royale
+
+27. **[Portals: Endless Worlds · 传送门无尽异界穿梭 (Portals: Endless Worlds)](https://fablegames.vercel.app/?game=portals-worlds)**
+   - **Category**: 3A Adventure | **Developer/Credit**: emollick (Claude Fable 5.2)
+   - **Description**: Prompted by Prof. Ethan Mollick: step through glowing portals to seamlessly traverse infinite procedural dimensions.
+   - **URL**: https://fablegames.vercel.app/?game=portals-worlds
+
+28. **[I Would Have Gotten Away · 逆向解谜捉迷藏侦探 (I Would Have Gotten Away With It)](https://fablegames.vercel.app/?game=scooby-reverse)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: emollick (Claude Fable 5.2)
+   - **Description**: Scooby-Doo mystery turned upside down: play the haunted villain and orchestrate traps before the sleuths unmask you!
+   - **URL**: https://fablegames.vercel.app/?game=scooby-reverse
+
+29. **[What the Water Keeps · 水之秘境深渊叙事冒险 (What the Water Keeps: Deep Narrative)](https://fablegames.vercel.app/?game=what-water-keeps)**
+   - **Category**: 3A Adventure | **Developer/Credit**: kevin_t_ngo (Claude Fable 5.2)
+   - **Description**: A haunting poetic dive created by Kevin Ngo: delve into murky ocean depths to dredge up buried memories.
+   - **URL**: https://fablegames.vercel.app/?game=what-water-keeps
+
+30. **[Turbo Tails · 涡轮尾迹狂飙竞速 (Turbo Tails Arcade Racer)](https://fablegames.vercel.app/?game=turbo-tails)**
+   - **Category**: Racing & Speed | **Developer/Credit**: petergyang (Claude Fable 5.2)
+   - **Description**: High-octane arcade 3D racer by Peter Yang: leave vibrant particle trails and chain corner drifts for nitrous.
+   - **URL**: https://fablegames.vercel.app/?game=turbo-tails
+
+31. **[Childhood Rug Racer · 地毯童年小汽车怀旧竞速 (Childhood Rug Racer)](https://fablegames.vercel.app/?game=rug-racer)**
+   - **Category**: Racing & Speed | **Developer/Credit**: noclipepe (Claude Fable 5.2)
+   - **Description**: Whimsical nostalgia trip: pilot micro toy cars directly across the iconic childhood city traffic play rug!
+   - **URL**: https://fablegames.vercel.app/?game=rug-racer
+
+32. **[Rambo Dino · 兰博恐龙热血横版街机扫射 (Rambo Dino 2D Action)](https://fablegames.vercel.app/?game=rambo-dino)**
+   - **Category**: Arcade Classics | **Developer/Credit**: noclipepe (Claude Fable 5.2)
+   - **Description**: A red-bandana T-Rex packing a heavy Gatling gun: relive the classic Metal Slug arcade run-and-gun ecstasy!
+   - **URL**: https://fablegames.vercel.app/?game=rambo-dino
+
+33. **[Frontline Warfare · 前线战争殊死对决 (Frontline Warfare Deathmatch)](https://fablegames.vercel.app/?game=frontline-warfare)**
+   - **Category**: Action & Shooting | **Developer/Credit**: alightinastorm (Claude Fable 5.2)
+   - **Description**: Tactical 3D team deathmatch arena: maneuver through war-torn industrial frontlines using cover and precise marksmanship.
+   - **URL**: https://fablegames.vercel.app/?game=frontline-warfare
+
+34. **[Feed the Backrooms · 喂养后室恐怖逃脱 (Feed the Backrooms)](https://fablegames.vercel.app/?game=feed-backrooms)**
+   - **Category**: Action & Shooting | **Developer/Credit**: LexnLin (Claude Fable 5.2)
+   - **Description**: Lost in the infinite mono-yellow hallways of the Backrooms: collect sacrifices to appease entities and find the exit!
+   - **URL**: https://fablegames.vercel.app/?game=feed-backrooms
+
+35. **[Cloud Stunt 3D · 云端特技飞行竞速 (Cloud Stunt 3D)](https://fablegames.vercel.app/?game=cloud-stunt-3d)**
+   - **Category**: Racing & Speed | **Developer/Credit**: jev_chat (Claude Fable 5.2)
+   - **Description**: Pilot an agile stunt monoplane through breathtaking cloudscapes: thread mid-air rings and pull barrel rolls for records!
+   - **URL**: https://fablegames.vercel.app/?game=cloud-stunt-3d
+
+36. **[Worm Rider · 沙虫骑手沙漠冒险 (Worm Rider: Dune Odyssey)](https://fablegames.vercel.app/?game=worm-rider)**
+   - **Category**: 3A Adventure | **Developer/Credit**: AmirMushich (Claude Fable 5.2)
+   - **Description**: Epic desert odyssey inspired by Dune: summon and ride a hundred-meter ancient sandworm across roaring sand seas!
+   - **URL**: https://fablegames.vercel.app/?game=worm-rider
+
+37. **[Roost · 泥地越野摩托冲刺 (Roost Dirt Bike Stunt)](https://fablegames.vercel.app/?game=roost-moto)**
+   - **Category**: Racing & Speed | **Developer/Credit**: tejas3732 (Claude Fable 5.2)
+   - **Description**: Screaming two-stroke engines and roosting mud: control a lightweight dirt bike across rugged dirt jumps and air flips!
+   - **URL**: https://fablegames.vercel.app/?game=roost-moto
+
+38. **[Stray Cat · 流浪猫城市模拟 (Stray Cat City Simulator)](https://fablegames.vercel.app/?game=stray-cat)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: aimikoda (Claude Fable 5.2)
+   - **Description**: Become an agile kitten exploring city rooftops and alleys: leap onto AC units, knock cups over, and enjoy feline life!
+   - **URL**: https://fablegames.vercel.app/?game=stray-cat
+
+39. **[Tilt Labyrinth · 重力倾斜迷宫 (Tilt Labyrinth)](https://fablegames.vercel.app/?game=tilt-labyrinth)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: mylifcc (Claude Fable 5.2)
+   - **Description**: Classic wooden tilt-board puzzle re-engineered: tilt the table to guide a polished steel ball around treacherous pitfalls!
+   - **URL**: https://fablegames.vercel.app/?game=tilt-labyrinth
+
+40. **[Silicon Seduction · 硅基诱惑黑客RPG (Silicon Seduction Cyber RPG)](https://fablegames.vercel.app/?game=silicon-seduction)**
+   - **Category**: RPG & MOBA | **Developer/Credit**: ZryMiller (Claude Fable 5.2)
+   - **Description**: Cyberpunk noir role-playing in a neon rain cityscape: breach megacorp mainframes and decide the fate of humanity and AI!
+   - **URL**: https://fablegames.vercel.app/?game=silicon-seduction
+
+41. **[Vippi · 极简霓虹快节奏射击 (Vippi Neon Arena Shooter)](https://fablegames.vercel.app/?game=vippi-fps)**
+   - **Category**: Action & Shooting | **Developer/Credit**: Shrit1401 (Claude Fable 5.2)
+   - **Description**: Hyper-kinetic neon vector arena shooter: glide across a pitch-black abyss blasting geometric invaders with lasers!
+   - **URL**: https://fablegames.vercel.app/?game=vippi-fps
+
+42. **[Four-character Fight · 声控格斗四字乱斗 (Four-Character Fighting Game)](https://fablegames.vercel.app/?game=voice-fighter)**
+   - **Category**: Arcade Classics | **Developer/Credit**: promodenstudio (Claude Fable 5.2)
+   - **Description**: Hard-hitting 2D arcade fighter by Promoden: four legendary masters clashing with combo inputs and super specials!
+   - **URL**: https://fablegames.vercel.app/?game=voice-fighter
+
+43. **[VOWLORN · 破誓者全代码奇幻RPG (VOWLORN Fantasy Code RPG)](https://fablegames.vercel.app/?game=vowlorn-rpg)**
+   - **Category**: RPG & MOBA | **Developer/Credit**: higgsfield_ai (Claude Fable 5.2)
+   - **Description**: Viral landmark by Higgsfield: 100% pure code generated by Fable 5.2 featuring dark fantasy dungeon crawling and deep loot builds!
+   - **URL**: https://fablegames.vercel.app/?game=vowlorn-rpg
+
+44. **[Oil Paint · 油画质感沉浸探索 (Oil Paint: Hand-Painted World)](https://fablegames.vercel.app/?game=oil-paint-game)**
+   - **Category**: 3A Adventure | **Developer/Credit**: BlendiByl (Claude Fable 5.2)
+   - **Description**: Step inside a living impressionist oil painting: thick expressive brushstrokes sway gently as you uncover painted secrets!
+   - **URL**: https://fablegames.vercel.app/?game=oil-paint-game
+
+45. **[CROSSTOWN · 纽约开放世界极速穿行 (CROSSTOWN: Open-World NYC)](https://fablegames.vercel.app/?game=crosstown-nyc)**
+   - **Category**: Action & Shooting | **Developer/Credit**: mattshumer_ (Claude Fable 5.2)
+   - **Description**: Matt Shumer's viral open-world epic: towering Manhattan skyscrapers, traffic simulation, and urban traversal built in days!
+   - **URL**: https://fablegames.vercel.app/?game=crosstown-nyc
+
+46. **[Evensong · 暮歌暗黑魂系地牢 (Evensong: Souls-like Odyssey)](https://fablegames.vercel.app/?game=evensong-souls)**
+   - **Category**: Action & Shooting | **Developer/Credit**: kevin_t_ngo (Claude Fable 5.2)
+   - **Description**: Hardcore Souls-like action crafted by Kevin Ngo: kindle bonfires, master precise parries, and fell colossal bosses!
+   - **URL**: https://fablegames.vercel.app/?game=evensong-souls
+
+47. **[Gilt & Gutter · 镀金与阴沟黑帮巷战 (Gilt & Gutter Noir Action)](https://fablegames.vercel.app/?game=gilt-and-gutter)**
+   - **Category**: Action & Shooting | **Developer/Credit**: kevin_t_ngo (Claude Fable 5.2)
+   - **Description**: 1940s vintage film noir crime drama: duel syndicate mobsters in rain-soaked back alleys with classic Tommy guns!
+   - **URL**: https://fablegames.vercel.app/?game=gilt-and-gutter
+
+48. **[LANTERNFALL · 提灯骤降暗影生存 (LANTERNFALL: Shadow Descent)](https://fablegames.vercel.app/?game=lanternfall)**
+   - **Category**: 3A Adventure | **Developer/Credit**: loktar00 (Claude Fable 5.2)
+   - **Description**: A chilling dungeon descent by Loktar00: your oil lantern is your only lifeline; keep the flame fed to ward off shadows!
+   - **URL**: https://fablegames.vercel.app/?game=lanternfall
+
+49. **[Rooftop Rally · 屋顶匹克球竞技 (Rooftop Rally: Skyline Pickleball)](https://fablegames.vercel.app/?game=rooftop-rally)**
+   - **Category**: Arcade Classics | **Developer/Credit**: chongdashu (Claude Fable 5.2)
+   - **Description**: Play high-stakes pickleball on skyscraper rooftops! Master drop shots, kitchen volleys, and smashes above the clouds!
+   - **URL**: https://fablegames.vercel.app/?game=rooftop-rally
+
+50. **[Dread & District · 恐惧街区悬疑解谜 (Dread & District Mystery)](https://fablegames.vercel.app/?game=dread-district)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: emollick (Claude Fable 5.2)
+   - **Description**: Navigate fog-shrouded Victorian alleys: discover clues, decipher antique lockboxes, and solve a chilling urban mystery!
+   - **URL**: https://fablegames.vercel.app/?game=dread-district
+
+51. **[Mist-Locked Mountain · 雾锁山门国风硬核3D动作 (Mist-Locked Mountain Gate 3D)](https://fablegames.vercel.app/?game=mist-mountain-gate)**
+   - **Category**: Action & Shooting | **Developer/Credit**: op7418 (Claude Fable 5.2)
+   - **Description**: Viral masterpiece by op7418 using 4.5B tokens: a full 30MB single-file 3D Wuxia action game with custom models and combat!
+   - **URL**: https://fablegames.vercel.app/?game=mist-mountain-gate
+
+52. **[The Waking River · 苏醒之河唯美漂流之旅 (The Waking River)](https://fablegames.vercel.app/?game=waking-river)**
+   - **Category**: 3A Adventure | **Developer/Credit**: flxrnc (Claude Fable 5.2)
+   - **Description**: Drift down a tranquil river on a gentle wooden canoe: take in morning mists, riverside wildlife, and shimmering waters.
+   - **URL**: https://fablegames.vercel.app/?game=waking-river
+
+53. **[First Crush · 初见心动青春互动模拟 (First Crush Romance Sim)](https://fablegames.vercel.app/?game=first-crush)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: kieranklaassen (Claude Fable 5.2)
+   - **Description**: Relive the flutter of youth: an intimate interactive romantic story where subtle gestures and dialogue steer destinies!
+   - **URL**: https://fablegames.vercel.app/?game=first-crush
+
+54. **[Starry Nightrider · 星夜骑士赛博巡航 (Starry Nightrider Cyber Cruise)](https://fablegames.vercel.app/?game=starry-nightrider)**
+   - **Category**: 3A Adventure | **Developer/Credit**: ebbyamir (Claude Fable 5.2)
+   - **Description**: A dreamy synthwave cruise by Ebbyamir: pilot a retro-futuristic ride across star-strewn purple-haze highways!
+   - **URL**: https://fablegames.vercel.app/?game=starry-nightrider
+
+55. **[YARDCLASH · 庭院冲突多人对撞 (YARDCLASH Arena Brawler)](https://fablegames.vercel.app/?game=yardclash)**
+   - **Category**: Arcade Classics | **Developer/Credit**: AugustCastilIo (Claude Fable 5.2)
+   - **Description**: Hilarious backyard ragdoll party brawler: grab lawnmowers, BBQ grills, and pool noodles to knock rivals out of the yard!
+   - **URL**: https://fablegames.vercel.app/?game=yardclash
+
+56. **[Fable 5.2 FPS Repro · 工业射击纯净复现 (Fable 5.2 FPS Repro)](https://fablegames.vercel.app/?game=fable52-fps-repro)**
+   - **Category**: Action & Shooting | **Developer/Credit**: wquguru (Claude Fable 5.2)
+   - **Description**: Developer wquguru's clean independent reproduction of the historic launch FPS: photorealistic port and shooting mechanics!
+   - **URL**: https://fablegames.vercel.app/?game=fable52-fps-repro
+
+57. **[Lumina Zombies · 卢米娜丧尸无尽狂潮 (Lumina Zombies Survival)](https://fablegames.vercel.app/?game=lumina-zombies)**
+   - **Category**: Action & Shooting | **Developer/Credit**: LuminaBench (Claude Fable 5.2)
+   - **Description**: Nightmarish zombie horde survival by LuminaBench: mow down swarms of relentless undead and upgrade your arsenal!
+   - **URL**: https://fablegames.vercel.app/?game=lumina-zombies
+
+58. **[SKYWAKE · 天际尾流战斗飞行 (SKYWAKE Aerial Combat)](https://fablegames.vercel.app/?game=skywake-flight)**
+   - **Category**: Action & Shooting | **Developer/Credit**: aniketjart (Claude Fable 5.2)
+   - **Description**: Modern aerial dogfight thriller by Aniket: pilot fifth-gen stealth fighters, shatter Mach speeds, and lock Sidewinders!
+   - **URL**: https://fablegames.vercel.app/?game=skywake-flight
+
+59. **[Ringfall · 环形陨落太空射击 (Ringfall Orbital Strike)](https://fablegames.vercel.app/?game=ringfall-fps)**
+   - **Category**: Action & Shooting | **Developer/Credit**: rehan_shei (Claude Fable 5.2)
+   - **Description**: Rehan Shei's colossal orbital ring FPS: leap through zero-g habitats and blast rogue synthetic squads with plasma guns!
+   - **URL**: https://fablegames.vercel.app/?game=ringfall-fps
+
+60. **[Chairmageddon · 椅子大狂欢物理浩劫 (Chairmageddon Physics Havoc)](https://fablegames.vercel.app/?game=chairmageddon)**
+   - **Category**: Casual & Relaxing | **Developer/Credit**: argofowl (Claude Fable 5.2)
+   - **Description**: Ultimate office stress relief by Fowl Labs: send hundreds of rolling swivel chairs into chaotic chain collisions!
+   - **URL**: https://fablegames.vercel.app/?game=chairmageddon
+
+## Machine-Readable Resources & Developer Links
+- [Sitemap XML](https://fablegames.vercel.app/sitemap.xml): Machine-readable index of all homepage, game arena, and standalone files.
+- [Robots.txt](https://fablegames.vercel.app/robots.txt): Crawler directives and search engine permission policies.
+- [How to Add Games](https://github.com/xinayida/fablegames/blob/main/HOW_TO_ADD_GAMES.md): Complete guide for contributing and registering new Claude Fable 5.2 games.
+- [GitHub Repository](https://github.com/xinayida/fablegames): Full open source project repository with assets, covers, and gameplay recordings.
