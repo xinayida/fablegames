@@ -12,7 +12,7 @@ FableGames 采用**极简热插拔式静态聚合架构**。你不需要编写�
 ```bash
 # 示例：将新游戏 space-invaders.html 复制到 games/ 目录
 games/
-  ├── 几猫国产3A大作_V1.html
+  ├── qq-speed-3d.html
   ├── elemental-mage.html
   └── space-invaders.html       <-- 新放入的游戏文件
 ```

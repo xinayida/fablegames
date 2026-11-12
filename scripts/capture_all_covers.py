@@ -140,10 +140,10 @@ def main():
             except Exception as e:
                 print(f"Error elemental-mage: {e}")
 
-            # 5. saltline (几猫3A大作)
+            # 5. saltline (online)
             print("Capturing saltline...")
             try:
-                page.goto(f"{base_url}/games/%E5%87%A0%E7%8C%AB%E5%9B%BD%E4%BA%A73A%E5%A4%A7%E4%BD%9C_V1.html?autostart=1&q=ultra")
+                page.goto("https://realcodebear.github.io/saltline-fable-5.2/?autostart=1&q=ultra", timeout=25000)
                 for _ in range(40):
                     ready = page.evaluate("() => { const b = document.getElementById('boot'); return b && b.classList.contains('done'); }")
                     if ready:

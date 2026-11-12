@@ -47,7 +47,7 @@ npm start
 
 | 游戏名称 | 英文名称 | 分类 | 游玩方式 | 亮点说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| **Saltline (盐线)** | Saltline: 3A Web FPS | 动作射击 | 本地离线 | Anthropic Claude 全自动生成的写实光影码头 3A 第一人称射击 |
+| **Saltline (盐线)** | Saltline: 3A Web FPS | 动作射击 | 云端嵌入 | Anthropic Claude 全自动生成的写实光影码头 3A 第一人称射击 |
 | **QQ飞车 3D** | QQ Speed 3D: Drift Racing | 竞速漂移 | 本地离线 | 经典还原11城/爱琴海赛道、贴墙漂移、双喷、道具赛 |
 | **穿越火线 · 运输船 3D** | CrossFire: Transport Ship 3D | 动作射击 | 本地离线 | 经典运输船 1:1 还原，保卫者 vs 潜伏者，智能 BOT 团队对战 |
 | **鹈鹕骑单车** | Pelican on a Bike | 休闲治愈 | 本地离线 | 唯美落日海岸追鱼漫游、IK骨骼动画与治愈合成器音乐 |

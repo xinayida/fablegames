@@ -90,10 +90,10 @@ def capture_elemental_mage(page, base_url: str, temp_dir: Path):
     page.screenshot(path=str(temp_png))
     save_cover_images(temp_png, "elemental-mage")
 
-def capture_jimao_3a(page, base_url: str, temp_dir: Path):
-    print("▶ 正在截取游戏: 几猫3A大作 (jimao-3a)...")
-    url = f"{base_url}/games/%E5%87%A0%E7%8C%AB%E5%9B%BD%E4%BA%A73A%E5%A4%A7%E4%BD%9C_V1.html?autostart=1&q=ultra"
-    page.goto(url)
+def capture_saltline(page, temp_dir: Path):
+    print("▶ 正在截取游戏: Saltline · 盐线 (saltline)...")
+    url = "https://realcodebear.github.io/saltline-fable-5.2/?autostart=1&q=ultra"
+    page.goto(url, timeout=25000)
     
     # Wait for loading / boot screen to finish
     print("  等待 3D 资产、WebGL 光影与着色器加载...")
@@ -106,9 +106,9 @@ def capture_jimao_3a(page, base_url: str, temp_dir: Path):
     # Wait for 3D world and shaders to fully render
     page.wait_for_timeout(2500)
     
-    temp_png = temp_dir / "jimao-3a.png"
+    temp_png = temp_dir / "saltline.png"
     page.screenshot(path=str(temp_png))
-    save_cover_images(temp_png, "jimao-3a")
+    save_cover_images(temp_png, "saltline")
 
 def main():
     os.chdir(WORKSPACE_DIR)
@@ -151,7 +151,7 @@ def main():
             page = context.new_page()
 
             # Capture all games
-            capture_jimao_3a(page, base_url, temp_dir)
+            capture_saltline(page, temp_dir)
             capture_elemental_mage(page, base_url, temp_dir)
 
             browser.close()

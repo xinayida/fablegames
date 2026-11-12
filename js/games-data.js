@@ -48,7 +48,7 @@
       developer: 'Claude Fable 5.2 (Anthropic)',
       developerEn: 'Claude Fable 5.2 (Anthropic)',
       aiEngine: 'Claude Fable 5.2',
-      fileUrl: 'games/几猫国产3A大作_V1.html',
+      fileUrl: 'https://realcodebear.github.io/saltline-fable-5.2/',
       originalUrl: 'https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp',
       cover: 'assets/covers/saltline.webp',
       summary: '由 Claude Fable 5.2 全自动端到端编码生成的 3A 级写实光影码头第一人称射击游戏。',
@@ -75,7 +75,8 @@
         { key: 'R 键', action: '更换弹匣', actionEn: 'Reload Magazine' },
         { key: '空格 Space', action: '跳跃攀爬', actionEn: 'Jump' },
         { key: 'Shift 键', action: '战术冲刺', actionEn: 'Tactical Sprint' },
-        { key: 'C 键', action: '下蹲避弹', actionEn: 'Crouch' }
+        { key: 'C 键', action: '下蹲避弹', actionEn: 'Crouch' },
+        { key: 'E 键', action: '切断中继器 / 目标交互', actionEn: 'Cut Relay / Interact' }
       ]
     },
     {
