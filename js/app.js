@@ -173,11 +173,133 @@
   };
 
   /* ========================================================================
-     2. Application State & Storage Helpers
+     2. Geo & Locale Detection Helpers
+     ======================================================================== */
+  const CHINESE_REGIONS = ['CN', 'HK', 'MO', 'TW'];
+  const CHINESE_TIMEZONES = [
+    'Asia/Shanghai', 'Asia/Chongqing', 'Asia/Harbin', 'Asia/Urumqi', 'Asia/Kashgar',
+    'Asia/Hong_Kong', 'Asia/Taipei', 'Asia/Macau', 'PRC', 'ROC', 'Hongkong'
+  ];
+
+  /**
+   * Fast, zero-latency synchronous language detection for initial paint:
+   * 1. URL parameter override (?lang=zh or ?lang=en)
+   * 2. Saved user preference in localStorage (explicit choice always takes precedence)
+   * 3. Environment heuristic (Timezone + Browser/System Language)
+   * 4. International default: 'en' for overseas users, 'zh' for Greater China
+   */
+  function detectInitialLanguage() {
+    // 1. URL parameter (?lang=zh or ?lang=en)
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlLang = urlParams.get('lang');
+      if (urlLang === 'zh' || urlLang === 'en') {
+        localStorage.setItem(STORAGE_KEYS.LANG, urlLang);
+        return urlLang;
+      }
+    } catch (_) {}
+
+    // 2. Previously saved user manual preference
+    try {
+      const saved = localStorage.getItem(STORAGE_KEYS.LANG);
+      if (saved === 'zh' || saved === 'en') {
+        return saved;
+      }
+    } catch (_) {}
+
+    // 3. Timezone heuristic (detect if user timezone belongs to Greater China)
+    let isChineseTimezone = false;
+    try {
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      if (CHINESE_TIMEZONES.includes(tz) || tz.startsWith('Asia/Shanghai') || tz.startsWith('Asia/Chongqing')) {
+        isChineseTimezone = true;
+      }
+    } catch (_) {}
+
+    // 4. Browser/System language heuristic
+    let isChineseBrowser = false;
+    try {
+      const langs = (navigator.languages && navigator.languages.length > 0)
+        ? navigator.languages
+        : [navigator.language || navigator.userLanguage || ''];
+      isChineseBrowser = langs.some(l => {
+        const lower = String(l).toLowerCase();
+        return lower.startsWith('zh') || lower.includes('chinese');
+      });
+    } catch (_) {}
+
+    // Default to 'zh' if timezone or browser locale indicates Greater China
+    if (isChineseBrowser || isChineseTimezone) {
+      return 'zh';
+    }
+
+    // Default to 'en' for overseas/international users
+    return 'en';
+  }
+
+  /**
+   * Asynchronous GeoIP location verification:
+   * Confirms true geographical country in background without blocking initial paint.
+   * If detected location differs from initial guess and user hasn't explicitly chosen,
+   * updates the page language seamlessly.
+   */
+  async function detectLocationLanguageAsync() {
+    // If user has already made an explicit choice, never override it
+    try {
+      if (localStorage.getItem(STORAGE_KEYS.LANG)) return;
+    } catch (_) {}
+
+    // Check session cache to avoid repeated network calls
+    try {
+      const sessionGeo = sessionStorage.getItem('fablegames_geo_lang');
+      if (sessionGeo) {
+        if (sessionGeo !== AppState.lang && (sessionGeo === 'zh' || sessionGeo === 'en')) {
+          AppState.lang = sessionGeo;
+          applyLanguage();
+        }
+        return;
+      }
+    } catch (_) {}
+
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 2500);
+
+      const res = await fetch('https://api.country.is', {
+        signal: controller.signal,
+        headers: { 'Accept': 'application/json' }
+      });
+      clearTimeout(timeoutId);
+
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data || !data.country) return;
+
+      // Double check user didn't toggle language during network fetch
+      if (localStorage.getItem(STORAGE_KEYS.LANG)) return;
+
+      const country = String(data.country).toUpperCase();
+      const detectedLang = CHINESE_REGIONS.includes(country) ? 'zh' : 'en';
+
+      try {
+        sessionStorage.setItem('fablegames_geo_lang', detectedLang);
+      } catch (_) {}
+
+      if (detectedLang !== AppState.lang) {
+        AppState.lang = detectedLang;
+        applyLanguage();
+      }
+    } catch (_) {
+      // Graceful fallback: sync detection remains in effect
+    }
+  }
+
+  /* ========================================================================
+     3. Application State & Storage Helpers
      ======================================================================== */
   const AppState = {
     theme: localStorage.getItem(STORAGE_KEYS.THEME) || 'dark',
-    lang: localStorage.getItem(STORAGE_KEYS.LANG) || 'zh',
+    lang: detectInitialLanguage(),
     favorites: new Set(JSON.parse(localStorage.getItem(STORAGE_KEYS.FAVORITES) || '[]')),
     recents: JSON.parse(localStorage.getItem(STORAGE_KEYS.RECENTS) || '[]'),
     likes: JSON.parse(localStorage.getItem(STORAGE_KEYS.LIKES) || '{}'),
@@ -1211,6 +1333,9 @@
 
     // Initial routing
     handleRoute();
+
+    // Asynchronously verify user geographic location (IP Geo) if not manually chosen
+    detectLocationLanguageAsync();
   }
 
   // DOM ready check
