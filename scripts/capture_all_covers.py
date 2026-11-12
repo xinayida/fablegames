@@ -36,7 +36,20 @@ def save_cover_images(png_path: Path, base_name: str):
 
     with Image.open(png_path) as img:
         rgb_img = img.convert("RGB")
-        # Resize to standard 16:9 (1280x720) if larger
+        w, h = rgb_img.size
+        target_ratio = 16 / 9
+        current_ratio = w / h
+
+        if abs(current_ratio - target_ratio) > 0.05:
+            if current_ratio > target_ratio:
+                new_w = int(h * target_ratio)
+                left = (w - new_w) // 2
+                rgb_img = rgb_img.crop((left, 0, left + new_w, h))
+            else:
+                new_h = int(w / target_ratio)
+                top = (h - new_h) // 2
+                rgb_img = rgb_img.crop((0, top, w, top + new_h))
+
         if rgb_img.width != 1280 or rgb_img.height != 720:
             rgb_img = rgb_img.resize((1280, 720), Image.Resampling.LANCZOS)
         rgb_img.save(out_png, "PNG", optimize=True)
@@ -73,12 +86,12 @@ def main():
             context = browser.new_context(viewport={"width": 1280, "height": 720})
             page = context.new_page()
 
+            # Existing local games
             # 1. qq-speed-3d
             print("Capturing qq-speed-3d...")
             try:
                 page.goto(f"{base_url}/games/qq-speed-3d.html")
                 page.wait_for_timeout(1000)
-                # Click start button
                 start_btn = page.locator("#start")
                 if start_btn.count() > 0:
                     start_btn.click()
@@ -140,7 +153,228 @@ def main():
             except Exception as e:
                 print(f"Error elemental-mage: {e}")
 
-            # 5. saltline (online)
+            # 5. doubao-dance
+            print("Capturing doubao-dance...")
+            try:
+                page.goto(f"{base_url}/games/doubao-dance.html")
+                page.wait_for_timeout(1000)
+                btn = page.locator("#btnStart")
+                if btn.count() > 0:
+                    btn.click()
+                page.wait_for_timeout(3500)
+                page.keyboard.press("ArrowLeft")
+                page.keyboard.press("ArrowUp")
+                page.keyboard.press("Space")
+                page.wait_for_timeout(500)
+                tmp = temp_dir / "doubao-dance.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "doubao-dance")
+            except Exception as e:
+                print(f"Error doubao-dance: {e}")
+
+            # 6. voxel-gta
+            print("Capturing voxel-gta...")
+            try:
+                page.goto(f"{base_url}/games/voxel-gta.html")
+                page.wait_for_timeout(1000)
+                page.mouse.click(640, 360)
+                page.wait_for_timeout(1500)
+                page.keyboard.down("KeyW")
+                page.wait_for_timeout(800)
+                page.keyboard.up("KeyW")
+                tmp = temp_dir / "voxel-gta.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "voxel-gta")
+            except Exception as e:
+                print(f"Error voxel-gta: {e}")
+
+            # 7. frostline-kart
+            print("Capturing frostline-kart...")
+            try:
+                page.goto(f"{base_url}/games/frostline-kart.html")
+                page.wait_for_timeout(1000)
+                page.keyboard.press("Space")
+                page.wait_for_timeout(500)
+                page.keyboard.down("ArrowUp")
+                page.wait_for_timeout(2500)
+                page.keyboard.up("ArrowUp")
+                tmp = temp_dir / "frostline-kart.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "frostline-kart")
+            except Exception as e:
+                print(f"Error frostline-kart: {e}")
+
+            # 8. robo-tennis
+            print("Capturing robo-tennis...")
+            try:
+                page.goto(f"{base_url}/games/robo-tennis.html")
+                page.wait_for_timeout(2500)
+                page.keyboard.press("Space")
+                page.wait_for_timeout(800)
+                tmp = temp_dir / "robo-tennis.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "robo-tennis")
+            except Exception as e:
+                print(f"Error robo-tennis: {e}")
+
+            # 9. rail-rush
+            print("Capturing rail-rush...")
+            try:
+                page.goto(f"{base_url}/games/rail-rush.html")
+                page.wait_for_timeout(1000)
+                start_btn = page.locator("#start")
+                if start_btn.count() > 0:
+                    start_btn.click()
+                else:
+                    page.keyboard.press("Space")
+                page.wait_for_timeout(2500)
+                tmp = temp_dir / "rail-rush.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "rail-rush")
+            except Exception as e:
+                print(f"Error rail-rush: {e}")
+
+            # 10. crossy-farm
+            print("Capturing crossy-farm...")
+            try:
+                page.goto(f"{base_url}/games/crossy-farm.html")
+                page.wait_for_timeout(1000)
+                btn = page.locator("#btnDrive")
+                if btn.count() > 0:
+                    btn.click()
+                page.wait_for_timeout(1000)
+                page.keyboard.press("ArrowUp")
+                page.wait_for_timeout(300)
+                page.keyboard.press("ArrowUp")
+                page.wait_for_timeout(300)
+                page.keyboard.press("ArrowUp")
+                page.wait_for_timeout(500)
+                tmp = temp_dir / "crossy-farm.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "crossy-farm")
+            except Exception as e:
+                print(f"Error crossy-farm: {e}")
+
+            # 11. mario-world
+            print("Capturing mario-world...")
+            try:
+                page.goto(f"{base_url}/games/mario-world.html")
+                page.wait_for_timeout(1000)
+                page.evaluate("newGame(); startLevel();")
+                page.wait_for_timeout(500)
+                page.keyboard.down("ArrowRight")
+                page.wait_for_timeout(1200)
+                page.keyboard.press("Space")
+                page.wait_for_timeout(200)
+                page.keyboard.up("ArrowRight")
+                tmp = temp_dir / "mario-world.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "mario-world")
+            except Exception as e:
+                print(f"Error mario-world: {e}")
+
+            # 12. hollowmere
+            print("Capturing hollowmere...")
+            try:
+                page.goto(f"{base_url}/games/hollowmere.html")
+                page.wait_for_timeout(1500)
+                page.evaluate("summonBoss()")
+                page.wait_for_timeout(1200)
+                tmp = temp_dir / "hollowmere.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "hollowmere")
+            except Exception as e:
+                print(f"Error hollowmere: {e}")
+
+            # 13. flappy-skies
+            print("Capturing flappy-skies...")
+            try:
+                page.goto(f"{base_url}/games/flappy-skies.html")
+                page.wait_for_timeout(1000)
+                page.keyboard.press("Space")
+                page.wait_for_timeout(600)
+                page.keyboard.press("Space")
+                page.wait_for_timeout(800)
+                tmp = temp_dir / "flappy-skies.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "flappy-skies")
+            except Exception as e:
+                print(f"Error flappy-skies: {e}")
+
+            # 14. vector-descent
+            print("Capturing vector-descent...")
+            try:
+                page.goto(f"{base_url}/games/vector-descent.html")
+                page.wait_for_timeout(1000)
+                btn = page.locator("#bStart")
+                if btn.count() > 0:
+                    btn.click()
+                page.wait_for_timeout(1500)
+                page.keyboard.down("ArrowUp")
+                page.wait_for_timeout(1000)
+                page.keyboard.up("ArrowUp")
+                tmp = temp_dir / "vector-descent.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "vector-descent")
+            except Exception as e:
+                print(f"Error vector-descent: {e}")
+
+            # 15. sorrow-rock
+            print("Capturing sorrow-rock...")
+            try:
+                page.goto(f"{base_url}/games/sorrow-rock.html")
+                page.wait_for_timeout(2500)
+                tmp = temp_dir / "sorrow-rock.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "sorrow-rock")
+            except Exception as e:
+                print(f"Error sorrow-rock: {e}")
+
+            # 16. ariadnes-thread
+            print("Capturing ariadnes-thread...")
+            try:
+                page.goto(f"{base_url}/games/ariadnes-thread.html")
+                page.wait_for_timeout(2000)
+                page.keyboard.press("ArrowRight")
+                page.wait_for_timeout(300)
+                page.keyboard.press("ArrowDown")
+                page.wait_for_timeout(300)
+                page.keyboard.press("ArrowRight")
+                page.wait_for_timeout(500)
+                tmp = temp_dir / "ariadnes-thread.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "ariadnes-thread")
+            except Exception as e:
+                print(f"Error ariadnes-thread: {e}")
+
+            # 17. the-combination
+            print("Capturing the-combination...")
+            try:
+                page.goto(f"{base_url}/games/the-combination.html")
+                page.wait_for_timeout(2000)
+                tmp = temp_dir / "the-combination.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "the-combination")
+            except Exception as e:
+                print(f"Error the-combination: {e}")
+
+            # 18. gelato-tower
+            print("Capturing gelato-tower...")
+            try:
+                page.goto(f"{base_url}/games/gelato-tower.html")
+                page.wait_for_timeout(1000)
+                page.keyboard.press("Space")
+                page.wait_for_timeout(1500)
+                page.keyboard.press("Space")
+                page.wait_for_timeout(1500)
+                tmp = temp_dir / "gelato-tower.png"
+                page.screenshot(path=str(tmp))
+                save_cover_images(tmp, "gelato-tower")
+            except Exception as e:
+                print(f"Error gelato-tower: {e}")
+
+            # Online games
+            # 19. saltline (online)
             print("Capturing saltline...")
             try:
                 page.goto("https://realcodebear.github.io/saltline-fable-5.2/?autostart=1&q=ultra", timeout=25000)
@@ -156,7 +390,7 @@ def main():
             except Exception as e:
                 print(f"Error saltline: {e}")
 
-            # 6. black-myth-wukong (online)
+            # 20. black-myth-wukong (online)
             print("Capturing black-myth-wukong...")
             try:
                 page.goto("https://wukong.cnmwx.com/", timeout=15000)
@@ -167,7 +401,7 @@ def main():
             except Exception as e:
                 print(f"Error black-myth-wukong: {e}")
 
-            # 7. lol-aram (online)
+            # 21. lol-aram (online)
             print("Capturing lol-aram...")
             try:
                 page.goto("https://lol.hanyue.io/", timeout=15000)

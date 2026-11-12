@@ -1,0 +1,3003 @@
+[
+  {
+    "id": "three-games",
+    "slug": "three-games-fable-trio",
+    "title": "Three Games · 三合一神作合集 (Saltline / 钟表匠 / Tidewright)",
+    "titleEn": "Three Games: Fable 5.2 Trio",
+    "category": "经典街机",
+    "categoryEn": "Arcade Classics",
+    "categoryId": "arcade",
+    "tags": [
+      "Claude Fable 5.2",
+      "三合一",
+      "第一初稿",
+      "无人类反馈",
+      "Felix Rieseberg"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Trio",
+      "Zero Human Touch",
+      "Raw Output",
+      "Felix Rieseberg"
+    ],
+    "rating": 4.9,
+    "ratingCount": 35200,
+    "plays": "310.5K",
+    "playsNum": 310500,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "felixrieseberg (Claude Fable 5.2)",
+    "developerEn": "felixrieseberg (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://claude.ai/artifact/MXxb36zKgN261ckbGhmNin",
+    "originalUrl": "https://x.com/vineerpasam/status/2119955306096857145",
+    "githubUrl": "https://x.com/felixrieseberg",
+    "cover": "assets/covers/three-games.webp",
+    "gif": "assets/gifs/three-games.gif",
+    "summary": "Felix Rieseberg 发布的传奇合集：包含 Saltline、钟表匠之心与 Tidewright 三款零人工反馈初稿作品。",
+    "summaryEn": "Legendary trilogy published by Felix Rieseberg featuring Saltline, The Clockmaker's Heart and Tidewright.",
+    "description": "这是 Fable 5.2 发布首日转发量最高的神作合集。作者署名写道：'所有游戏均由 Claude Fable 5.2 独立端到端制作，纯第一版初稿，无任何人类反馈修正'。在一个页面中汇聚了三种截然不同的游戏类型与视觉风格。",
+    "descriptionEn": "The most widely shared showcase on launch day. Signed by Felix Rieseberg: 'All games made with Claude Fable 5.2. First drafts, no human feedback.' Houses three distinct genres in a unified experience.",
+    "features": [
+      "汇聚 Saltline、钟表匠之心、Tidewright 三款标志性 AI 独立游戏",
+      "零人工调试、纯 LLM 第一初稿端到端生成",
+      "涵盖第一人称射击、机械钟表解谜与海洋潮汐生存三大玩法",
+      "集成极简切换界面与独立 WebGL 渲染管线"
+    ],
+    "featuresEn": [
+      "Houses three iconic AI games: Saltline, The Clockmaker's Heart, and Tidewright",
+      "100% pure first-draft generation with zero human touch or code editing",
+      "Seamlessly spans FPS, clockwork mechanical puzzle, and tidal ocean survival",
+      "Unified switching interface with dedicated WebGL rendering pipelines"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "角色移动 / 控制",
+        "actionEn": "Movement"
+      },
+      {
+        "key": "鼠标",
+        "action": "瞄准视角 / 互动点击",
+        "actionEn": "Aim / Interact"
+      },
+      {
+        "key": "数字 1 2 3",
+        "action": "快速切换对应游戏",
+        "actionEn": "Switch Game"
+      },
+      {
+        "key": "空格 Space",
+        "action": "跳跃 / 确认操作",
+        "actionEn": "Jump / Confirm"
+      }
+    ]
+  },
+  {
+    "id": "mirror-earth",
+    "slug": "mirror-earth-destructible-planet",
+    "title": "Mirror Earth · 镜像地球 (实时天气全境破坏模拟)",
+    "titleEn": "Mirror Earth: Destructible Planet",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "开放地球",
+      "实时天气",
+      "全境破坏",
+      "Matt Shumer"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Open Earth",
+      "Live Weather",
+      "Voxel Havoc",
+      "Matt Shumer"
+    ],
+    "rating": 4.9,
+    "ratingCount": 42100,
+    "plays": "412.0K",
+    "playsNum": 412000,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "mattshumer_ (Claude Fable 5.2)",
+    "developerEn": "mattshumer_ (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://www.spawn.co/@mattshumer/earth?room=local",
+    "originalUrl": "https://x.com/mattshumer_/status/2119877065701036047",
+    "githubUrl": "https://x.com/mattshumer_",
+    "cover": "assets/covers/mirror-earth.webp",
+    "gif": "assets/gifs/mirror-earth.gif",
+    "summary": "以整个真实地球为沙盒：全境地表可自由穿梭与摧毁，天气数据与现实世界全球实时同步。",
+    "summaryEn": "The entire planet modeled as an interactive destructible sandbox, synced with real-time global weather.",
+    "description": "Matt Shumer 借助 Claude Fable 5.2 构建的震撼项目。将整个地球数字化为可破坏的 3D 游戏世界，不仅能够自由缩放穿梭至各大洲各个城市，更有实时天气 API 驱动动态云层与降水，伴随震撼的全境物理破坏粒子效果。",
+    "descriptionEn": "A jaw-dropping achievement by Matt Shumer via Claude Fable 5.2. Turns the globe into an open destructible voxel world synced with live Earth weather data and high-yield volumetric physics destruction.",
+    "features": [
+      "全地球尺度自由漫游缩放与地表无缝穿梭",
+      "现实全球天气 API 实时驱动全球云系与气象变化",
+      "地表建筑物与地形完全可受物理撞击摧毁",
+      "多玩家房间联机与共享空间同步"
+    ],
+    "featuresEn": [
+      "Global planetary scale with seamless zooming from orbit to ground level",
+      "Live meteorological APIs powering real-time global cloud and storm fronts",
+      "100% destructible surface geography and urban structures",
+      "Multiplayer room support for shared planetary exploration"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "高空漫游飞行与水平机动",
+        "actionEn": "Fly / Navigate"
+      },
+      {
+        "key": "鼠标滚轮",
+        "action": "从近地视角平滑缩放至太空轨道",
+        "actionEn": "Zoom to Orbit"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "释放动能炮引发局部地表破坏",
+        "actionEn": "Fire Kinetic Blast"
+      },
+      {
+        "key": "空格 Space",
+        "action": "加速冲刺飞行",
+        "actionEn": "Boost Flight"
+      }
+    ]
+  },
+  {
+    "id": "voxel-engine",
+    "slug": "voxel-engine-3d-sandbox",
+    "title": "Voxel Engine · 纯原生 3D 体素方块沙盒",
+    "titleEn": "Voxel Engine 3D Sandbox",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "我的世界",
+      "体素引擎",
+      "沙盒建造",
+      "WebGL"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Minecraft Style",
+      "Voxel Engine",
+      "Sandbox",
+      "WebGL"
+    ],
+    "rating": 4.8,
+    "ratingCount": 19800,
+    "plays": "184.2K",
+    "playsNum": 184200,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "mattshumer_ (Claude Fable 5.2)",
+    "developerEn": "mattshumer_ (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://www.spawn.co/@mattshumer/voxel-engine",
+    "originalUrl": "https://x.com/mattshumer_/status/2119870965106483384",
+    "githubUrl": "https://x.com/mattshumer_",
+    "cover": "assets/covers/voxel-engine.webp",
+    "gif": "assets/gifs/voxel-engine.gif",
+    "summary": "由 Fable 5.2 生成的纯网页体素渲染引擎，支持程序化地形生成、动态光照与实时方块搭建拆除。",
+    "summaryEn": "Browser-native voxel sandbox engine by Fable 5.2 with infinite procedural terrain, dynamic lighting and block building.",
+    "description": "基于原生 WebGL 与 Three.js 的体素沙盒世界。拥有类似 Minecraft 的无限地形分块加载算法、柏林噪声地形生成、草地方块与岩石破坏粒子，以及实时日夜光影变化系统。",
+    "descriptionEn": "A browser-native voxel sandbox powered by WebGL. Features procedural chunk-based Perlin terrain generation, block mining and placing physics, and real-time sun angle lighting.",
+    "features": [
+      "无限柏林噪声程序化地形渲染与多层 Chunk 管理",
+      "毫秒级方块破坏粒子与重力碰撞检测",
+      "快捷栏多种方块材质随心放置建造",
+      "流畅的 60 FPS 第一人称摄像机控制"
+    ],
+    "featuresEn": [
+      "Infinite Perlin noise chunk generation and dynamic LOD management",
+      "Sub-millisecond block fracture particles and physical collision",
+      "Quick-slot block selector for diverse architectural building",
+      "Silky smooth 60 FPS first-person controller"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "角色平移走动",
+        "actionEn": "Walk"
+      },
+      {
+        "key": "鼠标",
+        "action": "第一人称视角环视",
+        "actionEn": "Look Around"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "挖掘与破坏前方方块",
+        "actionEn": "Mine Block"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "放置当前选中的方块",
+        "actionEn": "Place Block"
+      },
+      {
+        "key": "数字 1-9",
+        "action": "切换快捷栏方块材质",
+        "actionEn": "Select Block Type"
+      },
+      {
+        "key": "空格 Space",
+        "action": "跳跃攀爬",
+        "actionEn": "Jump"
+      }
+    ]
+  },
+  {
+    "id": "hogwarts-royale",
+    "slug": "hogwarts-royale-magic-battle",
+    "title": "Hogwarts Royale · 霍格沃茨魔法吃鸡大逃杀",
+    "titleEn": "Hogwarts Royale: Magic Battle Royale",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "魔法对决",
+      "吃鸡大逃杀",
+      "法术连击",
+      "3D对战"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Magic Duel",
+      "Battle Royale",
+      "Spell Combos",
+      "3D Arena"
+    ],
+    "rating": 4.9,
+    "ratingCount": 38900,
+    "plays": "375.0K",
+    "playsNum": 375000,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "mattshumer_ (Claude Fable 5.2)",
+    "developerEn": "mattshumer_ (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://www.spawn.co/@mattshumer/hogwarts-royale",
+    "originalUrl": "https://x.com/mattshumer_/status/2119872098306810226",
+    "githubUrl": "https://x.com/mattshumer_",
+    "cover": "assets/covers/hogwarts-royale.webp",
+    "gif": "assets/gifs/hogwarts-royale.gif",
+    "summary": "手持魔杖的 3D 大逃杀竞技场：毒圈不断收缩，收集全图上古魔咒与飞天扫帚，决战至最后一巫师！",
+    "summaryEn": "Wand-slinging battle royale in a mystical castle courtyard: shrinking ring, ancient spell pickups, and broomstick maneuvers.",
+    "description": "结合了吃鸡竞技与魔法对决的快节奏 3D 动作游戏。玩家置身于程序化生成的古堡庭院中，躲避蔓延的魔法风暴毒圈，通过发射闪电、火焰弹、防护盾以及幻影移形消灭竞争对手，夺得魁首。",
+    "descriptionEn": "Fast-paced magical battle royale created by Claude Fable 5.2. Outrun the enclosing magical mist storm, loot high-tier wands and ancient incantations, and unleash elemental spell combos to be the last wizard standing.",
+    "features": [
+      "绚丽的粒子法术弹道：烈焰咒、寒冰爆破与除你武器",
+      "经典吃鸡缩圈机制与高低差古堡立体地图",
+      "幻影移形瞬间位移与护甲咒防御机制",
+      "全 3D 角色动作与魔杖法术手势反馈"
+    ],
+    "featuresEn": [
+      "Brilliant elemental projectile effects: Incendio, Glacius, and Expelliarmus",
+      "Shrinking ring zone mechanic with vertical multi-tier castle layout",
+      "Apparition blink teleport and Protego shield deflection",
+      "Full 3D character kinematics with responsive wand aiming"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "战术走位与闪避",
+        "actionEn": "Movement"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "挥动魔杖发射主攻魔咒",
+        "actionEn": "Cast Attack Spell"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "撑开魔力护盾防御反弹",
+        "actionEn": "Shield (Protego)"
+      },
+      {
+        "key": "数字 1-4",
+        "action": "切换不同的核心魔法技能",
+        "actionEn": "Switch Spells"
+      },
+      {
+        "key": "Shift 键",
+        "action": "幻影移形短距离瞬移",
+        "actionEn": "Blink Teleport"
+      }
+    ]
+  },
+  {
+    "id": "portals-worlds",
+    "slug": "portals-endless-worlds",
+    "title": "Portals: Endless Worlds · 传送门无尽异界穿梭",
+    "titleEn": "Portals: Endless Worlds",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "多维传送门",
+      "解谜探索",
+      "无限世界",
+      "Ethan Mollick"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Portals",
+      "Puzzle Exploration",
+      "Multiverse",
+      "Ethan Mollick"
+    ],
+    "rating": 4.8,
+    "ratingCount": 24300,
+    "plays": "228.6K",
+    "playsNum": 228600,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "emollick (Claude Fable 5.2)",
+    "developerEn": "emollick (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://portals-endless-worlds.netlify.app/",
+    "originalUrl": "https://x.com/emollick/status/2119918307457577163",
+    "githubUrl": "https://x.com/emollick",
+    "cover": "assets/covers/portals-worlds.webp",
+    "gif": "assets/gifs/portals-worlds.gif",
+    "summary": "由沃顿商学院教授 Ethan Mollick 提示词促成：步入一道道传送门，无缝跨越数十个奇幻的程序化生成异维度。",
+    "summaryEn": "Prompted by Prof. Ethan Mollick: step through glowing portals to seamlessly traverse infinite procedural dimensions.",
+    "description": "探索跨维度宇宙的沉浸式解谜漫游游戏。每一个传送门后方都隐藏着一个拥有不同几何法则、奇异重力和梦幻天空盒的异世界，玩家在各个世界之间寻找时空锚点并解开古老机关。",
+    "descriptionEn": "An atmospheric dimensional exploration puzzle crafted by Fable 5.2. Each portal door opens directly into an exotic biome with unique geometry, gravity constants, and surreal skyboxes.",
+    "features": [
+      "无缝非欧几里得传送门视锥渲染技术",
+      "数十种差异极大的程序化生态宇宙空间",
+      "结合环境重力变化的解谜机制",
+      "空灵的程序化合成氛围音乐"
+    ],
+    "featuresEn": [
+      "Seamless non-Euclidean portal view rendering in pure WebGL",
+      "Dozens of contrasting procedural dimensional realms",
+      "Gravity-shifting environmental spatial puzzles",
+      "Ethereal procedural ambient audio score"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "角色漫步移动",
+        "actionEn": "Movement"
+      },
+      {
+        "key": "鼠标",
+        "action": "转动视线观察传送门内外",
+        "actionEn": "Look View"
+      },
+      {
+        "key": "E 键",
+        "action": "激活时空锚点与机关交互",
+        "actionEn": "Activate Portal Anchor"
+      },
+      {
+        "key": "空格 Space",
+        "action": "失重跳跃与漂浮",
+        "actionEn": "Float Jump"
+      }
+    ]
+  },
+  {
+    "id": "scooby-reverse",
+    "slug": "i-would-have-gotten-away",
+    "title": "I Would Have Gotten Away · 逆向解谜捉迷藏侦探",
+    "titleEn": "I Would Have Gotten Away With It",
+    "category": "休闲治愈",
+    "categoryEn": "Casual & Relaxing",
+    "categoryId": "casual",
+    "tags": [
+      "Claude Fable 5.2",
+      "逆向解谜",
+      "潜行伪装",
+      "美式卡通",
+      "幽默逃脱"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Reverse Mystery",
+      "Stealth",
+      "Cartoon Humor",
+      "Ethan Mollick"
+    ],
+    "rating": 4.7,
+    "ratingCount": 16500,
+    "plays": "152.0K",
+    "playsNum": 152000,
+    "featured": false,
+    "hot": false,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "emollick (Claude Fable 5.2)",
+    "developerEn": "emollick (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://i-would-have-gotten-away-with-it.netlify.app/",
+    "originalUrl": "https://x.com/emollick/status/2119876449494540554",
+    "githubUrl": "https://x.com/emollick",
+    "cover": "assets/covers/scooby-reverse.webp",
+    "gif": "assets/gifs/scooby-reverse.gif",
+    "summary": "经典史酷比侦探剧的反转：这次你扮演幽灵反派，必须在爱管闲事的小分队揭露真相前精心布置机关！",
+    "summaryEn": "Scooby-Doo mystery turned upside down: play the haunted villain and orchestrate traps before the sleuths unmask you!",
+    "description": "充满幽默感的美式复古卡通逆向潜行策略游戏。玩家扮演假扮幽灵的大亨，在古堡各处布置升降滑索、干冰烟雾与机械怪物，吓跑侦探小队，并在被当场抓获前成功逃之夭夭。",
+    "descriptionEn": "A clever comic stealth strategy game by Ethan Mollick & Fable 5.2. Flipping classic cartoon tropes, you play the masked culprit rigging traps, creating fake paranormal hoaxes, and dodging meddling kids.",
+    "features": [
+      "颠覆传统的反派视角策略布防玩法",
+      "经典美式复古卡通艺术风格与幽默音效",
+      "丰富的机关道具：投影仪、滑轮索道与假门",
+      "充满变数的侦探 AI 行为树巡逻逻辑"
+    ],
+    "featuresEn": [
+      "Fresh villain-perspective strategic stealth gameplay",
+      "Retro Saturday-morning cartoon visual aesthetic and comic SFX",
+      "Rich inventory of hoax tools: holograms, zip-lines, and trapdoors",
+      "Dynamic AI behavior trees guiding the meddling detectives"
+    ],
+    "controls": [
+      {
+        "key": "鼠标点击 / 拖拽",
+        "action": "在房间布设惊吓陷阱与道具",
+        "actionEn": "Place Traps"
+      },
+      {
+        "key": "W A S D / 方向键",
+        "action": "幽灵反派悄悄潜行",
+        "actionEn": "Sneak Move"
+      },
+      {
+        "key": "空格 Space",
+        "action": "手动拉动电闸触发连环恐慌",
+        "actionEn": "Trigger Scare"
+      }
+    ]
+  },
+  {
+    "id": "what-water-keeps",
+    "slug": "what-the-water-keeps",
+    "title": "What the Water Keeps · 水之秘境深渊叙事冒险",
+    "titleEn": "What the Water Keeps: Deep Narrative",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "唯美叙事",
+      "水下探秘",
+      "互动小说",
+      "深海氛围"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Underwater",
+      "Poetic Narrative",
+      "Atmospheric",
+      "Kevin Ngo"
+    ],
+    "rating": 4.9,
+    "ratingCount": 27800,
+    "plays": "260.4K",
+    "playsNum": 260400,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "kevin_t_ngo (Claude Fable 5.2)",
+    "developerEn": "kevin_t_ngo (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://what-the-water-keeps.vercel.app/",
+    "originalUrl": "https://x.com/kevin_t_ngo/status/2119868968307695818",
+    "githubUrl": "https://x.com/kevin_t_ngo",
+    "cover": "assets/covers/what-water-keeps.webp",
+    "gif": "assets/gifs/what-water-keeps.gif",
+    "summary": "Kevin Ngo 潜心打造的深水互动艺术之作：在幽暗水域潜行，打捞沉睡在深渊之底的记忆回响。",
+    "summaryEn": "A haunting poetic dive created by Kevin Ngo: delve into murky ocean depths to dredge up buried memories.",
+    "description": "极具电影感的水下探险叙事游戏。游戏采用独特的深海水色渲染与流动光斑滤镜，伴随柔和的潜水呼吸声，玩家操控探测仪器在水下残骸间搜寻遗落的录音带与历史碎片，揭开一段隐秘过往。",
+    "descriptionEn": "A cinematic underwater interactive journey crafted by Kevin Ngo through Claude Fable 5.2. Features procedural fluid light refraction, submerged hydrophone audio, and an evocative mystery narrative.",
+    "features": [
+      "极致唯美的水下焦散与深海悬浮微粒渲染",
+      "电影级环境水声设计与沉浸式动态音景",
+      "深度剧情互动与多重隐喻结局分支",
+      "细腻的潜水声呐与打捞工具交互"
+    ],
+    "featuresEn": [
+      "Stunning underwater caustic refraction and suspended marine snow particles",
+      "Binaural underwater hydrophone soundscapes and dynamic audio",
+      "Evocative branched narrative with multiple thematic conclusions",
+      "Tactile sonar ping and underwater salvage mechanics"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "潜水艇 / 潜水员水下平滑游动",
+        "actionEn": "Swim / Propel"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "发射声呐脉冲扫描水底残骸",
+        "actionEn": "Sonar Pulse"
+      },
+      {
+        "key": "E 键",
+        "action": "调查沉船遗物并倾听回忆",
+        "actionEn": "Inspect Relic"
+      },
+      {
+        "key": "空格 / Shift",
+        "action": "上浮浮潜 / 下潜深海",
+        "actionEn": "Ascend / Descend"
+      }
+    ]
+  },
+  {
+    "id": "turbo-tails",
+    "slug": "turbo-tails-arcade-racer",
+    "title": "Turbo Tails · 涡轮尾迹狂飙竞速",
+    "titleEn": "Turbo Tails Arcade Racer",
+    "category": "竞速漂移",
+    "categoryEn": "Racing & Speed",
+    "categoryId": "racing",
+    "tags": [
+      "Claude Fable 5.2",
+      "街机赛车",
+      "涡轮喷射",
+      "极速漂移",
+      "3D赛道"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Arcade Racer",
+      "Turbo Boost",
+      "Drifting",
+      "Peter Yang"
+    ],
+    "rating": 4.8,
+    "ratingCount": 31200,
+    "plays": "298.5K",
+    "playsNum": 298500,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "petergyang (Claude Fable 5.2)",
+    "developerEn": "petergyang (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://turbo-tails.vercel.app",
+    "originalUrl": "https://x.com/petergyang/status/2119901658394358005",
+    "githubUrl": "https://x.com/petergyang",
+    "cover": "assets/covers/turbo-tails.webp",
+    "gif": "assets/gifs/turbo-tails.gif",
+    "summary": "由 Peter Yang 制作的超爽快 3D 街机竞速：喷射彩色粒子尾迹，在弯道连续极限漂移蓄满氮气！",
+    "summaryEn": "High-octane arcade 3D racer by Peter Yang: leave vibrant particle trails and chain corner drifts for nitrous.",
+    "description": "极具速度感的 3D 原生 WebGL 赛车游戏。继承了经典世嘉街机风格的狂暴驾驶手感，车轮带有抓地力滑移曲线与粒子胎痕，在城市夜景高速公路与山路大回环中争夺极速第一名。",
+    "descriptionEn": "A thrill-fueled 3D browser racer created by Peter Yang with Claude Fable 5.2. Channelling vintage Sega arcade physics, complete with drift slip angles, tire smoke particles, and explosive nitrous boosts.",
+    "features": [
+      "街机级爽快漂移力学与多段氮气喷射机制",
+      "绚丽的霓虹光带尾迹与动态速度线特效",
+      "程序化生成的立交桥与发卡弯竞速赛道",
+      "多款性能各异的酷炫街车随心驾驭"
+    ],
+    "featuresEn": [
+      "Arcade-calibrated drift handling with tiered nitro boost gauges",
+      "Luminescent neon tail-light ribbons and dynamic motion blur lines",
+      "Procedural overpass highways and hair-raising hairpin loops",
+      "Multiple tuned sports cars with responsive suspension kinematics"
+    ],
+    "controls": [
+      {
+        "key": "W / ↑",
+        "action": "油门全开向前狂飙",
+        "actionEn": "Throttle Accelerate"
+      },
+      {
+        "key": "S / ↓",
+        "action": "刹车制动与倒车",
+        "actionEn": "Brake / Reverse"
+      },
+      {
+        "key": "A D / ← →",
+        "action": "左右转向切入弯心",
+        "actionEn": "Steer Left / Right"
+      },
+      {
+        "key": "空格 Space",
+        "action": "拉动手刹进入极限漂移",
+        "actionEn": "Handbrake Drift"
+      },
+      {
+        "key": "Shift 键",
+        "action": "引爆全油门涡轮氮气",
+        "actionEn": "Nitrous Boost"
+      }
+    ]
+  },
+  {
+    "id": "rug-racer",
+    "slug": "childhood-rug-racer",
+    "title": "Childhood Rug Racer · 地毯童年小汽车怀旧竞速",
+    "titleEn": "Childhood Rug Racer",
+    "category": "竞速漂移",
+    "categoryEn": "Racing & Speed",
+    "categoryId": "racing",
+    "tags": [
+      "Claude Fable 5.2",
+      "童年回忆",
+      "玩具汽车",
+      "城市地毯",
+      "物理模拟"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Nostalgia",
+      "Toy Car",
+      "Play Mat",
+      "NoClipEpe"
+    ],
+    "rating": 4.8,
+    "ratingCount": 21500,
+    "plays": "205.3K",
+    "playsNum": 205300,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "noclipepe (Claude Fable 5.2)",
+    "developerEn": "noclipepe (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://noclipepe.pages.dev/rug/",
+    "originalUrl": "https://x.com/noclipepe/status/2119728047754547326",
+    "githubUrl": "https://x.com/noclipepe",
+    "cover": "assets/covers/rug-racer.webp",
+    "gif": "assets/gifs/rug-racer.gif",
+    "summary": "让全世界网友瞬间泪目的创意之作：在小时候房间里印着道路和房屋的经典交通游戏地毯上开车！",
+    "summaryEn": "Whimsical nostalgia trip: pilot micro toy cars directly across the iconic childhood city traffic play rug!",
+    "description": "Noclipepe 运用 Fable 5.2 唤醒所有人童年记忆的温馨作品。将小时候几乎人手一张的经典儿童交通道路游戏地毯高精建模为 3D 赛道，操作小玩具车在印有医院、警察局和小桥的毛绒地毯上欢快奔跑。",
+    "descriptionEn": "A heartwarming nostalgic hit created by Noclipepe via Fable 5.2. Faithfully reconstructs the legendary childhood city-street play mat into an interactive micro-scale 3D playground with delightful toy car physics.",
+    "features": [
+      "完美还原经典儿童房城市道路图案地毯高保真材质",
+      "逼真有趣的微型合金玩具小车弹簧悬挂物理",
+      "各种地毯上的玩具方块障碍物与斜坡飞车",
+      "充满童趣的玩具喇叭鸣笛音效"
+    ],
+    "featuresEn": [
+      "Faithful micro-scale textile shader reproducing the iconic city road rug",
+      "Playful springy toy vehicle suspension and bouncing dynamics",
+      "Toy brick ramps, obstacle blocks and carpet folds to leap across",
+      "Charming toy car horn honks and rolling carpet SFX"
+    ],
+    "controls": [
+      {
+        "key": "W A S D / 方向键",
+        "action": "驾驶小玩具车在道路上行驶",
+        "actionEn": "Drive Toy Car"
+      },
+      {
+        "key": "空格 Space",
+        "action": "按响可爱的玩具喇叭",
+        "actionEn": "Honk Horn"
+      },
+      {
+        "key": "R 键",
+        "action": "车辆翻转时立即扶正复位",
+        "actionEn": "Reset Position"
+      }
+    ]
+  },
+  {
+    "id": "rambo-dino",
+    "slug": "rambo-dino-2d-action",
+    "title": "Rambo Dino · 兰博恐龙热血横版街机扫射",
+    "titleEn": "Rambo Dino 2D Action",
+    "category": "经典街机",
+    "categoryEn": "Arcade Classics",
+    "categoryId": "arcade",
+    "tags": [
+      "Claude Fable 5.2",
+      "横版过关",
+      "热血突击",
+      "硬派像素",
+      "暴爽射击"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Side Scroller",
+      "Run and Gun",
+      "Pixel Art",
+      "NoClipEpe"
+    ],
+    "rating": 4.8,
+    "ratingCount": 18700,
+    "plays": "176.4K",
+    "playsNum": 176400,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "noclipepe (Claude Fable 5.2)",
+    "developerEn": "noclipepe (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://noclipepe.pages.dev/dino",
+    "originalUrl": "https://x.com/noclipepe/status/2119927838321328577",
+    "githubUrl": "https://x.com/noclipepe",
+    "cover": "assets/covers/rambo-dino.webp",
+    "gif": "assets/gifs/rambo-dino.gif",
+    "summary": "一只身绑红色头巾、手提重型加特林机枪的霸王龙横扫战场，重温合金弹头般的爽快突突突！",
+    "summaryEn": "A red-bandana T-Rex packing a heavy Gatling gun: relive the classic Metal Slug arcade run-and-gun ecstasy!",
+    "description": "由 Noclipepe 借助 Fable 5.2 打造的硬派横版射击动作游戏。玩家扮演武装到牙齿的恐龙战士兰博，在枪林弹雨中跳跃躲闪，发射火箭筒与全屏弹幕，将敌方机械军团碾成废铁。",
+    "descriptionEn": "An explosive retro run-and-gun side-scroller created by Noclipepe with Claude Fable 5.2. Take command of an unstoppable heavily-armed Rambo dinosaur blazing through swarms of mechanical enemies.",
+    "features": [
+      "经典合金弹头式的硬核横版平台跳跃射击",
+      "加特林重机枪、散弹枪与核能火箭筒丰富武器库",
+      "极具打击感的像素爆炸与击飞物理反馈",
+      "动感十足的 16-bit 街机电音配乐"
+    ],
+    "featuresEn": [
+      "Pure Metal-Slug-inspired 2D run-and-gun combat mechanics",
+      "Arsenal featuring Gatlings, spread shotguns, and tactical RPGs",
+      "Juicy pixel particle explosions and screen shake impact",
+      "High-energy 16-bit chiptune arcade soundtrack"
+    ],
+    "controls": [
+      {
+        "key": "A D / ← →",
+        "action": "霸王龙左右突进奔跑",
+        "actionEn": "Run Left / Right"
+      },
+      {
+        "key": "W / ↑",
+        "action": "向上瞄准射击 / 平台跳跃",
+        "actionEn": "Aim Up / Jump"
+      },
+      {
+        "key": "J / 空格",
+        "action": "重机枪疯狂倾泻弹药",
+        "actionEn": "Fire Weapon"
+      },
+      {
+        "key": "K 键",
+        "action": "投掷高爆破片手雷",
+        "actionEn": "Toss Grenade"
+      }
+    ]
+  },
+  {
+    "id": "frontline-warfare",
+    "slug": "frontline-warfare-deathmatch",
+    "title": "Frontline Warfare · 前线战争殊死对决",
+    "titleEn": "Frontline Warfare Deathmatch",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "战地对抗",
+      "掩体突击",
+      "团队死斗",
+      "3D射击"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Battlefield",
+      "Cover Shooter",
+      "Team Deathmatch",
+      "Robot"
+    ],
+    "rating": 4.8,
+    "ratingCount": 26400,
+    "plays": "254.0K",
+    "playsNum": 254000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "alightinastorm (Claude Fable 5.2)",
+    "developerEn": "alightinastorm (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://spawn.co/@robot/frontline-warfare-deathmatch",
+    "originalUrl": "https://x.com/alightinastorm/status/2120020469487440210",
+    "githubUrl": "https://x.com/alightinastorm",
+    "cover": "assets/covers/frontline-warfare.webp",
+    "gif": "assets/gifs/frontline-warfare.gif",
+    "summary": "沉浸式 3D 团队死斗对抗：在饱受炮火洗礼的工业阵地穿梭，依靠战术掩体与精准点射击退敌军。",
+    "summaryEn": "Tactical 3D team deathmatch arena: maneuver through war-torn industrial frontlines using cover and precise marksmanship.",
+    "description": "由 alightinastorm 创作的拟真军事风格网页第一人称对抗射击。具有完善的掩体规避系统、兵种射程判定与后坐力抑制机制，带给玩家纯粹的战场交火压迫感。",
+    "descriptionEn": "A gritty military-style FPS built by alightinastorm using Claude Fable 5.2. Delivers authentic combat adrenaline with physical bullet ballistics, dynamic cover mechanics, and intelligent tactical AI squads.",
+    "features": [
+      "真实的弹道下坠计算与精确头部爆头伤害倍率",
+      "复杂掩体交互系统与战术滑铲位移",
+      "动态战况计分板与智能人机战术小队",
+      "多武器切换：突击步枪、战术手枪与狙击长枪"
+    ],
+    "featuresEn": [
+      "Realistic ballistic drop and lethal headshot damage multipliers",
+      "Fluid cover mounting and tactical crouch slide mechanics",
+      "Dynamic battle scoreboard with intelligent squad combat AI",
+      "Multi-weapon loadouts: assault rifles, sidearms, and marksman rifles"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "战术走位与阵地转移",
+        "actionEn": "Tactical Movement"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "准星精确指向",
+        "actionEn": "Reticle Aiming"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "开火射击",
+        "actionEn": "Fire Weapon"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "机瞄精确瞄准",
+        "actionEn": "ADS View"
+      },
+      {
+        "key": "R 键",
+        "action": "更换战术弹匣",
+        "actionEn": "Reload"
+      },
+      {
+        "key": "C 键",
+        "action": "下蹲寻找沙袋掩体",
+        "actionEn": "Crouch behind cover"
+      }
+    ]
+  },
+  {
+    "id": "feed-backrooms",
+    "slug": "feed-the-backrooms-horror",
+    "title": "Feed the Backrooms · 喂养后室恐怖逃脱",
+    "titleEn": "Feed the Backrooms",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "后室迷宫",
+      "恐怖求生",
+      "实体追逐",
+      "手电探险"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Backrooms",
+      "Horror Survival",
+      "Liminal Spaces",
+      "LexnLin"
+    ],
+    "rating": 4.8,
+    "ratingCount": 29400,
+    "plays": "281.0K",
+    "playsNum": 281000,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "LexnLin (Claude Fable 5.2)",
+    "developerEn": "LexnLin (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://feed-backrooms.vercel.app",
+    "originalUrl": "https://x.com/LexnLin/status/2119966127149429093",
+    "githubUrl": "https://x.com/LexnLin",
+    "cover": "assets/covers/feed-backrooms.webp",
+    "gif": "assets/gifs/feed-backrooms.gif",
+    "summary": "迷失在无限泛黄墙纸与日光灯蜂鸣声的'后室'中，收集祭品喂养游荡的潜伏实体，寻找逃出生天的出口！",
+    "summaryEn": "Lost in the infinite mono-yellow hallways of the Backrooms: collect sacrifices to appease entities and find the exit!",
+    "description": "LexnLin 借助 Claude Fable 5.2 精准复刻后室（The Backrooms）精神内核的恐怖生存解谜游戏。潮湿的地毯、闪烁滋滋作响的荧光灯、拐角处突然响起的未知脚步声，为你带来身临其境的心理恐惧体验。",
+    "descriptionEn": "A chilling survival horror experience by LexnLin via Claude Fable 5.2. Recreates the iconic liminal dread of The Backrooms: buzzing fluorescent tubes, damp carpets, and terrifying spatial entities tracking your scent.",
+    "features": [
+      "经典 Level 0 无限黄色迷宫程序化生成地图",
+      "基于音源传播的实体感知与追踪 AI",
+      "有限电量手电筒与生存理智值（Sanity）管理",
+      "高压环境下的潜行搜集与献祭解密机制"
+    ],
+    "featuresEn": [
+      "Infinite Level 0 mono-yellow procedural labyrinth architecture",
+      "Acoustic hearing perception and tracking algorithms for entities",
+      "Flickering battery flashlight and sanity management meter",
+      "High-tension stealth scavenging and sacrifice altar progression"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "轻手轻脚在走廊走动",
+        "actionEn": "Walk Carefully"
+      },
+      {
+        "key": "鼠标",
+        "action": "晃动手电筒探照四周",
+        "actionEn": "Flashlight Aim"
+      },
+      {
+        "key": "F 键",
+        "action": "开关手电筒以节约电量",
+        "actionEn": "Toggle Flashlight"
+      },
+      {
+        "key": "E 键",
+        "action": "捡起地面补给品或献祭物品",
+        "actionEn": "Scavenge / Feed"
+      },
+      {
+        "key": "Shift 键",
+        "action": "听到异响时全力冲刺逃跑",
+        "actionEn": "Panic Sprint"
+      }
+    ]
+  },
+  {
+    "id": "cloud-stunt-3d",
+    "slug": "cloud-stunt-3d",
+    "title": "Cloud Stunt 3D · 云端特技飞行竞速",
+    "titleEn": "Cloud Stunt 3D",
+    "category": "竞速漂移",
+    "categoryEn": "Racing & Speed",
+    "categoryId": "racing",
+    "tags": [
+      "Claude Fable 5.2",
+      "特技飞行",
+      "云海空战",
+      "穿越光环",
+      "3D飞行模拟"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Aerobatics",
+      "Flight Sim",
+      "Cloudscape",
+      "jev_chat"
+    ],
+    "rating": 4.8,
+    "ratingCount": 20400,
+    "plays": "195.2K",
+    "playsNum": 195200,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "jev_chat (Claude Fable 5.2)",
+    "developerEn": "jev_chat (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://finderchangchang.github.io/cloud-stunt-3d/",
+    "originalUrl": "https://x.com/jev_chat/status/2120015641151426838",
+    "githubUrl": "https://x.com/jev_chat",
+    "cover": "assets/covers/cloud-stunt-3d.webp",
+    "gif": "assets/gifs/cloud-stunt-3d.gif",
+    "summary": "驾驶高机动特技单翼机在壮阔云海穿行：穿越浮空光环，完成桶滚与失速俯冲挑战极速纪录！",
+    "summaryEn": "Pilot an agile stunt monoplane through breathtaking cloudscapes: thread mid-air rings and pull barrel rolls for records!",
+    "description": "极具自由度的 3D 特技飞行模拟游戏。借助原生 WebGL 的体积云雾着色器，玩家在蓝天白云与悬浮群岛之间翱翔，拥有完整的 6 自由度空气动力学俯仰、滚转与偏航操控手感。",
+    "descriptionEn": "An exhilarating 3D flight aerobatics game built with Claude Fable 5.2. Features 6DOF aerodynamic physics, volumetric cloud shaders, floating sky island checkpoints, and responsive throttle control.",
+    "features": [
+      "纯 WebGL 体积云海光影着色与高空穿云效果",
+      "逼真的空气动力学升力、失速与重力过载手感",
+      "连贯的空中穿越光环计时赛与高难度特技积分",
+      "平滑的第三人称飞行跟随机位与驾驶舱内视角切换"
+    ],
+    "featuresEn": [
+      "Pure WebGL volumetric cloudscape shaders with dynamic sky scattering",
+      "Aerodynamic lift, drag, stall limits, and G-force flight kinematics",
+      "Time-attack ring-threading circuits and acrobatic stunt trick combos",
+      "Seamless toggle between chase chase-cam and cockpit view"
+    ],
+    "controls": [
+      {
+        "key": "W / S",
+        "action": "机头下俯俯冲 / 上仰爬升",
+        "actionEn": "Pitch Down / Up"
+      },
+      {
+        "key": "A / D",
+        "action": "机翼左右副翼倾斜滚转",
+        "actionEn": "Roll Left / Right"
+      },
+      {
+        "key": "← / →",
+        "action": "方向舵偏航调整航向",
+        "actionEn": "Rudder Yaw"
+      },
+      {
+        "key": "空格 Space",
+        "action": "加力推力全开加速",
+        "actionEn": "Full Boost"
+      },
+      {
+        "key": "C 键",
+        "action": "切换座舱/机尾摄影机视角",
+        "actionEn": "Toggle Camera"
+      }
+    ]
+  },
+  {
+    "id": "worm-rider",
+    "slug": "worm-rider-dune-odyssey",
+    "title": "Worm Rider · 沙虫骑手沙漠冒险",
+    "titleEn": "Worm Rider: Dune Odyssey",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "沙丘科幻",
+      "巨型沙虫",
+      "沙漠狂奔",
+      "震撼视觉"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Dune Inspired",
+      "Sandworm",
+      "Desert Odyssey",
+      "AmirMushich"
+    ],
+    "rating": 4.9,
+    "ratingCount": 36700,
+    "plays": "348.0K",
+    "playsNum": 348000,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "AmirMushich (Claude Fable 5.2)",
+    "developerEn": "AmirMushich (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://github.com/amirmushichge/worm-rider",
+    "originalUrl": "https://x.com/AmirMushich/status/2119937977426338283",
+    "githubUrl": "https://x.com/AmirMushich",
+    "cover": "assets/covers/worm-rider.webp",
+    "gif": "assets/gifs/worm-rider.gif",
+    "summary": "致敬《沙丘》的史诗级沙漠狂飙：召唤并驾驭百米长的远古巨型沙虫，在漫天黄沙中穿梭征服荒原！",
+    "summaryEn": "Epic desert odyssey inspired by Dune: summon and ride a hundred-meter ancient sandworm across roaring sand seas!",
+    "description": "AmirMushich 借助 Fable 5.2 实现的视觉奇迹。通过反向运动学（IK）实时模拟多节沙虫身躯在沙丘起伏中的波浪形穿梭，扬起漫天沙尘，震撼的沙暴粒子与震耳欲聋的地底轰鸣令人热血沸腾。",
+    "descriptionEn": "A breathtaking desert riding simulation crafted by AmirMushich using Fable 5.2. Features procedural multi-segment inverse kinematics (IK) animating a massive sandworm cresting sand dunes amid blinding dust storms.",
+    "features": [
+      "程序化多节段身体反向运动学（IK）动态摆动",
+      "浩瀚无垠的流体沙丘物理与狂暴沙暴粒子系统",
+      "驾驭钩爪控制沙虫转向与破沙飞跃",
+      "震撼的 WebAudio 低频地底生物轰鸣声效"
+    ],
+    "featuresEn": [
+      "Procedural multi-segmented inverse kinematics (IK) spine animation",
+      "Endless desert dunes with real-time fluid particle sandstorms",
+      "Maker hooks steering mechanics: breach sand dunes and dive deep",
+      "Deep sub-bass synthesized earth tremor acoustics"
+    ],
+    "controls": [
+      {
+        "key": "A / D",
+        "action": "拉动左/右侧挽具引导沙虫急转弯",
+        "actionEn": "Steer Left / Right"
+      },
+      {
+        "key": "W / S",
+        "action": "策动沙虫极速破沙冲刺 / 潜入沙底",
+        "actionEn": "Surge / Submerge"
+      },
+      {
+        "key": "空格 Space",
+        "action": "借力沙丘腾空飞跃沙海",
+        "actionEn": "Sandwave Leap"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "从骑手高空视角俯瞰荒漠",
+        "actionEn": "Pan Horizon Camera"
+      }
+    ]
+  },
+  {
+    "id": "roost-moto",
+    "slug": "roost-dirt-bike-stunt",
+    "title": "Roost · 泥地越野摩托冲刺",
+    "titleEn": "Roost Dirt Bike Stunt",
+    "category": "竞速漂移",
+    "categoryEn": "Racing & Speed",
+    "categoryId": "racing",
+    "tags": [
+      "Claude Fable 5.2",
+      "越野摩托",
+      "泥泞赛道",
+      "空中特技",
+      "物理重力"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Motocross",
+      "Dirt Bike",
+      "Physics Stunt",
+      "Tejas"
+    ],
+    "rating": 4.8,
+    "ratingCount": 17200,
+    "plays": "163.5K",
+    "playsNum": 163500,
+    "featured": false,
+    "hot": false,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "tejas3732 (Claude Fable 5.2)",
+    "developerEn": "tejas3732 (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://claude.ai/artifact/DLnFodkTwvawCNwurDmSZK?sk=5N6PtC07f1niB7h3I6clZQ",
+    "originalUrl": "https://x.com/tejas3732/status/2120091513657139549",
+    "githubUrl": "https://x.com/tejas3732",
+    "cover": "assets/covers/roost-moto.webp",
+    "gif": "assets/gifs/roost-moto.gif",
+    "summary": "轰鸣的二冲程引擎与泥浆四溅的越野赛道：驾驭轻量级越野摩托，在起伏土坡完成超高难度的腾空翻转！",
+    "summaryEn": "Screaming two-stroke engines and roosting mud: control a lightweight dirt bike across rugged dirt jumps and air flips!",
+    "description": "极具挑战性的 3D 物理越野摩托特技游戏。物理引擎真实计算了前后避震器的压缩回弹阻尼与骑手重心转移，在泥泞起伏的越野赛道上飞驰，稍有不慎便会车翻人仰。",
+    "descriptionEn": "A physics-intensive motocross trial game crafted by Tejas with Claude Fable 5.2. Accurately simulates dual-suspension dampening, rider weight transfer, mud roost spray, and high-flying aerial flips.",
+    "features": [
+      "独立前后轮悬挂弹簧物理与地面附着力模拟",
+      "空中姿态重心微调与 360 度前后空翻特技",
+      "飞溅泥土颗粒与泥泞抓地痕迹实时渲染",
+      "狂暴逼真的单缸摩托引擎排气声浪"
+    ],
+    "featuresEn": [
+      "Independent front/rear suspension spring dampening and tire friction",
+      "Mid-air rider center-of-mass pitch control for 360 front/backflips",
+      "Roost particle spray and dynamic mud groove surface deformation",
+      "Raw high-revving 2-stroke exhaust audio simulation"
+    ],
+    "controls": [
+      {
+        "key": "W / ↑",
+        "action": "大拧油门向前爆冲",
+        "actionEn": "Throttle Forward"
+      },
+      {
+        "key": "S / ↓",
+        "action": "重刹后轮防止冲出赛道",
+        "actionEn": "Rear Brake"
+      },
+      {
+        "key": "A / D / ← →",
+        "action": "空中前后倾斜调整骑手重心",
+        "actionEn": "Lean Forward / Backward"
+      },
+      {
+        "key": "空格 Space",
+        "action": "弹射离合器暴力起步",
+        "actionEn": "Clutch Dump Launch"
+      }
+    ]
+  },
+  {
+    "id": "stray-cat",
+    "slug": "stray-cat-city-sim",
+    "title": "Stray Cat · 流浪猫城市模拟",
+    "titleEn": "Stray Cat City Simulator",
+    "category": "休闲治愈",
+    "categoryEn": "Casual & Relaxing",
+    "categoryId": "casual",
+    "tags": [
+      "Claude Fable 5.2",
+      "猫咪模拟",
+      "治愈放松",
+      "城市屋顶",
+      "攀爬穿梭"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Cat Sim",
+      "Relaxing",
+      "Rooftops",
+      "Aimikoda"
+    ],
+    "rating": 4.9,
+    "ratingCount": 33100,
+    "plays": "315.8K",
+    "playsNum": 315800,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "aimikoda (Claude Fable 5.2)",
+    "developerEn": "aimikoda (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://claude.ai/artifact/4nPXUKJjQWNsZEHVNmXXCt",
+    "originalUrl": "https://x.com/aimikoda/status/2120120133712593118",
+    "githubUrl": "https://x.com/aimikoda",
+    "cover": "assets/covers/stray-cat.webp",
+    "gif": "assets/gifs/stray-cat.gif",
+    "summary": "化身一只敏捷小猫穿梭在现代都市的屋顶与小巷：跳上空调外机、打翻桌上水杯，享受悠闲猫生！",
+    "summaryEn": "Become an agile kitten exploring city rooftops and alleys: leap onto AC units, knock cups over, and enjoy feline life!",
+    "description": "Aimikoda 借助 Fable 5.2 带来的温暖治愈之作。你是一只在城市里自由漫步的小橘猫，拥有流畅优雅的四足奔跑动画、抓挠地毯、喵喵叫与高难度墙檐轻功跳跃能力，用猫咪的独特视角重新打量人类世界。",
+    "descriptionEn": "A heartwarming urban adventure created by Aimikoda via Claude Fable 5.2. Roam freely as a nimble ginger cat across balconies, gutters, and back alleys with lifelike paw kinematics, playful mischief, and cozy meows.",
+    "features": [
+      "细腻逼真的猫咪四足步态与空中翻身稳当落地系统",
+      "生动的猫咪专属互动：打翻花盆、蹭路人裤腿、猫爪抓沙发",
+      "垂直立体的都市探索：管道、晾衣架与铁丝网穿行",
+      "一键发出萌力十足的清脆猫叫"
+    ],
+    "featuresEn": [
+      "Graceful procedural quadruped locomotion and feline righting reflex",
+      "Playful cat interactions: swatting mugs, scratching poles, and naps",
+      "Vertical urban exploration spanning drainpipes, canopies, and ledges",
+      "Dedicated button to chirp and meow with procedural pitch variations"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "猫爪轻盈跑动跳跃",
+        "actionEn": "Cat Movement"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "小猫灵动视角环视",
+        "actionEn": "Look Around"
+      },
+      {
+        "key": "空格 Space",
+        "action": "敏捷跃上高墙与空调外机",
+        "actionEn": "Pounce / Jump"
+      },
+      {
+        "key": "E 键",
+        "action": "伸出爪子推下边缘物品",
+        "actionEn": "Swat Object"
+      },
+      {
+        "key": "M 键",
+        "action": "奶声奶气喵喵叫",
+        "actionEn": "Meow"
+      }
+    ]
+  },
+  {
+    "id": "tilt-labyrinth",
+    "slug": "tilt-labyrinth-gravity",
+    "title": "Tilt Labyrinth · 重力倾斜迷宫",
+    "titleEn": "Tilt Labyrinth",
+    "category": "休闲治愈",
+    "categoryEn": "Casual & Relaxing",
+    "categoryId": "casual",
+    "tags": [
+      "Claude Fable 5.2",
+      "重力球",
+      "木制迷宫",
+      "物理碰撞",
+      "巧避陷阱"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Gravity Ball",
+      "Wooden Labyrinth",
+      "Physics Tilt",
+      "Mylifcc"
+    ],
+    "rating": 4.7,
+    "ratingCount": 15400,
+    "plays": "142.0K",
+    "playsNum": 142000,
+    "featured": false,
+    "hot": false,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "mylifcc (Claude Fable 5.2)",
+    "developerEn": "mylifcc (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://blog.silencestar.com/posts/tilt-labyrinth/play/",
+    "originalUrl": "https://x.com/mylifcc/status/2120054646282870910",
+    "githubUrl": "https://x.com/mylifcc",
+    "cover": "assets/covers/tilt-labyrinth.webp",
+    "gif": "assets/gifs/tilt-labyrinth.gif",
+    "summary": "经典物理木盘滚珠桌游重现：倾斜盘面控制钢珠精准避开密密麻麻的深坑陷阱，平稳滚入终点星标！",
+    "summaryEn": "Classic wooden tilt-board puzzle re-engineered: tilt the table to guide a polished steel ball around treacherous pitfalls!",
+    "description": "极具真实质感的 3D 物理平衡解谜小游戏。钢珠在木纹盘面上滑动时拥有真实的重力加速度、壁面弹性碰撞以及令人极度解压的滚珠滚轴音效，考验玩家极具耐心的微操掌控力。",
+    "descriptionEn": "A satisfying, tactile 3D physical marble maze created by Mylifcc with Fable 5.2. Recreates the timeless analog tabletop toy with sub-pixel collision physics, authentic rolling wood rumble, and tricky trap holes.",
+    "features": [
+      "超逼真的刚体动力学与球面滚动摩擦力计算",
+      "精细的清漆原木材质与金属光泽反光着色",
+      "支持鼠标平滑拖拽倾斜与键盘微调双操作模式",
+      "多个精心设计的复杂迷宫关卡挑战"
+    ],
+    "featuresEn": [
+      "Rigid-body mechanics calculating angular velocity and sphere friction",
+      "Detailed varnished mahogany wood and shiny chrome sphere shaders",
+      "Dual control options: analog mouse drag tilt or keyboard micro-adjust",
+      "Dozens of hand-crafted ascending difficulty maze layouts"
+    ],
+    "controls": [
+      {
+        "key": "鼠标拖拽",
+        "action": "按住鼠标平滑倾斜木质迷宫盘面",
+        "actionEn": "Tilt Maze Board"
+      },
+      {
+        "key": "W A S D / 方向键",
+        "action": "精细微调各方向倾角角度",
+        "actionEn": "Nudge Tilt"
+      },
+      {
+        "key": "R 键",
+        "action": "钢珠掉入黑洞时一键重置",
+        "actionEn": "Reset Ball"
+      }
+    ]
+  },
+  {
+    "id": "silicon-seduction",
+    "slug": "silicon-seduction-cyber-rpg",
+    "title": "Silicon Seduction · 硅基诱惑黑客RPG",
+    "titleEn": "Silicon Seduction Cyber RPG",
+    "category": "角色扮演",
+    "categoryEn": "RPG & MOBA",
+    "categoryId": "rpg",
+    "tags": [
+      "Claude Fable 5.2",
+      "赛博朋克",
+      "网络黑客",
+      "分支剧情",
+      "RPG决策"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Cyberpunk",
+      "Hacking RPG",
+      "Branching",
+      "ZryMiller"
+    ],
+    "rating": 4.8,
+    "ratingCount": 21800,
+    "plays": "208.5K",
+    "playsNum": 208500,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "ZryMiller (Claude Fable 5.2)",
+    "developerEn": "ZryMiller (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://silicon-seduction.vercel.app/",
+    "originalUrl": "https://x.com/ZryMiller/status/2119918766691954691",
+    "githubUrl": "https://x.com/ZryMiller",
+    "cover": "assets/covers/silicon-seduction.webp",
+    "gif": "assets/gifs/silicon-seduction.gif",
+    "summary": "霓虹雨夜下的赛博朋克黑客角色扮演：潜入巨型财阀核心数据库，在道德边缘抉择人类与 AI 的未来！",
+    "summaryEn": "Cyberpunk noir role-playing in a neon rain cityscape: breach megacorp mainframes and decide the fate of humanity and AI!",
+    "description": "ZryMiller 构思的赛博朋克叙事 RPG。游戏融合了终端命令行代码入侵小游戏、分支丰富的深层剧情对话以及霓虹交织的暗色调界面，你的每一次选择都在改写地下黑客帝国的权力格局。",
+    "descriptionEn": "A neon-soaked cyberpunk narrative RPG built by ZryMiller via Claude Fable 5.2. Combines interactive terminal hacking mini-games with deep philosophical dialogue trees and fateful moral crossroads.",
+    "features": [
+      "扣人心弦的深度科幻剧情与多结局走向",
+      "终端命令行破解解谜与节点防火墙绕过机制",
+      "高度风格化的赛博朋克霓虹终端视觉美学",
+      "合成波电子乐与机械键盘按键击打音效"
+    ],
+    "featuresEn": [
+      "Gripping speculative sci-fi storyline featuring multiple ending states",
+      "Interactive terminal bypass and cybersecurity puzzle nodes",
+      "Stylized CRT scanline cyber-terminal visual design",
+      "Immersive synthwave soundtrack paired with mechanical key-clatter audio"
+    ],
+    "controls": [
+      {
+        "key": "鼠标点击",
+        "action": "选择剧情对话与行动分支",
+        "actionEn": "Select Dialogue Choice"
+      },
+      {
+        "key": "键盘输入",
+        "action": "在黑客终端输入指令破解密码",
+        "actionEn": "Type Terminal Command"
+      },
+      {
+        "key": "Tab / Esc",
+        "action": "切换背包植入体与系统菜单",
+        "actionEn": "Toggle Cyberware Menu"
+      }
+    ]
+  },
+  {
+    "id": "vippi-fps",
+    "slug": "vippi-neon-arena-shooter",
+    "title": "Vippi · 极简霓虹快节奏射击",
+    "titleEn": "Vippi Neon Arena Shooter",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "几何霓虹",
+      "超快节奏",
+      "弹幕竞技",
+      "空间位移"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Neon Shooter",
+      "Hyper-Fast",
+      "Arena",
+      "Shrit1401"
+    ],
+    "rating": 4.8,
+    "ratingCount": 23600,
+    "plays": "224.0K",
+    "playsNum": 224000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "Shrit1401 (Claude Fable 5.2)",
+    "developerEn": "Shrit1401 (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://vippi.vercel.app/",
+    "originalUrl": "https://x.com/Shrit1401/status/2120060593763926314",
+    "githubUrl": "https://x.com/Shrit1401",
+    "cover": "assets/covers/vippi-fps.webp",
+    "gif": "assets/gifs/vippi-fps.gif",
+    "summary": "灵感源自经典几何战争的快节奏竞技场射击：纯黑背景与璀璨发光霓虹线框，在密集弹幕中瞬间闪避消灭敌人！",
+    "summaryEn": "Hyper-kinetic neon vector arena shooter: glide across a pitch-black abyss blasting geometric invaders with lasers!",
+    "description": "Shrit1401 带来的极速节奏射击体验。游戏采用纯粹的高亮发光线框视觉风格，玩家驾驶灵活的几何飞行器，在四面八方涌来的多边形蜂群中穿梭漂移，连续击杀触发绚丽的粒子冲击波。",
+    "descriptionEn": "A lightning-fast vector arcade shooter by Shrit1401 coded by Claude Fable 5.2. Channels Geometry Wars aesthetics with ultra-responsive inertia physics, screen-clearing pulse bombs, and kaleidoscopic bloom explosions.",
+    "features": [
+      "极其顺滑的 120 FPS 响应手感与惯性滑移漂移",
+      "发光泛光（Bloom）几何线条与绚烂的爆炸粒子",
+      "多样化的几何敌人：追踪菱形、自爆三角与巨型母舰",
+      "节奏强劲的电子合成节拍卡点打击反馈"
+    ],
+    "featuresEn": [
+      "Silky 120 FPS responsive controls with momentum-based sliding drift",
+      "Hyper-saturated vector bloom line graphics and particle shockwaves",
+      "Diverse geometric enemies: homing diamonds, suicide triangles, and motherships",
+      "High-tempo beat-synced hit confirms and acoustic pulse synth"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "飞行器惯性滑行机动",
+        "actionEn": "Glide Movement"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "360 度全向武器瞄准",
+        "actionEn": "Aim Crosshair"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "高速连射脉冲激光",
+        "actionEn": "Rapid Laser Fire"
+      },
+      {
+        "key": "空格 Space",
+        "action": "释放全屏清屏冲击波护盾",
+        "actionEn": "Nova Shockwave Bomb"
+      }
+    ]
+  },
+  {
+    "id": "voice-fighter",
+    "slug": "four-character-fighting-game",
+    "title": "Four-character Fight · 声控格斗四字乱斗",
+    "titleEn": "Four-Character Fighting Game",
+    "category": "经典街机",
+    "categoryEn": "Arcade Classics",
+    "categoryId": "arcade",
+    "tags": [
+      "Claude Fable 5.2",
+      "格斗对战",
+      "街头霸王风",
+      "必杀连招",
+      "声音/按键响应"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Fighter",
+      "Street Fighter",
+      "Combos",
+      "Promoden"
+    ],
+    "rating": 4.8,
+    "ratingCount": 20100,
+    "plays": "189.6K",
+    "playsNum": 189600,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "promodenstudio (Claude Fable 5.2)",
+    "developerEn": "promodenstudio (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://claude.ai/artifact/1QGGhB68jMCjjjeeKtKNUo",
+    "originalUrl": "https://x.com/promodenstudio/status/2120085977079107788",
+    "githubUrl": "https://x.com/promodenstudio",
+    "cover": "assets/covers/voice-fighter.webp",
+    "gif": "assets/gifs/voice-fighter.gif",
+    "summary": "由 Promoden Studio 打造的硬派 2D 街机格斗：四位身怀绝技的武术宗师，支持经典按键搓招与连击必杀！",
+    "summaryEn": "Hard-hitting 2D arcade fighter by Promoden: four legendary masters clashing with combo inputs and super specials!",
+    "description": "致敬街霸与拳皇的复古街机格斗游戏。拥有完整的受击硬直、格挡减伤、浮空追击与下前拳（波动拳）等经典格斗指令输入系统，每一拳每一腿都充满拳拳到肉的打击感。",
+    "descriptionEn": "A classic retro arcade 2D fighting game crafted with Claude Fable 5.2. Boasts authentic frame data, hit-stun timings, block dampening, aerial juggles, and quarter-circle command inputs for signature specials.",
+    "features": [
+      "严谨的格斗判定框（Hitbox/Hurtbox）与连段取消机制",
+      "四大特色迥异的格斗宗师与专属必杀技大招",
+      "经典的波动拳、升龙拳与全屏超必杀炫酷立绘",
+      "支持键盘双人同屏对战与智能 AI 单人街机闯关"
+    ],
+    "featuresEn": [
+      "Authentic fighting game frame data, hitboxes, and special cancels",
+      "Four distinct martial arts characters with unique special move sets",
+      "Iconic Hadouken and Shoryuken command gestures with super portraits",
+      "Supports 2-player local keyboard battle and arcade ladder AI"
+    ],
+    "controls": [
+      {
+        "key": "A / D",
+        "action": "角色前后走位与后退格挡",
+        "actionEn": "Walk / Block"
+      },
+      {
+        "key": "W / S",
+        "action": "跳跃腾空 / 下蹲防守",
+        "actionEn": "Jump / Crouch"
+      },
+      {
+        "key": "J / K",
+        "action": "轻拳 / 重脚攻击",
+        "actionEn": "Light Punch / Heavy Kick"
+      },
+      {
+        "key": "U / I",
+        "action": "特殊技与超必杀释放",
+        "actionEn": "Special / EX Super"
+      }
+    ]
+  },
+  {
+    "id": "vowlorn-rpg",
+    "slug": "vowlorn-fantasy-code-rpg",
+    "title": "VOWLORN · 破誓者全代码奇幻RPG",
+    "titleEn": "VOWLORN Fantasy Code RPG",
+    "category": "角色扮演",
+    "categoryEn": "RPG & MOBA",
+    "categoryId": "rpg",
+    "tags": [
+      "Claude Fable 5.2",
+      "硬核RPG",
+      "纯代码生成",
+      "装备构筑",
+      "暗黑地下城"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Dark Fantasy",
+      "Code RPG",
+      "Builds",
+      "Higgsfield"
+    ],
+    "rating": 4.9,
+    "ratingCount": 44500,
+    "plays": "430.0K",
+    "playsNum": 430000,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "higgsfield_ai (Claude Fable 5.2)",
+    "developerEn": "higgsfield_ai (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://higgsfield.ai/@higgsfield.studio/blogs/fable-5-2-built-this-rpg-from-pure-code-here-s-every-step",
+    "originalUrl": "https://x.com/higgsfield_ai/status/2119997122896601269",
+    "githubUrl": "https://x.com/higgsfield_ai",
+    "cover": "assets/covers/vowlorn-rpg.webp",
+    "gif": "assets/gifs/vowlorn-rpg.gif",
+    "summary": "Higgsfield 团队全网刷屏的里程碑之作：100% 纯代码由 Fable 5.2 生成，深度暗黑奇幻地下城冒险与装备构筑！",
+    "summaryEn": "Viral landmark by Higgsfield: 100% pure code generated by Fable 5.2 featuring dark fantasy dungeon crawling and deep loot builds!",
+    "description": "这是被 Higgsfield 官方长文专门报道的 AI 独立游戏奇迹。Fable 5.2 从零写就了完整的程序化暗黑地下城生成器、怪物战斗 AI、属性天赋树、战利品掉落与随机词条附魔系统，带来无比沉浸的硬核 RPG 体验。",
+    "descriptionEn": "A viral breakthrough extensively documented by Higgsfield Studio. Fable 5.2 engineered procedural dungeon generation, monster behavior AI, skill perk trees, and randomized affix loot mechanics entirely from scratch.",
+    "features": [
+      "程序化暗黑地牢迷宫生成与战争迷雾系统",
+      "深度装备 Build 搭配：传奇武器、套装效果与符文镶嵌",
+      "硬核实时动作战斗：翻滚躲闪、法术吟唱与体力值管理",
+      "史诗级暗黑哥特氛围美术与沉浸式中世纪原声配乐"
+    ],
+    "featuresEn": [
+      "Procedural multi-level gothic dungeon layouts with dynamic fog-of-war",
+      "Deep ARPG loot system: legendary gear, set synergies, and socketed gems",
+      "Challenging real-time combat with stamina metering, dodges, and spellcasting",
+      "Haunting dark fantasy art direction and sweeping medieval ambient score"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "地牢探索与战术走位",
+        "actionEn": "Dungeon Movement"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "主手武器挥击攻击",
+        "actionEn": "Main Hand Attack"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "举盾格挡或施展副手法术",
+        "actionEn": "Shield Block / Off-hand"
+      },
+      {
+        "key": "空格 Space",
+        "action": "快速翻滚躲避致命攻击",
+        "actionEn": "Evasive Roll"
+      },
+      {
+        "key": "数字 1-4",
+        "action": "释放高阶奥术与治疗药水",
+        "actionEn": "Hotbar Spells / Flasks"
+      },
+      {
+        "key": "I 键",
+        "action": "打开装备背包与人物属性面板",
+        "actionEn": "Inventory Panel"
+      }
+    ]
+  },
+  {
+    "id": "oil-paint-game",
+    "slug": "oil-paint-hand-painted-world",
+    "title": "Oil Paint · 油画质感沉浸探索",
+    "titleEn": "Oil Paint: Hand-Painted World",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "油画艺术",
+      "厚涂笔触",
+      "唯美风光",
+      "沉浸探索"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Oil Paint",
+      "Painterly Art",
+      "Impressionism",
+      "BlendiByl"
+    ],
+    "rating": 4.8,
+    "ratingCount": 19200,
+    "plays": "183.0K",
+    "playsNum": 183000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "BlendiByl (Claude Fable 5.2)",
+    "developerEn": "BlendiByl (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://patch.gg/blendi/oil-paint",
+    "originalUrl": "https://x.com/BlendiByl/status/2120341251178594532",
+    "githubUrl": "https://x.com/BlendiByl",
+    "cover": "assets/covers/oil-paint-game.webp",
+    "gif": "assets/gifs/oil-paint-game.gif",
+    "summary": "宛如漫步在印象派大师画布之中的艺术游戏：厚涂油彩笔触随微风起伏，探寻画布背后的生命诗篇！",
+    "summaryEn": "Step inside a living impressionist oil painting: thick expressive brushstrokes sway gently as you uncover painted secrets!",
+    "description": "BlendiByl 借助 Fable 5.2 开发的艺术风格探索冒险。利用独特的自定义着色器将整个 3D 场景渲染为充满触感质地的厚涂油画，一草一木、光影折射均带有画笔涂抹的肌理感，让人流连忘返。",
+    "descriptionEn": "A painterly art adventure created by BlendiByl using Claude Fable 5.2. Employs a custom post-processing shader stack that transforms 3D geometry into tangible impressionist impasto oil brushstrokes.",
+    "features": [
+      "令人惊叹的程序化油画笔触肌理与色彩混色着色器",
+      "风吹麦浪与树影摇曳的动态画布呼吸效果",
+      "寻找遗失的画笔颜料解锁场景隐藏区域",
+      "优雅宁静的古典弦乐背景旋律"
+    ],
+    "featuresEn": [
+      "Custom impasto paint stroke post-fx pipeline with pigment blending",
+      "Breathing world dynamics: wind ripples through textured canvas grass",
+      "Scavenge lost pigment tubes to restore color to dimmed vistas",
+      "Tranquil classical violin and cello soundtrack"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "在如画的美景中漫步探索",
+        "actionEn": "Walk the Canvas"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "全景欣赏油画笔触光影",
+        "actionEn": "Rotate View"
+      },
+      {
+        "key": "E 键",
+        "action": "采集画中颜料与色彩交互",
+        "actionEn": "Collect Pigment"
+      },
+      {
+        "key": "空格 Space",
+        "action": "轻盈跳跃越过画中溪流",
+        "actionEn": "Jump over brook"
+      }
+    ]
+  },
+  {
+    "id": "crosstown-nyc",
+    "slug": "crosstown-open-world-nyc",
+    "title": "CROSSTOWN · 纽约开放世界极速穿行",
+    "titleEn": "CROSSTOWN: Open-World NYC",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "开放世界",
+      "纽约曼哈顿",
+      "极速穿梭",
+      "都市漫游"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Open World",
+      "NYC Manhattan",
+      "Urban Roam",
+      "Matt Shumer"
+    ],
+    "rating": 4.9,
+    "ratingCount": 48200,
+    "plays": "468.0K",
+    "playsNum": 468000,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "mattshumer_ (Claude Fable 5.2)",
+    "developerEn": "mattshumer_ (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://nyc.somethingbig.ai/",
+    "originalUrl": "https://x.com/mattshumer_/status/2120282133503820150",
+    "githubUrl": "https://x.com/mattshumer_",
+    "cover": "assets/covers/crosstown-nyc.webp",
+    "gif": "assets/gifs/crosstown-nyc.gif",
+    "summary": "Matt Shumer 轰动推特的'7天挑战'巨制：程序化纽约曼哈顿高楼林立，在车流穿梭中体验次世代开放都市！",
+    "summaryEn": "Matt Shumer's viral open-world epic: towering Manhattan skyscrapers, traffic simulation, and urban traversal built in days!",
+    "description": "「Rockstar 花了 8 年制作 GTA，Fable 5.2 正在用几天时间证明未来」。Matt Shumer 借助 Fable 5.2 构建的纽约开放世界早期演示，拥有摩天大楼天际线、街道车流碰撞、多建筑进出和极速奔跑穿梭机制，备受行业瞩目。",
+    "descriptionEn": "A viral marvel by Matt Shumer: 'Rockstar took 8 years, Fable 5.2 is doing this in days.' Explore Manhattan's dense urban grid, hop into cruising sports cars, weave through traffic, and test early mechanics.",
+    "features": [
+      "高度还原的纽约曼哈顿网格化街区与摩天大楼天际线",
+      "车辆驾驶物理系统与智能城市交通车流 AI",
+      "高楼攀爬跳跃与极速街道跑酷穿梭体验",
+      "实时按键（B 键）向开发者提交改进反馈"
+    ],
+    "featuresEn": [
+      "Dense Manhattan grid architecture with towering skyscraper skylines",
+      "Dynamic vehicle handling kinematics and urban traffic AI routines",
+      "Rooftop parkour traversal and seamless on-foot urban sprint",
+      "Integrated real-time player telemetry feedback hotkey (B key)"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "街头疾跑或驾车穿梭",
+        "actionEn": "Run / Drive"
+      },
+      {
+        "key": "鼠标",
+        "action": "观察曼哈顿壮丽天际线",
+        "actionEn": "Look View"
+      },
+      {
+        "key": "F 键",
+        "action": "进入或离开道路上的载具",
+        "actionEn": "Enter / Exit Vehicle"
+      },
+      {
+        "key": "空格 Space",
+        "action": "跳跃翻越街边护栏与障碍",
+        "actionEn": "Parkour Vault"
+      },
+      {
+        "key": "B 键",
+        "action": "打开实时反馈面板提交建议",
+        "actionEn": "Submit Feedback"
+      }
+    ]
+  },
+  {
+    "id": "evensong-souls",
+    "slug": "evensong-souls-like",
+    "title": "Evensong · 暮歌暗黑魂系地牢",
+    "titleEn": "Evensong: Souls-like Odyssey",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "魂系硬核",
+      "暗黑地牢",
+      "翻滚格挡",
+      "首领对决"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Souls-like",
+      "Hardcore Action",
+      "Parry",
+      "Kevin Ngo"
+    ],
+    "rating": 4.9,
+    "ratingCount": 31500,
+    "plays": "302.4K",
+    "playsNum": 302400,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "kevin_t_ngo (Claude Fable 5.2)",
+    "developerEn": "kevin_t_ngo (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://evensong-phi.vercel.app/",
+    "originalUrl": "https://x.com/kevin_t_ngo/status/2120238844754923874",
+    "githubUrl": "https://x.com/kevin_t_ngo",
+    "cover": "assets/covers/evensong-souls.webp",
+    "gif": "assets/gifs/evensong-souls.gif",
+    "summary": "Kevin Ngo 倾力打磨的硬核魂系动作神作：点燃幽暗营火，精准弹反首领重击，在绝望中寻找破晓微光！",
+    "summaryEn": "Hardcore Souls-like action crafted by Kevin Ngo: kindle bonfires, master precise parries, and fell colossal bosses!",
+    "description": "具有纯正魂系血统的 3D 动作冒险游戏。拥有严苛的精力条（Stamina）管理、带有无敌帧的翻滚闪避、致命弹反处决与多阶段首领战，在残垣断壁与幽暗地牢中体验步步惊心的死斗。",
+    "descriptionEn": "A punishing 3D souls-like action challenge by Kevin Ngo via Claude Fable 5.2. Demands strict stamina discipline, iframe dodge rolls, high-risk parry counters, and multi-phase epic boss encounters.",
+    "features": [
+      "经典魂味营火存盘点与怪物刷新机制",
+      "精准判定窗口的盾反处决与断肢破韧系统",
+      "气势磅礴的多阶段守门首领 AI 动作模组",
+      "暗黑中世纪废墟与逼真火把动态光影"
+    ],
+    "featuresEn": [
+      "Authentic bonfire checkpoint mechanics and realm-reset loops",
+      "Strict timing-window parry ripostes and poise-breaking staggered hits",
+      "Formidable multi-phase guardian boss AI with deadly telegraphs",
+      "Atmospheric dark gothic ruin environments with dynamic torchlight"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "沉稳走位控制战斗距离",
+        "actionEn": "Combat Movement"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "普通斩击与轻武器连招",
+        "actionEn": "Light Attack"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "盾牌格挡或精准弹反",
+        "actionEn": "Block / Parry"
+      },
+      {
+        "key": "空格 Space",
+        "action": "翻滚闪避利用无敌帧化解重击",
+        "actionEn": "Dodge Roll"
+      },
+      {
+        "key": "R 键",
+        "action": "饮用原素瓶恢复生命值",
+        "actionEn": "Drink Estus Flask"
+      }
+    ]
+  },
+  {
+    "id": "gilt-and-gutter",
+    "slug": "gilt-and-gutter-noir",
+    "title": "Gilt & Gutter · 镀金与阴沟黑帮巷战",
+    "titleEn": "Gilt & Gutter Noir Action",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "黑色电影",
+      "硬派巷战",
+      "黑白光影",
+      "警匪对决"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Film Noir",
+      "Cover Shooter",
+      "Black and White",
+      "Kevin Ngo"
+    ],
+    "rating": 4.8,
+    "ratingCount": 22100,
+    "plays": "210.0K",
+    "playsNum": 210000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "kevin_t_ngo (Claude Fable 5.2)",
+    "developerEn": "kevin_t_ngo (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://gilt-and-gutter.vercel.app/",
+    "originalUrl": "https://x.com/kevin_t_ngo/status/2119900487688622171",
+    "githubUrl": "https://x.com/kevin_t_ngo",
+    "cover": "assets/covers/gilt-and-gutter.webp",
+    "gif": "assets/gifs/gilt-and-gutter.gif",
+    "summary": "1940 年代黑白诺瓦尔黑色电影风格：在雨夜迷离的罪恶小巷中，手持汤姆逊冲锋枪展开殊死对决！",
+    "summaryEn": "1940s vintage film noir crime drama: duel syndicate mobsters in rain-soaked back alleys with classic Tommy guns!",
+    "description": "Kevin Ngo 带来的高风格化黑色电影动作射击。黑白高对比度光影、被雨水打湿的反光沥青路面、路灯下的长长倒影，搭配爵士乐与雷雨声，为玩家带来身临其境的老式黑帮警匪大片体验。",
+    "descriptionEn": "A stylish film-noir cover shooter by Kevin Ngo using Fable 5.2. Immerses players in high-contrast monochrome cinematography, wet asphalt reflections, moody neon glows, and vintage Tommy gun firefights.",
+    "features": [
+      "老式黑色电影胶片颗粒感与高对比度光影滤镜",
+      "掩体射击系统：翻越垃圾桶与防火梯躲避弹雨",
+      "经典 1940 年代枪械：左轮手枪、泵动式猎枪与冲锋枪",
+      "忧郁醉人的爵士萨克斯与倾盆暴雨环境音效"
+    ],
+    "featuresEn": [
+      "Grainy 35mm film noir post-processing with high-contrast chiaroscuro",
+      "Dynamic cover mechanic: duck behind brick dumpsters and fire escapes",
+      "Period-accurate 1940s firearms: snubbies, pump shotguns, and Tommy guns",
+      "Melancholic jazz saxophone solos woven with driving rain foley"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "在阴暗巷道中谨慎穿行",
+        "actionEn": "Alley Movement"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "扣动扳机射击黑帮歹徒",
+        "actionEn": "Shoot Weapon"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "举枪精细瞄准",
+        "actionEn": "Aim Down Sights"
+      },
+      {
+        "key": "空格 Space",
+        "action": "滑入掩体避弹或翻越障碍",
+        "actionEn": "Take Cover / Vault"
+      },
+      {
+        "key": "R 键",
+        "action": "填装弹药弹鼓",
+        "actionEn": "Reload Drum"
+      }
+    ]
+  },
+  {
+    "id": "lanternfall",
+    "slug": "lanternfall-shadow-descent",
+    "title": "LANTERNFALL · 提灯骤降暗影生存",
+    "titleEn": "LANTERNFALL: Shadow Descent",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "提灯微光",
+      "地牢生存",
+      "暗影迷雾",
+      "克苏鲁氛围"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Lantern",
+      "Dungeon Survival",
+      "Darkness",
+      "Loktar00"
+    ],
+    "rating": 4.8,
+    "ratingCount": 19600,
+    "plays": "188.4K",
+    "playsNum": 188400,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "loktar00 (Claude Fable 5.2)",
+    "developerEn": "loktar00 (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://loktar00.github.io/lanternfall/",
+    "originalUrl": "https://x.com/loktar00/status/2120192761542615271",
+    "githubUrl": "https://x.com/loktar00",
+    "cover": "assets/covers/lanternfall.webp",
+    "gif": "assets/gifs/lanternfall.gif",
+    "summary": "Loktar00 呈现的幽闭暗影生存神作：提灯是你唯一的生命依托，在无尽黑夜中添油续命，躲避阴影生物！",
+    "summaryEn": "A chilling dungeon descent by Loktar00: your oil lantern is your only lifeline; keep the flame fed to ward off shadows!",
+    "description": "以光与影为核心机制的暗影生存探索游戏。地底深渊中潜伏着吞噬光芒的暗影怪兽，提灯的油量正在一分一秒流逝。收集散落的煤油瓶与发光水晶，点亮远古符文祭坛方能驱散深沉黑暗。",
+    "descriptionEn": "A tension-soaked survival horror experience by Loktar00 powered by Claude Fable 5.2. Darkness isn't just absence of light—it's a living entity. Manage your dwindling lantern oil to keep lurking beasts at bay.",
+    "features": [
+      "动态光锥与暗影迷雾体积渲染系统",
+      "提灯煤油消耗与火焰强弱动态影响可视范围",
+      "对光线敏感的潜伏阴影生物 AI 生态",
+      "地下遗迹古老谜题与祭坛点燃机制"
+    ],
+    "featuresEn": [
+      "Dynamic volumetric light cone and creeping shadow fog rendering",
+      "Lantern fuel decay affecting sight radius and monster aggression",
+      "Light-averse predatory shadow creature behavioral ecology",
+      "Subterranean environmental puzzles and sanctuary braziers"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "小心翼翼在黑暗迷宫中前行",
+        "actionEn": "Careful Movement"
+      },
+      {
+        "key": "鼠标",
+        "action": "举起提灯照射探索方向",
+        "actionEn": "Direct Lantern Light"
+      },
+      {
+        "key": "F 键",
+        "action": "给提灯补充煤油续火",
+        "actionEn": "Refill Lantern Oil"
+      },
+      {
+        "key": "E 键",
+        "action": "搜集矿灯与点亮壁上火把",
+        "actionEn": "Ignite Torch / Pickup"
+      }
+    ]
+  },
+  {
+    "id": "rooftop-rally",
+    "slug": "rooftop-rally-pickleball",
+    "title": "Rooftop Rally · 屋顶匹克球竞技",
+    "titleEn": "Rooftop Rally: Skyline Pickleball",
+    "category": "经典街机",
+    "categoryEn": "Arcade Classics",
+    "categoryId": "arcade",
+    "tags": [
+      "Claude Fable 5.2",
+      "匹克球",
+      "网球竞技",
+      "高空天台",
+      "物理回弹"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Pickleball",
+      "Sports Arcade",
+      "Skyline",
+      "Chongdashu"
+    ],
+    "rating": 4.8,
+    "ratingCount": 24800,
+    "plays": "236.2K",
+    "playsNum": 236200,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "chongdashu (Claude Fable 5.2)",
+    "developerEn": "chongdashu (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://wavedash.com/games/rooftop-rally",
+    "originalUrl": "https://x.com/chongdashu/status/2120154573356793883",
+    "githubUrl": "https://x.com/chongdashu",
+    "cover": "assets/covers/rooftop-rally.webp",
+    "gif": "assets/gifs/rooftop-rally.gif",
+    "summary": "在摩天大楼天台打当下最火爆的匹克球！精准切球、强力扣杀，在开阔云海全景下与强劲 AI 争夺天台球王！",
+    "summaryEn": "Play high-stakes pickleball on skyscraper rooftops! Master drop shots, kitchen volleys, and smashes above the clouds!",
+    "description": "由知名开发者 Chongdashu 运用 Fable 5.2 制作的趣味高空体育竞技游戏。将当下风靡全球的匹克球搬到了摩天大楼的屋顶球场，逼真的击球物理、清脆的球拍击打声和多变的风向让每一局对拉都充满乐趣。",
+    "descriptionEn": "An energetic sports arcade hit crafted by Chongdashu via Claude Fable 5.2. Brings the worldwide pickleball phenomenon to breathtaking high-altitude rooftop courts with authentic paddle pop and spin acoustics.",
+    "features": [
+      "严格遵循匹克球非截击区（厨房区）发球与落点规则",
+      "逼真的旋转球空气动力学与球拍接触角度弹射",
+      "俯瞰摩天大楼全景的壮阔天台视觉舞台",
+      "多难度自适应球路预测 AI 对手"
+    ],
+    "featuresEn": [
+      "Faithful implementation of pickleball 'kitchen' non-volley zone rules",
+      "Realistic ball spin aerodynamic curves and paddle face trajectory deflection",
+      "Spectacular panoramic high-rise skyline court backdrop",
+      "Adaptive multi-tier AI opponent capable of defensive dinks and smashes"
+    ],
+    "controls": [
+      {
+        "key": "A D / ← →",
+        "action": "底线左右横向移动就位",
+        "actionEn": "Move Lateral"
+      },
+      {
+        "key": "W S / ↑ ↓",
+        "action": "上网截击或后撤防守",
+        "actionEn": "Approach Net / Retreat"
+      },
+      {
+        "key": "空格 / 鼠标左键",
+        "action": "挥拍击球（长按蓄力扣杀）",
+        "actionEn": "Swing Paddle / Smash"
+      },
+      {
+        "key": "Shift 键",
+        "action": "放短球（Dink）与吊高球",
+        "actionEn": "Soft Dink / Lob Shot"
+      }
+    ]
+  },
+  {
+    "id": "dread-district",
+    "slug": "dread-district-mystery",
+    "title": "Dread & District · 恐惧街区悬疑解谜",
+    "titleEn": "Dread & District Mystery",
+    "category": "休闲治愈",
+    "categoryEn": "Casual & Relaxing",
+    "categoryId": "casual",
+    "tags": [
+      "Claude Fable 5.2",
+      "悬疑探案",
+      "解谜密室",
+      "氛围渲染",
+      "寻物侦探"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Detective",
+      "Mystery",
+      "Room Escape",
+      "Ethan Mollick"
+    ],
+    "rating": 4.7,
+    "ratingCount": 16900,
+    "plays": "158.0K",
+    "playsNum": 158000,
+    "featured": false,
+    "hot": false,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "emollick (Claude Fable 5.2)",
+    "developerEn": "emollick (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://dread-and-district.netlify.app",
+    "originalUrl": "https://x.com/emollick/status/2120248525254742318",
+    "githubUrl": "https://x.com/emollick",
+    "cover": "assets/covers/dread-district.webp",
+    "gif": "assets/gifs/dread-district.gif",
+    "summary": "穿行在雾气弥漫的维多利亚式老街区：搜集散落物证、破解机关锁扣，拼凑出隐藏在黑夜背后的惊人谜案！",
+    "summaryEn": "Navigate fog-shrouded Victorian alleys: discover clues, decipher antique lockboxes, and solve a chilling urban mystery!",
+    "description": "Ethan Mollick 带来的精致悬疑侦探解谜作品。玩家置身于一座被神秘迷雾笼罩的古老街区，需要仔细搜查每一个房间与街道角落，利用道具栏中的放大镜与古董钥匙破译层层密码。",
+    "descriptionEn": "A captivating detective escape puzzle crafted by Ethan Mollick and Claude Fable 5.2. Explore evocative mist-covered Victorian streets and parlors, examining antique mechanisms and connecting hidden clues.",
+    "features": [
+      "经典维多利亚复古侦探视觉风格与细腻场景建模",
+      "精巧的机械密码锁、暗门与机关盒解谜设计",
+      "条理清晰的侦探线索笔记本与证据合成系统",
+      "引人入胜的悬疑案情发展与意外真相揭秘"
+    ],
+    "featuresEn": [
+      "Detailed Victorian neo-gothic art direction and period props",
+      "Intricate physical lockbox puzzles, hidden levers, and cipher decoders",
+      "Detective case notebook indexing evidence threads and deductions",
+      "Engrossing mystery plotline with unexpected story revelations"
+    ],
+    "controls": [
+      {
+        "key": "鼠标点击",
+        "action": "调查场景物品与拾取关键道具",
+        "actionEn": "Examine / Pick Up"
+      },
+      {
+        "key": "拖拽物品",
+        "action": "将背包中的道具拖至机关进行交互",
+        "actionEn": "Use Item on Object"
+      },
+      {
+        "key": "W A S D / 方向键",
+        "action": "切换不同的街区与房间视角",
+        "actionEn": "Switch View"
+      },
+      {
+        "key": "Tab 键",
+        "action": "翻开侦探线索记录手册",
+        "actionEn": "Open Detective Log"
+      }
+    ]
+  },
+  {
+    "id": "mist-mountain-gate",
+    "slug": "mist-mountain-gate-3d",
+    "title": "Mist-Locked Mountain · 雾锁山门国风硬核3D动作",
+    "titleEn": "Mist-Locked Mountain Gate 3D",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "国风仙侠",
+      "硬核动作",
+      "单文件30MB",
+      "刀光剑影"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Wuxia Action",
+      "Hardcore 3D",
+      "Single File",
+      "op7418"
+    ],
+    "rating": 4.9,
+    "ratingCount": 46800,
+    "plays": "452.0K",
+    "playsNum": 452000,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "op7418 (Claude Fable 5.2)",
+    "developerEn": "op7418 (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://op7418.github.io/guizang-game-skill/",
+    "originalUrl": "https://x.com/op7418/status/2120694045299327187",
+    "githubUrl": "https://x.com/op7418",
+    "cover": "assets/covers/mist-mountain-gate.webp",
+    "gif": "assets/gifs/mist-mountain-gate.gif",
+    "summary": "国内顶尖技术博主 op7418 耗费 45 亿 Token 打造：单 HTML 文件打包 30MB 完整国风硬核动作游戏，模型动作光影惊艳！",
+    "summaryEn": "Viral masterpiece by op7418 using 4.5B tokens: a full 30MB single-file 3D Wuxia action game with custom models and combat!",
+    "description": "这是中文互联网上关于 Fable 5.2 讨论度最高的里程碑神作之一。作者在一个下午通过 45 亿 Token 的持续生成，将全部国风 3D 角色模型、山门云海场景、招式动作动画与音效无压缩地打包进单份 30MB HTML 文件中，刀光剑影、凌波微步一气呵成。",
+    "descriptionEn": "One of the most praised community achievements by op7418 using Claude Fable 5.2. Generates an entire 30MB single-HTML 3D martial arts action game containing custom rigged meshes, fluid combat moves, and dramatic swordplay.",
+    "features": [
+      "极罕见的单文件 30MB 完整嵌入式 3D 国风动作游戏架构",
+      "行云流水的武侠剑术连招、御剑飞天与破招击飞",
+      "气势磅礴的仙侠云海、青石山门与落叶飘零特效",
+      "国风古筝与琵琶激昂交织的战斗背景音乐"
+    ],
+    "featuresEn": [
+      "Historic 30MB self-contained single-file 3D browser action game architecture",
+      "Fluid martial arts sword stances, flying sword flourishes, and air-juggle combos",
+      "Breathtaking misty mountain gates with falling autumn leaves and cloud sea",
+      "Thunderous traditional guzheng and pipa combat music tracks"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "武学宗师灵动步法移动",
+        "actionEn": "Stance Movement"
+      },
+      {
+        "key": "鼠标左键 / J 键",
+        "action": "连环剑诀平砍连击",
+        "actionEn": "Sword Strike Combo"
+      },
+      {
+        "key": "鼠标右键 / K 键",
+        "action": "凌空斩击与万剑归宗",
+        "actionEn": "Heavy Slash / Flying Swords"
+      },
+      {
+        "key": "空格 Space",
+        "action": "踏空而行踏云梯跳跃",
+        "actionEn": "Cloud Step Jump"
+      },
+      {
+        "key": "Shift 键",
+        "action": "身如鬼魅残影闪避",
+        "actionEn": "Phantom Dash"
+      }
+    ]
+  },
+  {
+    "id": "waking-river",
+    "slug": "the-waking-river",
+    "title": "The Waking River · 苏醒之河唯美漂流之旅",
+    "titleEn": "The Waking River",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "唯美治愈",
+      "水流物理",
+      "泛舟探索",
+      "环境音效"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Tranquil",
+      "River Drift",
+      "Atmospheric",
+      "flxrnc"
+    ],
+    "rating": 4.8,
+    "ratingCount": 18200,
+    "plays": "173.5K",
+    "playsNum": 173500,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "flxrnc (Claude Fable 5.2)",
+    "developerEn": "flxrnc (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://rivergame-kappa.vercel.app",
+    "originalUrl": "https://x.com/flxrnc/status/2120494277528580110",
+    "githubUrl": "https://x.com/flxrnc",
+    "cover": "assets/covers/waking-river.webp",
+    "gif": "assets/gifs/waking-river.gif",
+    "summary": "乘一叶扁舟顺流而下：倾听两岸潺潺流水与鸟鸣，在晨曦与星光交替间体验一场洗涤心灵的唯美漂流。",
+    "summaryEn": "Drift down a tranquil river on a gentle wooden canoe: take in morning mists, riverside wildlife, and shimmering waters.",
+    "description": "flxrnc 借助 Fable 5.2 创造的冥想级治愈之作。河流拥有真实的流体水动力学模拟，载着轻盈的小木舟穿过葱郁森林、幽深峡谷与静谧湖泊，两岸风景在程序化日出与黄昏中变换，带来无尽宁静。",
+    "descriptionEn": "A meditative atmospheric river journey by flxrnc created with Claude Fable 5.2. Features fluid buoyancy physics carrying a small wooden canoe through procedurally shifting biomes under gentle day-to-night transitions.",
+    "features": [
+      "逼真柔和的流体水波着色与真实浮力漂浮力学",
+      "随时间流转的动态昼夜循环天光与水面反光",
+      "两岸野生动物与生机盎然的自然生态环境",
+      "极其解压的高保真自然水流声与环境白噪音"
+    ],
+    "featuresEn": [
+      "Gentle procedural water wave shaders paired with buoyant hull physics",
+      "Dynamic day-night lighting cycles reflecting off the peaceful surface",
+      "Procedural riverbanks populated with lush flora and wildlife",
+      "Calming binaural stream foley and soothing organic nature soundscapes"
+    ],
+    "controls": [
+      {
+        "key": "A / D / ← →",
+        "action": "划动木桨调整小舟航向",
+        "actionEn": "Paddle Steer"
+      },
+      {
+        "key": "W / ↑",
+        "action": "发力划水加速顺流而下",
+        "actionEn": "Paddle Forward"
+      },
+      {
+        "key": "S / ↓",
+        "action": "反向划水减速停舟观景",
+        "actionEn": "Brake Canoe"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "360 度环顾两岸自然风光",
+        "actionEn": "Pan River View"
+      }
+    ]
+  },
+  {
+    "id": "first-crush",
+    "slug": "first-crush-romance-sim",
+    "title": "First Crush · 初见心动青春互动模拟",
+    "titleEn": "First Crush Romance Sim",
+    "category": "休闲治愈",
+    "categoryEn": "Casual & Relaxing",
+    "categoryId": "casual",
+    "tags": [
+      "Claude Fable 5.2",
+      "互动视觉小说",
+      "心动抉择",
+      "治愈养成",
+      "多结局"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Romance Sim",
+      "Visual Novel",
+      "Choices Matter",
+      "Kieran"
+    ],
+    "rating": 4.7,
+    "ratingCount": 17800,
+    "plays": "165.2K",
+    "playsNum": 165200,
+    "featured": false,
+    "hot": false,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "kieranklaassen (Claude Fable 5.2)",
+    "developerEn": "kieranklaassen (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://frontier.every.to/experiments/first-crush",
+    "originalUrl": "https://x.com/kieranklaassen/status/2119871673294037280",
+    "githubUrl": "https://x.com/kieranklaassen",
+    "cover": "assets/covers/first-crush.webp",
+    "gif": "assets/gifs/first-crush.gif",
+    "summary": "重温校园时代的青涩与悸动：细腻的心情互动分支，每一个微小眼神与话语选择都将决定好感度的走向！",
+    "summaryEn": "Relive the flutter of youth: an intimate interactive romantic story where subtle gestures and dialogue steer destinies!",
+    "description": "Kieran Klaassen 构筑的温暖校园互动小品。游戏聚焦于青春期最细腻的情感碰撞，以清新柔和的色调呈现角色微表情与内心独白，让玩家重温初恋时的脸红心跳与美好期许。",
+    "descriptionEn": "A gentle and nostalgic coming-of-age romance interactive by Kieran Klaassen via Claude Fable 5.2. Highlights delicate emotional beats, witty dialogue branches, and subtle character body language.",
+    "features": [
+      "细腻入微的角色情感心理分支与实时心动值计算",
+      "日系轻小说般明亮温暖的手绘画风与界面排版",
+      "多种截然不同的人生结局与甜蜜隐藏彩蛋",
+      "舒缓动听的原声钢琴背景音乐"
+    ],
+    "featuresEn": [
+      "Nuanced emotional dialogue branches and live relationship meters",
+      "Warm watercolor-inspired visual presentation and typography",
+      "Multiple distinct relationship endings and unlockable memories",
+      "Heartfelt acoustic piano motifs underscoring pivotal moments"
+    ],
+    "controls": [
+      {
+        "key": "鼠标左键",
+        "action": "推进对话文本与点击选项",
+        "actionEn": "Progress / Select Choice"
+      },
+      {
+        "key": "空格 Space",
+        "action": "快速快进已读剧情段落",
+        "actionEn": "Fast-Forward Read Text"
+      },
+      {
+        "key": "Esc 键",
+        "action": "查看历史对话记录与心动度",
+        "actionEn": "View History & Affinity"
+      }
+    ]
+  },
+  {
+    "id": "starry-nightrider",
+    "slug": "starry-nightrider-cyber-cruise",
+    "title": "Starry Nightrider · 星夜骑士赛博巡航",
+    "titleEn": "Starry Nightrider Cyber Cruise",
+    "category": "3A冒险",
+    "categoryEn": "3A Adventure",
+    "categoryId": "adventure",
+    "tags": [
+      "Claude Fable 5.2",
+      "赛博朋克",
+      "夜间飞驰",
+      "合成波音乐",
+      "炫目光影"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Synthwave",
+      "Cyber Cruise",
+      "Neon Highway",
+      "Ebbyamir"
+    ],
+    "rating": 4.8,
+    "ratingCount": 25300,
+    "plays": "241.0K",
+    "playsNum": 241000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "ebbyamir (Claude Fable 5.2)",
+    "developerEn": "ebbyamir (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://starrynightrider.com",
+    "originalUrl": "https://x.com/ebbyamir/status/2120284261089673376",
+    "githubUrl": "https://x.com/ebbyamir",
+    "cover": "assets/covers/starry-nightrider.webp",
+    "gif": "assets/gifs/starry-nightrider.gif",
+    "summary": "Ebbyamir 打造的 Synthwave 赛博巡航：驾驶改装跑车穿行在紫金色调的星空高速，沉醉于合成器电音！",
+    "summaryEn": "A dreamy synthwave cruise by Ebbyamir: pilot a retro-futuristic ride across star-strewn purple-haze highways!",
+    "description": "复古未来主义美学的极致展现。游戏采用绚烂的紫粉霓虹与星空着色器，流光溢彩的网格地平线向远方无尽延伸，玩家在没有终点的公路巡航中聆听经典复古合成波，享受最惬意的公路漫游。",
+    "descriptionEn": "A masterclass in retro-futuristic synthwave aesthetics by Ebbyamir with Claude Fable 5.2. Cruise endlessly along glowing magenta highways into an 80s wireframe sunset accompanied by pulsing synthesizer basslines.",
+    "features": [
+      "经典 80 年代复古未来主义网格地面与动态紫霞夕阳",
+      "流畅的车辆悬挂惯性与车身灯光流线反射",
+      "内置多首纯正合成波（Synthwave/Outrun）原声电音",
+      "支持车内仪表盘第一人称沉浸式驾驶视角"
+    ],
+    "featuresEn": [
+      "Iconic 1980s neon wireframe terrain and animated synthwave sunset",
+      "Dynamic vehicle chassis roll, neon underglow, and reflective paint",
+      "Integrated multi-track retro synthwave and outrun radio station",
+      "Immersive cockpit first-person dashboard camera option"
+    ],
+    "controls": [
+      {
+        "key": "W A S D / 方向键",
+        "action": "操纵赛博超跑穿梭车流",
+        "actionEn": "Steer / Accelerate"
+      },
+      {
+        "key": "空格 Space",
+        "action": "启动超频霓虹推进器",
+        "actionEn": "Nitro Cruise"
+      },
+      {
+        "key": "C 键",
+        "action": "切换车外全景与车内仪表视角",
+        "actionEn": "Switch Camera"
+      },
+      {
+        "key": "N 键",
+        "action": "换一首车载合成波电音歌曲",
+        "actionEn": "Next Music Track"
+      }
+    ]
+  },
+  {
+    "id": "yardclash",
+    "slug": "yardclash-arena-brawler",
+    "title": "YARDCLASH · 庭院冲突多人对撞",
+    "titleEn": "YARDCLASH Arena Brawler",
+    "category": "经典街机",
+    "categoryEn": "Arcade Classics",
+    "categoryId": "arcade",
+    "tags": [
+      "Claude Fable 5.2",
+      "派对乱斗",
+      "搞笑物理",
+      "道具互殴",
+      "多人竞技"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Party Brawler",
+      "Ragdoll Physics",
+      "Backyard",
+      "AugustCastilIo"
+    ],
+    "rating": 4.8,
+    "ratingCount": 21000,
+    "plays": "199.5K",
+    "playsNum": 199500,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "AugustCastilIo (Claude Fable 5.2)",
+    "developerEn": "AugustCastilIo (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://yardclash.vercel.app/",
+    "originalUrl": "https://x.com/AugustCastilIo/status/2120302122776342865",
+    "githubUrl": "https://x.com/AugustCastilIo",
+    "cover": "assets/covers/yardclash.webp",
+    "gif": "assets/gifs/yardclash.gif",
+    "summary": "后院派对大乱斗：操纵软趴趴的布娃娃角色，捡起割草机、烧烤架和充气泳池玩具将对手撞飞出场地！",
+    "summaryEn": "Hilarious backyard ragdoll party brawler: grab lawnmowers, BBQ grills, and pool noodles to knock rivals out of the yard!",
+    "description": "充满欢声笑语的物理派对格斗游戏。基于搞笑的布娃娃物理引擎，庭院中的水管、除草机、折叠椅全都可以成为趁手武器，互相冲撞推搡，带来绝妙的解压狂欢体验。",
+    "descriptionEn": "A riotous physics party brawler crafted by AugustCastilIo via Fable 5.2. Players control wobbly ragdoll pugilists wielding backyard tools—from weed whackers to folding patio chairs—to eject opponents from the lawn.",
+    "features": [
+      "搞笑解压的全身布娃娃关节物理与滑稽碰撞反应",
+      "丰富的庭院环境互动武器：割草机、喷水龙头与飞盘",
+      "支持多人同屏乱斗与混乱擂台淘汰机制",
+      "欢乐欢快的派对音效与夸张的受击语音"
+    ],
+    "featuresEn": [
+      "Hilarious full-body active ragdoll physics and bouncy impact reactions",
+      "Interactive backyard arsenal: lawnmowers, garden hoses, and frisbees",
+      "Ring-out elimination mechanics supporting chaotic multi-fighter rounds",
+      "Upbeat party soundtrack with comic slapstick sound effects"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "摇摇晃晃奔跑位移",
+        "actionEn": "Wobbly Movement"
+      },
+      {
+        "key": "J 键",
+        "action": "挥舞王八拳猛烈出击",
+        "actionEn": "Wild Punch"
+      },
+      {
+        "key": "K 键",
+        "action": "抓取身旁的庭院物品与扔掷",
+        "actionEn": "Grab / Throw Prop"
+      },
+      {
+        "key": "空格 Space",
+        "action": "借助蹦床全力跃起下砸",
+        "actionEn": "Trampoline Jump Slam"
+      }
+    ]
+  },
+  {
+    "id": "fable52-fps-repro",
+    "slug": "fable-5-2-fps-repro",
+    "title": "Fable 5.2 FPS Repro · 工业射击纯净复现",
+    "titleEn": "Fable 5.2 FPS Repro",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "纯净复现",
+      "工业集装箱",
+      "PCF阴影",
+      "无人工修饰"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Clean Repro",
+      "Port FPS",
+      "PCF Shadows",
+      "wquguru"
+    ],
+    "rating": 4.8,
+    "ratingCount": 27100,
+    "plays": "258.0K",
+    "playsNum": 258000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "wquguru (Claude Fable 5.2)",
+    "developerEn": "wquguru (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://wquguru.github.io/fable52-fps-repro/",
+    "originalUrl": "https://x.com/wquguru/status/2120383332722905400",
+    "githubUrl": "https://x.com/wquguru",
+    "cover": "assets/covers/fable52-fps-repro.webp",
+    "gif": "assets/gifs/fable52-fps-repro.gif",
+    "summary": "开发者 wquguru 对官方发布会经典 FPS 演示的纯净完整复现：独立还原光影集装箱码头与完整射击管线！",
+    "summaryEn": "Developer wquguru's clean independent reproduction of the historic launch FPS: photorealistic port and shooting mechanics!",
+    "description": "旨在验证 Claude Fable 5.2 独立端到端生成能力的复现工程。完全依照原始 Prompt 重新促成，生成了高度一致的高动态范围工业港口场景、物理枪械后坐力模型与实时投射阴影，证明了 AI 开发的可复现性。",
+    "descriptionEn": "A clean room reproduction engineered by wquguru to benchmark Claude Fable 5.2's autonomous generation. Faithfully recreates the port container terminal, weapon kinematics, and PCF soft shadow rendering.",
+    "features": [
+      "严谨验证 AI 原生代码生成复现性的标杆项目",
+      "高质量 PCF 柔和阴影与工业集装箱 PBR 材质表现",
+      "精确的机械瞄具准星缩放与枪口火光粒子",
+      "基于 WebGL 的零依赖轻量化快速启动"
+    ],
+    "featuresEn": [
+      "Benchmark reproduction confirming deterministic prompt generation quality",
+      "High-fidelity PCF shadow filters and industrial container PBR materials",
+      "Crisp iron-sight magnification and procedural muzzle flash particles",
+      "Zero-dependency browser native execution with instant loading"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "战术走位移动",
+        "actionEn": "Tactical Movement"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "转动射击准星",
+        "actionEn": "Aim Reticle"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "开火射击靶标",
+        "actionEn": "Fire Weapon"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "举枪机械瞄准 (ADS)",
+        "actionEn": "Aim Down Sights"
+      },
+      {
+        "key": "R 键",
+        "action": "战术弹匣更换",
+        "actionEn": "Reload Magazine"
+      }
+    ]
+  },
+  {
+    "id": "lumina-zombies",
+    "slug": "lumina-zombies-survival",
+    "title": "Lumina Zombies · 卢米娜丧尸无尽狂潮",
+    "titleEn": "Lumina Zombies Survival",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "丧尸生存",
+      "尸潮防守",
+      "枪械升级",
+      "夜战突围"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Zombie Wave",
+      "Survival FPS",
+      "Weapon Upgrades",
+      "LuminaBench"
+    ],
+    "rating": 4.9,
+    "ratingCount": 39800,
+    "plays": "384.5K",
+    "playsNum": 384500,
+    "featured": true,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "LuminaBench (Claude Fable 5.2)",
+    "developerEn": "LuminaBench (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://luminazombies.com/",
+    "originalUrl": "https://x.com/LuminaBench/status/2120660076927099048",
+    "githubUrl": "https://x.com/LuminaBench",
+    "cover": "assets/covers/lumina-zombies.webp",
+    "gif": "assets/gifs/lumina-zombies.gif",
+    "summary": "由 LuminaBench 呈现的黑夜丧尸生存大潮：在四面涌来的无尽丧尸尸潮中杀出血路，升级军火库坚守黎明！",
+    "summaryEn": "Nightmarish zombie horde survival by LuminaBench: mow down swarms of relentless undead and upgrade your arsenal!",
+    "description": "极具压迫感的 3D 丧尸生存射击游戏。黑夜中成百上千具丧尸循着枪声蜂拥而至，玩家在废弃都市广场布设防线，利用机枪扫射、霰弹近战与阔剑地雷粉碎尸群，在每一波狂潮中夺取喘息之机。",
+    "descriptionEn": "An adrenaline-pumping 3D horde survival shooter crafted by LuminaBench via Fable 5.2. Confront wave after wave of bloodthirsty zombies in a ruined urban courtyard, acquiring firepower upgrades to endure until daybreak.",
+    "features": [
+      "同屏海量丧尸集群寻路与群聚涌动 AI",
+      "断肢断头判定与暴爽血浆飞溅打击反馈",
+      "丰富的军火库升级系统：双管霰弹枪、雷电发生器与哨戒炮",
+      "震撼的尸潮嘶吼音效与紧张窒息的夜战氛围"
+    ],
+    "featuresEn": [
+      "Flocking swarm algorithms managing hundreds of active undead on-screen",
+      "Dismemberment impact physics with visceral splatter feedback",
+      "Extensive defensive armory: double-barrel shotguns, Tesla coils, and turrets",
+      "Bone-chilling directional zombie groans and frantic survival ambiance"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "边退边打保持拉扯距离",
+        "actionEn": "Kiting Movement"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "准星瞄准丧尸头部弱点",
+        "actionEn": "Headshot Aim"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "全力开火扫射尸群",
+        "actionEn": "Unleash Weapon Fire"
+      },
+      {
+        "key": "数字 1-4",
+        "action": "切换步枪、霰弹枪或重火器",
+        "actionEn": "Switch Weapons"
+      },
+      {
+        "key": "R 键",
+        "action": "在弹药打空前快速换弹",
+        "actionEn": "Reload Weapon"
+      }
+    ]
+  },
+  {
+    "id": "skywake-flight",
+    "slug": "skywake-aerial-combat",
+    "title": "SKYWAKE · 天际尾流战斗飞行",
+    "titleEn": "SKYWAKE Aerial Combat",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "超音速战机",
+      "空战狗斗",
+      "锁定导弹",
+      "云海翻滚"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Fighter Jet",
+      "Dogfight",
+      "Lock-on Missile",
+      "Aniket"
+    ],
+    "rating": 4.8,
+    "ratingCount": 28300,
+    "plays": "270.0K",
+    "playsNum": 270000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "aniketjart (Claude Fable 5.2)",
+    "developerEn": "aniketjart (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://app.usecrayon.ai/play/992c2130-43da-416b-a577-aed9514d3057",
+    "originalUrl": "https://x.com/aniketjart/status/2120378493729222700",
+    "githubUrl": "https://x.com/aniketjart",
+    "cover": "assets/covers/skywake-flight.webp",
+    "gif": "assets/gifs/skywake-flight.gif",
+    "summary": "由 Aniket 打造的现代空战狗斗传奇：驾驭第五代隐形战机冲破音障，在万米高空锁定敌机发射响尾蛇导弹！",
+    "summaryEn": "Modern aerial dogfight thriller by Aniket: pilot fifth-gen stealth fighters, shatter Mach speeds, and lock Sidewinders!",
+    "description": "极富视听震撼的高空战机缠斗动作游戏。音爆云震碎长空，机炮火舌喷涌而出，配备 HUD 平显雷达锁定、热诱饵弹防御以及超机动过失速机动，体验身为王牌飞行员的终极快感。",
+    "descriptionEn": "A breathtaking high-altitude jet combat simulator by Aniket via Claude Fable 5.2. Features transonic sonic boom vapors, animated radar HUD displays, flare countermeasures, and high-G Cobra post-stall maneuvers.",
+    "features": [
+      "真实的现代超音速喷气战机空气动力学与后燃器加速",
+      "HUD 瞄准头盔显示界面与主动雷达导弹锁定机制",
+      "热诱饵弹释放系统以摆脱敌方红外制导空对空导弹",
+      "万米高空云海壮观立体空域与高速音爆视觉特效"
+    ],
+    "featuresEn": [
+      "Supersonic fighter jet aerodynamics with twin afterburner kinematics",
+      "Functional helmet HUD reticle with active radar missile lock tone",
+      "Countermeasure flare dispenser to spoof incoming heat-seeking missiles",
+      "Breathtaking high-altitude cloud canyons and Mach cone vapor visual FX"
+    ],
+    "controls": [
+      {
+        "key": "W / S",
+        "action": "操纵杆推拉：机头俯冲 / 跃升",
+        "actionEn": "Pitch Control"
+      },
+      {
+        "key": "A / D",
+        "action": "机翼滚转倾斜机动",
+        "actionEn": "Roll Wings"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "发射 20mm 火神机炮扫射",
+        "actionEn": "Fire Vulcan Cannon"
+      },
+      {
+        "key": "空格 Space",
+        "action": "发射雷达锁定空对空导弹",
+        "actionEn": "Fire Sidewinder Missile"
+      },
+      {
+        "key": "Shift 键",
+        "action": "加力燃烧室开启超音速巡航",
+        "actionEn": "Afterburner Boost"
+      },
+      {
+        "key": "X 键",
+        "action": "释放热诱饵弹干扰敌方锁定",
+        "actionEn": "Deploy Flares"
+      }
+    ]
+  },
+  {
+    "id": "ringfall-fps",
+    "slug": "ringfall-orbital-strike",
+    "title": "Ringfall · 环形陨落太空射击",
+    "titleEn": "Ringfall Orbital Strike",
+    "category": "动作射击",
+    "categoryEn": "Action & Shooting",
+    "categoryId": "action",
+    "tags": [
+      "Claude Fable 5.2",
+      "环形空间站",
+      "零重力枪战",
+      "科幻射击",
+      "光子能量枪"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Space Station",
+      "Zero-G FPS",
+      "Sci-Fi Laser",
+      "Rehan Shei"
+    ],
+    "rating": 4.8,
+    "ratingCount": 26900,
+    "plays": "256.4K",
+    "playsNum": 256400,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "rehan_shei (Claude Fable 5.2)",
+    "developerEn": "rehan_shei (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://patch.gg/games/rehan/ringfall",
+    "originalUrl": "https://x.com/rehan_shei/status/2119994607291584962",
+    "githubUrl": "https://x.com/rehan_shei",
+    "cover": "assets/covers/ringfall-fps.webp",
+    "gif": "assets/gifs/ringfall-fps.gif",
+    "summary": "Rehan Shei 构筑的巨型太空环世界枪战：在失重的轨道环形甲板跳跃穿梭，用光子等离子枪击碎机械叛军！",
+    "summaryEn": "Rehan Shei's colossal orbital ring FPS: leap through zero-g habitats and blast rogue synthetic squads with plasma guns!",
+    "description": "致敬《光环》传奇宏大世界观的太空科幻第一人称射击。置身于旋转的人造重力巨型环形空间站上，抬头即可望见头顶弯曲耸立的另一侧甲板大陆，光子能量武器与微重力喷气背包带来超凡战斗机动性。",
+    "descriptionEn": "An ambitious sci-fi FPS homage to mega-structural ringworlds by Rehan Shei. Set on an artificial-gravity megastructure curving high above the player, featuring zero-g thruster jumps and plasma railguns.",
+    "features": [
+      "壮丽的环形世界几何弧度与轨道太空全景视效",
+      "微重力喷气背包悬浮跃迁与磁力吸附靴走位",
+      "等离子突击步枪与反物质蓄力狙击光束",
+      "未来科幻战术装甲能量护盾自我再生系统"
+    ],
+    "featuresEn": [
+      "Magnificent curving ringworld geometry arching overhead into space",
+      "Zero-gravity thruster leap dynamics and magnetic boot ground locks",
+      "Plasma assault rifles and anti-matter charge-up railgun lances",
+      "Regenerative tactical shield overlay and sci-fi HUD display"
+    ],
+    "controls": [
+      {
+        "key": "W A S D",
+        "action": "环世界甲板战术位移",
+        "actionEn": "Orbital Movement"
+      },
+      {
+        "key": "鼠标移动",
+        "action": "全景瞄准射击准星",
+        "actionEn": "Aim Reticle"
+      },
+      {
+        "key": "鼠标左键",
+        "action": "发射高能光子等离子束",
+        "actionEn": "Fire Plasma"
+      },
+      {
+        "key": "鼠标右键",
+        "action": "护目镜远距战术放大",
+        "actionEn": "Tactical Scope"
+      },
+      {
+        "key": "空格 Space",
+        "action": "启动喷气背包长距离失重滑翔",
+        "actionEn": "Jetpack Glide Jump"
+      }
+    ]
+  },
+  {
+    "id": "chairmageddon",
+    "slug": "chairmageddon-physics-havoc",
+    "title": "Chairmageddon · 椅子大狂欢物理浩劫",
+    "titleEn": "Chairmageddon Physics Havoc",
+    "category": "休闲治愈",
+    "categoryEn": "Casual & Relaxing",
+    "categoryId": "casual",
+    "tags": [
+      "Claude Fable 5.2",
+      "疯狂物理",
+      "办公椅狂飙",
+      "解压发泄",
+      "连锁多米诺"
+    ],
+    "tagsEn": [
+      "Claude Fable 5.2",
+      "Physics Havoc",
+      "Office Chairs",
+      "Destruction",
+      "ArgoFowl"
+    ],
+    "rating": 4.8,
+    "ratingCount": 22400,
+    "plays": "214.0K",
+    "playsNum": 214000,
+    "featured": false,
+    "hot": true,
+    "isNew": true,
+    "releaseDate": "2024-11-12",
+    "developer": "argofowl (Claude Fable 5.2)",
+    "developerEn": "argofowl (Claude Fable 5.2)",
+    "aiEngine": "Claude Fable 5.2",
+    "fileUrl": "https://fowllabs.com/fable-5-2/chairmageddon/",
+    "originalUrl": "https://x.com/argofowl/status/2120568779537273263",
+    "githubUrl": "https://x.com/argofowl",
+    "cover": "assets/covers/chairmageddon.webp",
+    "gif": "assets/gifs/chairmageddon.gif",
+    "summary": "Fowl Labs 出品的终极办公室解压神器：成百上千把旋转办公椅如同海啸般多米诺连锁撞击，彻底摧毁无聊！",
+    "summaryEn": "Ultimate office stress relief by Fowl Labs: send hundreds of rolling swivel chairs into chaotic chain collisions!",
+    "description": "极具魔性与解压快感的 3D 物理破坏模拟器。在大型办公室和竞技场中，玩家可以用爆炸物、巨型保龄球和重力反转装置同时驱动满屏的带轮办公椅，看它们漫天飞舞、连锁翻滚，体验无比爽快的物理狂欢。",
+    "descriptionEn": "A wickedly hilarious physics destruction playground by ArgoFowl at Fowl Labs. Trigger shockwaves, bowling balls, and gravity warps amidst hundreds of wheel-swivel office chairs tumbling in domino chaos.",
+    "features": [
+      "同屏支持数百件高精度旋转轮办公椅刚体物理计算",
+      "狂暴的多米诺骨牌连锁碰撞与慢动作爆炸特效",
+      "多样化的物理工具箱：重力反转、引力黑洞与弹射风扇",
+      "清脆响亮、极度解压的滑轮碰撞与金属撞击音效"
+    ],
+    "featuresEn": [
+      "Rigid-body solver driving hundreds of rolling swivel chairs simultaneously",
+      "Chaotic domino chain-reaction collisions and cinematic slow-mo blasts",
+      "Whimsical physics toybox: gravity inverters, vortex vacuums, and mega-fans",
+      "Immensely satisfying metal clatter and wheel squeak audio foley"
+    ],
+    "controls": [
+      {
+        "key": "鼠标点击 / 拖拽",
+        "action": "猛力抓起并大力掷出办公椅",
+        "actionEn": "Fling Office Chair"
+      },
+      {
+        "key": "W A S D",
+        "action": "在狂欢破坏现场漫游观察",
+        "actionEn": "Free Cam Roam"
+      },
+      {
+        "key": "空格 Space",
+        "action": "在场景中央引爆椅子冲击波",
+        "actionEn": "Trigger Havoc Shockwave"
+      },
+      {
+        "key": "R 键",
+        "action": "重新摆满整整齐齐的椅子群",
+        "actionEn": "Reset Room"
+      }
+    ]
+  }
+]
