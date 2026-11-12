@@ -78,11 +78,11 @@ games/
 | **默认回退** | `assets/covers/default-fallback.svg` | **若未提供 `cover` 属性**，系统会自动使用带赛博发光手柄的默认封面 |
 
 ### 📸 自动化截取封面脚本
-平台内置了基于无头 Chromium 的真实游戏运行截图工具，支持 Canvas 与 WebGL 3D 渲染实机画面捕获：
+平台内置了基于 Playwright 与本地 Chromium 的真实游戏运行截图工具，支持 Canvas 与 WebGL 3D 渲染实机画面捕获：
 
 ```bash
-# 自动启动本地环境并对游戏进行实机运行截图（生成 .webp 与 .png 到 assets/covers/）
-uv run scripts/capture_covers.py
+# 自动启动本地环境并对游戏进行实机运行截图（生成标准 16:9 .webp 资产到 assets/covers/）
+uv run scripts/capture_all_covers.py
 ```
 
 ---
@@ -101,7 +101,7 @@ uv run scripts/capture_covers.py
 | `featured` | `Boolean`| 否 | `true` | 是否展示在首页大头条 Hero Showcase |
 | `hot` | `Boolean`| 否 | `true` | 是否具有「🔥 HOT」高光徽章 |
 | `isNew` | `Boolean`| 否 | `true` | 是否具有「🆕 NEW」上线徽章 |
-| `cover` | `String` | 否 | `'assets/covers/xxx.svg'` | 封面图片路径（缺省时自动使用默认封面） |
+| `cover` | `String` | 否 | `'assets/covers/xxx.webp'` | 封面图片路径（规范要求优先使用真实游戏运行截图，缺省时自动使用默认封面） |
 | `controls` | `Array` | 否 | `[{ key: 'WASD', action: '移动' }]` | 详细键位说明，会在播放器下方渲染为按键操作卡 |
 | `description`| `String`| 否 | `'丰富中文介绍...'` | 游戏详细玩法与背景介绍 |
 | `descriptionEn`| `String`| 否 | `'Rich English intro...'` | 英文版介绍，供双语切换使用 |
