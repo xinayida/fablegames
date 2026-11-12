@@ -326,13 +326,21 @@ input {
   fill: #ffffff;
 }
 
+h1.logo-text,
 .logo-text {
+  font-family: var(--font-family);
+  font-size: inherit;
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
   background: var(--grad-brand);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900;
   letter-spacing: -0.6px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .logo-badge {
@@ -1716,6 +1724,9 @@ input {
    Responsive Adaptations
    ========================================================================== */
 @media (max-width: 1024px) {
+  .brand-logo {
+    font-size: 1.3rem;
+  }
   .hero-banner {
     min-height: 320px;
   }
@@ -1734,6 +1745,9 @@ input {
 }
 
 @media (max-width: 768px) {
+  .brand-logo {
+    font-size: 1.15rem;
+  }
   .header-inner {
     height: 64px;
   }
@@ -1788,7 +1802,7 @@ input {
     height: 56px;
   }
   .brand-logo {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     gap: 6px;
   }
   .logo-icon-wrap {

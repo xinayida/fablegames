@@ -19,8 +19,8 @@
 
   const I18N = {
     zh: {
-      siteTitle: 'FableGames - Claude Fable 5.2 制作游戏中心 | 原生3D网页微游戏平台 | 即点即玩',
-      metaDesc: 'FableGames 是全球首个汇聚 100% 由 Claude Fable 5.2 独立编码制作的原生 Web 网页微游戏平台。畅玩国产 3A 赛博猫咪大作、元素法师等极速即点即玩原生 HTML5 / WebGL 3D 游戏，零安装、零延迟、高帧率极致体验！',
+      siteTitle: 'Awesome Fable 5.2 Games - Claude Fable 5.2 制作游戏中心 | 原生3D网页微游戏平台 | 即点即玩',
+      metaDesc: 'Awesome Fable 5.2 Games 是全球首个汇聚 100% 由 Claude Fable 5.2 独立编码制作的原生 Web 网页微游戏平台。畅玩 3A 射击神作 Saltline (盐线)、QQ飞车3D、CF运输船等极速即点即玩原生 HTML5 / WebGL 3D 游戏，零安装、零延迟、高帧率极致体验！',
       searchPlaceholder: '搜索游戏... (按 / 快捷键)',
       randomPlay: '随机一玩',
       favorites: '我的收藏',
@@ -84,7 +84,7 @@
       githubRepo: 'GitHub 仓库',
       footerDesc: '全球首家专注汇聚 Claude Fable 5.2 制作游戏的聚合平台。站内所有游戏均由前沿 AI 模型 Claude Fable 5.2 纯原生 Web 代码独立打造，无需安装插件，即点即玩！尽情畅享高保真 3A 开放世界、魔法动作射击等零等待极速体验。',
       footerCopyright: '100% 游戏由 Claude Fable 5.2 制作 · 极速原生即玩',
-      privacyToast: 'FableGames 严格遵守隐私保护规范，无任何第三方追踪器与恶意插件。',
+      privacyToast: 'Awesome Fable 5.2 Games 严格遵守隐私保护规范，无任何第三方追踪器与恶意插件。',
       voteSuccessToast: '感谢点赞！已记录您的评价',
       voteRemoveToast: '已取消点赞',
       feedbackToastPrefix: '已提交反馈: ',
@@ -100,8 +100,8 @@
       fullscreenToggleTitle: '切换浏览器全屏'
     },
     en: {
-      siteTitle: 'FableGames - 100% Claude Fable 5.2 AI-Generated Games | Play 3D Web Games Instantly',
-      metaDesc: 'FableGames is the world\'s premier web game portal showcasing games 100% crafted & coded by Claude Fable 5.2. Play stunning 3D WebGL action games, open-world feline adventures, and arcade shooters instantly with zero installs.',
+      siteTitle: 'Awesome Fable 5.2 Games - 100% Claude Fable 5.2 AI-Generated Games | Play 3D Web Games Instantly',
+      metaDesc: 'Awesome Fable 5.2 Games is the world\'s premier web game portal showcasing games 100% crafted & coded by Claude Fable 5.2. Play stunning 3D WebGL action games, open-world feline adventures, and arcade shooters instantly with zero installs.',
       searchPlaceholder: 'Search games... (Press /)',
       randomPlay: 'Random Game',
       favorites: 'Favorites',
@@ -165,7 +165,7 @@
       githubRepo: 'GitHub Repo',
       footerDesc: 'The premier web game portal 100% crafted & coded by Claude Fable 5.2. Powered by native WebGL & HTML5, play 3D open worlds and action adventures instantly with zero installs and silky 60FPS performance!',
       footerCopyright: '100% Games Crafted by Claude Fable 5.2 · Browser Native Play',
-      privacyToast: 'FableGames strictly respects user privacy with zero malicious plugins or trackers.',
+      privacyToast: 'Awesome Fable 5.2 Games strictly respects user privacy with zero malicious plugins or trackers.',
       voteSuccessToast: 'Thanks for your upvote! Your feedback was recorded.',
       voteRemoveToast: 'Upvote removed.',
       feedbackToastPrefix: 'Feedback submitted: ',
@@ -632,7 +632,7 @@
             <span class="badge badge-category">${escapeHtml(category)}</span>
           </div>
 
-          <h1 class="hero-title">${escapeHtml(title)}</h1>
+          <h2 class="hero-title">${escapeHtml(title)}</h2>
           <p class="hero-description">${escapeHtml(summary)}</p>
 
           <div class="hero-tags-row">
@@ -848,7 +848,7 @@
 
     // Update dynamic document title for SEO & bookmarking
     try {
-      document.title = `${getLocalizedTitle(game)} · FableGames`;
+      document.title = `${getLocalizedTitle(game)} · Awesome Fable 5.2 Games`;
     } catch (_) {}
 
     const lobbyView = document.getElementById('lobbyView');
