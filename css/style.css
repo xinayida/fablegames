@@ -838,6 +838,32 @@ input {
   border-color: var(--neon-pink);
 }
 
+.btn-cta-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 20px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: all var(--transition-fast);
+}
+
+.btn-cta-github:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px var(--neon-cyan-glow);
+}
+
 /* Quick Hero Switcher Thumbnails */
 .hero-thumbs {
   position: absolute;
@@ -1031,6 +1057,32 @@ input {
   color: var(--neon-pink);
   background: rgba(236, 72, 153, 0.25);
   border-color: var(--neon-pink);
+}
+
+.card-github-btn {
+  position: absolute;
+  top: 48px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: rgba(11, 14, 20, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.card-github-btn:hover {
+  background: rgba(11, 14, 20, 0.95);
+  color: var(--neon-cyan);
+  border-color: var(--neon-cyan);
+  transform: scale(1.15);
 }
 
 /* Card Body */
@@ -1566,7 +1618,7 @@ input {
 
 .footer-top {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.8fr 1fr 1.1fr 1.3fr;
   gap: 36px;
   margin-bottom: 36px;
 }

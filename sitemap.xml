@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://fablegames.vercel.app/</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fablegames.vercel.app/"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/saltline.webp</image:loc>
+      <image:title>Saltline · 盐线 (3A第一人称射击)</image:title>
+      <image:caption>由 Claude Fable 5.2 全自动端到端编码生成的 3A 级写实光影码头第一人称射击游戏。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/qq-speed-3d.webp</image:loc>
+      <image:title>QQ飞车 3D · 极速漂移</image:title>
+      <image:caption>由 Claude Fable 5.2 制作的高保真 3D 竞速大作！纯 WebGL 还原 QQ飞车经典地图（11城、爱琴海、金字塔），支持漂移集气与双喷！</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/cf-transport-ship.webp</image:loc>
+      <image:title>穿越火线 · 运输船 3D</image:title>
+      <image:caption>由 Claude Fable 5.2 打造的经典穿越火线「运输船」3D 原生复刻：团队竞技对决，保卫者 vs 潜伏者！</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/black-myth-wukong.webp</image:loc>
+      <image:title>黑神话 · 悟空 (天命人)</image:title>
+      <image:caption>由 Claude Fable 5.2 打造的三维西游动作 RPG，扮演天命人，重温六卷西行路。劈棍连击与神通法术！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/games/qq-speed-3d.html</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/qq-speed-3d.webp</image:loc>
+      <image:title>QQ飞车 3D · 极速漂移</image:title>
+      <image:caption>由 Claude Fable 5.2 制作的高保真 3D 竞速大作！纯 WebGL 还原 QQ飞车经典地图（11城、爱琴海、金字塔），支持漂移集气与双喷！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/games/cf-transport-ship.html</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/cf-transport-ship.webp</image:loc>
+      <image:title>穿越火线 · 运输船 3D</image:title>
+      <image:caption>由 Claude Fable 5.2 打造的经典穿越火线「运输船」3D 原生复刻：团队竞技对决，保卫者 vs 潜伏者！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/games/pelican-bike.html</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/pelican-bike.webp</image:loc>
+      <image:title>鹈鹕骑单车 · 沿海追鱼</image:title>
+      <image:caption>Claude Fable 5.2 打造的治愈系 3D 漫游作品！可爱白鹈鹕骑着复古单车在落日海岸线追逐鱼群！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/games/elemental-mage.html</loc>
+    <lastmod>2024-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/elemental-mage.webp</image:loc>
+      <image:title>元素法师 · 火球与闪电</image:title>
+      <image:caption>Claude Fable 5.2 独立制作的元素法师！在战场中交织轰击连珠火球与连锁闪电，全屏割草解压！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=saltline</loc>
+    <lastmod>2024-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=saltline&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=saltline&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/saltline.webp</image:loc>
+      <image:title>Saltline · 盐线 (3A第一人称射击)</image:title>
+      <image:caption>由 Claude Fable 5.2 全自动端到端编码生成的 3A 级写实光影码头第一人称射击游戏。</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=qq-speed-3d</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=qq-speed-3d&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=qq-speed-3d&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/qq-speed-3d.webp</image:loc>
+      <image:title>QQ飞车 3D · 极速漂移</image:title>
+      <image:caption>由 Claude Fable 5.2 制作的高保真 3D 竞速大作！纯 WebGL 还原 QQ飞车经典地图（11城、爱琴海、金字塔），支持漂移集气与双喷！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=cf-transport-ship</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=cf-transport-ship&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=cf-transport-ship&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/cf-transport-ship.webp</image:loc>
+      <image:title>穿越火线 · 运输船 3D</image:title>
+      <image:caption>由 Claude Fable 5.2 打造的经典穿越火线「运输船」3D 原生复刻：团队竞技对决，保卫者 vs 潜伏者！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=black-myth-wukong</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=black-myth-wukong&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=black-myth-wukong&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/black-myth-wukong.webp</image:loc>
+      <image:title>黑神话 · 悟空 (天命人)</image:title>
+      <image:caption>由 Claude Fable 5.2 打造的三维西游动作 RPG，扮演天命人，重温六卷西行路。劈棍连击与神通法术！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=black-myth-guanyu</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=black-myth-guanyu&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=black-myth-guanyu&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/black-myth-guanyu.webp</image:loc>
+      <image:title>黑神话 · 关羽</image:title>
+      <image:caption>Claude Fable 5.2 制作的三国武圣关羽写实动作独立微游戏，手握青龙偃月刀，施展破风刀气与龙魂斩击！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=lol-aram</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=lol-aram&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=lol-aram&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/lol-aram.webp</image:loc>
+      <image:title>英雄联盟 · 海克斯大乱斗</image:title>
+      <image:caption>Claude Fable 5.2 制作的嚎哭深渊极地大乱斗！自选英雄、神话装备搭配、抽取海克斯强化符文，极速推塔！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=pelican-bike</loc>
+    <lastmod>2024-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=pelican-bike&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=pelican-bike&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/pelican-bike.webp</image:loc>
+      <image:title>鹈鹕骑单车 · 沿海追鱼</image:title>
+      <image:caption>Claude Fable 5.2 打造的治愈系 3D 漫游作品！可爱白鹈鹕骑着复古单车在落日海岸线追逐鱼群！</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://fablegames.vercel.app/?game=elemental-mage</loc>
+    <lastmod>2024-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=elemental-mage&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=elemental-mage&amp;lang=en"/>
+    <image:image>
+      <image:loc>https://fablegames.vercel.app/assets/covers/elemental-mage.webp</image:loc>
+      <image:title>元素法师 · 火球与闪电</image:title>
+      <image:caption>Claude Fable 5.2 独立制作的元素法师！在战场中交织轰击连珠火球与连锁闪电，全屏割草解压！</image:caption>
+    </image:image>
+  </url>
+</urlset>

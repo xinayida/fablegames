@@ -43,6 +43,7 @@ games/
   releaseDate: '2024-11-12',                    // 上线日期 (YYYY-MM-DD)
   developer: 'Retro Pixel Lab',                 // 开发者 / 工作室名称
   fileUrl: 'games/space-invaders.html',         // 游戏入口文件相对路径
+  githubUrl: 'https://github.com/retro/space-invaders', // 游戏开源仓库（可选，配置后将在详情页与卡片展示源码直达链接）
   cover: 'assets/covers/space-invaders.webp',   // 游戏封面（真实运行截图，可选，不填则自动使用默认封面）
   summary: '重温 80 年代经典投币机太空弹幕射击的激情对决！', // 一句话简介（中文）
   summaryEn: 'Defend Earth against endless waves of descending alien invaders!', // 一句话简介（英文）
@@ -93,7 +94,8 @@ uv run scripts/capture_all_covers.py
 | :--- | :--- | :---: | :--- | :--- |
 | `id` | `String` | **是** | `'elemental-mage'` | 游戏唯一标识（小写英文字母、数字和横杠） |
 | `title` | `String` | **是** | `'元素法师 · 火球与闪电'` | 游戏中文显示名称 |
-| `fileUrl` | `String` | **是** | `'games/elemental-mage.html'` | 游戏在 `games/` 中的相对路径 |
+| `fileUrl` | `String` | **是** | `'games/elemental-mage.html'` | 游戏在 `games/` 中的相对路径或在线 HTTPS 地址 |
+| `githubUrl` | `String` | 否 | `'https://github.com/...'` | 游戏 GitHub 开源仓库地址（配置后可一键直达源码） |
 | `category` | `String` | 否 | `'动作射击'` | 页面显示的分类名称 |
 | `categoryId`| `String` | 否 | `'action'` | 分类筛选标识：`adventure` / `action` / `rpg` / `casual` / `arcade` |
 | `rating` | `Number` | 否 | `4.9` | 推荐评分（0.0 ~ 5.0），卡片展示金黄色星标 |
@@ -105,6 +107,15 @@ uv run scripts/capture_all_covers.py
 | `controls` | `Array` | 否 | `[{ key: 'WASD', action: '移动' }]` | 详细键位说明，会在播放器下方渲染为按键操作卡 |
 | `description`| `String`| 否 | `'丰富中文介绍...'` | 游戏详细玩法与背景介绍 |
 | `descriptionEn`| `String`| 否 | `'Rich English intro...'` | 英文版介绍，供双语切换使用 |
+
+### 步骤 3（可选）：一键更新搜索引擎站点地图 (Sitemap)
+添加新游戏后，只需运行一行命令即可将新游戏自动纳入 `sitemap.xml`，加速 Google 与 Bing 索引收录：
+
+```bash
+npm run sitemap
+# 或直接运行 Node.js 脚本
+node scripts/generate_sitemap.js
+```
 
 ---
 

@@ -77,6 +77,11 @@
       footerRandom: '🎲 随机好玩',
       footerAllGames: '🎮 全部游戏库',
       footerPrivacy: '🛡️ 隐私与安全',
+      footerGithub: '💻 GitHub 开源仓库',
+      footerColCredits: '开源游戏出处 (Credits)',
+      viewSource: '查看源码',
+      gameSource: '源码',
+      githubRepo: 'GitHub 仓库',
       footerDesc: '全球首家专注汇聚 Claude Fable 5.2 制作游戏的聚合平台。站内所有游戏均由前沿 AI 模型 Claude Fable 5.2 纯原生 Web 代码独立打造，无需安装插件，即点即玩！尽情畅享高保真 3A 开放世界、魔法动作射击等零等待极速体验。',
       footerCopyright: '100% 游戏由 Claude Fable 5.2 制作 · 极速原生即玩',
       privacyToast: 'FableGames 严格遵守隐私保护规范，无任何第三方追踪器与恶意插件。',
@@ -153,6 +158,11 @@
       footerRandom: '🎲 Random Game',
       footerAllGames: '🎮 All Games',
       footerPrivacy: '🛡️ Privacy & Safety',
+      footerGithub: '💻 GitHub Repository',
+      footerColCredits: 'Open Source Credits',
+      viewSource: 'View Source',
+      gameSource: 'Source',
+      githubRepo: 'GitHub Repo',
       footerDesc: 'The premier web game portal 100% crafted & coded by Claude Fable 5.2. Powered by native WebGL & HTML5, play 3D open worlds and action adventures instantly with zero installs and silky 60FPS performance!',
       footerCopyright: '100% Games Crafted by Claude Fable 5.2 · Browser Native Play',
       privacyToast: 'FableGames strictly respects user privacy with zero malicious plugins or trackers.',
@@ -634,6 +644,13 @@
               <span>▶</span>
               <span>${t('playNow')}</span>
             </button>
+            ${game.githubUrl ? `
+            <a class="btn-cta-github" href="${escapeHtml(game.githubUrl)}" target="_blank" rel="noopener noreferrer" title="${t('viewSource')}">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+              <span>GitHub</span>
+            </a>` : ''}
             <button class="btn-cta-fav ${isFav ? 'favorited' : ''}" id="heroFavBtn" data-game-id="${game.id}" title="${t('favorites')}">
               ${isFav ? '❤️' : '🤍'}
             </button>
@@ -758,6 +775,12 @@
           <button class="card-fav-btn ${isFav ? 'favorited' : ''}" data-fav-id="${game.id}" title="${t('favorites')}">
             ${isFav ? '❤️' : '🤍'}
           </button>
+          ${game.githubUrl ? `
+          <a class="card-github-btn" href="${escapeHtml(game.githubUrl)}" target="_blank" rel="noopener noreferrer" title="${t('viewSource')}" onclick="event.stopPropagation();">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>` : ''}
           <div class="card-overlay">
             <div class="card-play-btn">
               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -823,6 +846,11 @@
     AppState.currentGame = game;
     AppState.saveRecents(game.id);
 
+    // Update dynamic document title for SEO & bookmarking
+    try {
+      document.title = `${getLocalizedTitle(game)} · FableGames`;
+    } catch (_) {}
+
     const lobbyView = document.getElementById('lobbyView');
     const arenaView = document.getElementById('arenaView');
     if (lobbyView) lobbyView.classList.add('hidden');
@@ -856,6 +884,17 @@
     const btnOpenExternal = document.getElementById('btnOpenExternal');
     if (btnOpenExternal) {
       btnOpenExternal.href = game.originalUrl || game.fileUrl;
+    }
+
+    // Update GitHub source button in arena
+    const btnGameGithub = document.getElementById('btnGameGithub');
+    if (btnGameGithub) {
+      if (game.githubUrl) {
+        btnGameGithub.href = game.githubUrl;
+        btnGameGithub.style.display = 'inline-flex';
+      } else {
+        btnGameGithub.style.display = 'none';
+      }
     }
 
     if (iframe) {
@@ -935,6 +974,19 @@
     const relDate = document.getElementById('arenaReleaseDate');
     if (relDate) relDate.textContent = game.releaseDate || '2024-11';
 
+    const githubLink = document.getElementById('arenaGithubLink');
+    const githubMetaWrap = document.getElementById('arenaGithubMetaWrap');
+    if (githubLink && githubMetaWrap) {
+      if (game.githubUrl) {
+        githubLink.href = game.githubUrl;
+        let repoLabel = game.githubUrl.replace(/^https?:\/\/github\.com\//i, '');
+        githubLink.textContent = repoLabel;
+        githubMetaWrap.style.display = 'block';
+      } else {
+        githubMetaWrap.style.display = 'none';
+      }
+    }
+
     // 3. Like button
     const likeBtn = document.getElementById('btnVoteLike');
     const countEl = document.getElementById('voteLikeCount');
@@ -995,6 +1047,9 @@
       }
     }
     AppState.currentGame = null;
+    try {
+      document.title = t('siteTitle');
+    } catch (_) {}
   }
 
   /* ========================================================================
@@ -1112,7 +1167,21 @@
      6. Hash Router & URL Dispatcher
      ======================================================================== */
   function handleRoute() {
-    const hash = window.location.hash || '#/';
+    let hash = window.location.hash || '';
+
+    // If no specific hash specified, check for ?game= parameter (SEO friendly URL)
+    if (!hash || hash === '#/' || hash === '#') {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const gameParam = urlParams.get('game');
+        if (gameParam && window.GAMES_DATA && window.GAMES_DATA.getById(gameParam)) {
+          window.location.hash = `#/play/${gameParam}`;
+          return;
+        }
+      } catch (_) {}
+    }
+
+    if (!hash) hash = '#/';
 
     if (hash.startsWith('#/play/')) {
       const gameId = hash.replace('#/play/', '').trim();

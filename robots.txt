@@ -1,0 +1,46 @@
+# ==============================================================================
+# Robots.txt for FableGames
+# Website: https://fablegames.vercel.app/
+# Description: Claude Fable 5.2 Next-Gen Native Web Mini-Games Aggregation Portal
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /games/
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+# Disallow internal scripts, tools, and repo-level directories
+Disallow: /scripts/
+Disallow: /.git/
+Disallow: /.agents/
+
+# ------------------------------------------------------------------------------
+# Targeted Search Engine Crawlers (Explicit Open Crawl Permission)
+# ------------------------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/covers/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ------------------------------------------------------------------------------
+# XML Sitemap Index
+# ------------------------------------------------------------------------------
+Sitemap: https://fablegames.vercel.app/sitemap.xml

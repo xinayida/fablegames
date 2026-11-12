@@ -13,6 +13,9 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://fablegames.vercel.app/">
 
+  <!-- Sitemap for Search Engines -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fablegames.vercel.app/">
@@ -122,6 +125,13 @@
         <button id="btnLangToggle" class="action-btn btn-icon-only" title="切换语言 / Switch Language">
           <span id="langText" style="font-weight: 700; font-size: 0.8rem;">EN</span>
         </button>
+
+        <!-- GitHub Repository Link -->
+        <a href="https://github.com/xinayida/fablegames" target="_blank" rel="noopener noreferrer" class="action-btn btn-icon-only" title="GitHub 开源仓库 / Project GitHub" aria-label="GitHub Repository">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
 
         <!-- Fullscreen Browser -->
         <button id="btnFullscreenToggle" class="action-btn btn-icon-only" title="切换浏览器全屏">
@@ -240,6 +250,14 @@
               <span class="control-btn-text" data-i18n="openNewTab">独立窗口</span>
             </a>
 
+            <!-- Game GitHub Source Code Link -->
+            <a id="btnGameGithub" class="control-icon-btn" href="#" target="_blank" rel="noopener noreferrer" title="查看游戏 GitHub 源码 / View Source">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+              <span class="control-btn-text" data-i18n="gameSource">源码</span>
+            </a>
+
             <!-- Share Game Link -->
             <button id="btnShareGame" class="control-icon-btn" title="复制游戏直接链接">
               <span>🔗</span>
@@ -293,6 +311,7 @@
                 <div><strong style="color: var(--text-primary);" data-i18n="developer">开发团队</strong>: <span id="arenaDevName"></span></div>
                 <div><strong style="color: var(--text-primary);" data-i18n="aiEngine">AI 引擎</strong>: <span id="arenaAiEngine" style="color: var(--neon-purple); font-weight: 600;">Claude Fable 5.2</span></div>
                 <div><strong style="color: var(--text-primary);" data-i18n="releaseDate">发布时间</strong>: <span id="arenaReleaseDate"></span></div>
+                <div id="arenaGithubMetaWrap"><strong style="color: var(--text-primary);" data-i18n="githubRepo">GitHub 仓库</strong>: <a id="arenaGithubLink" href="#" target="_blank" rel="noopener noreferrer" style="color: var(--neon-cyan); text-decoration: underline;"></a></div>
               </div>
             </div>
 
@@ -370,7 +389,21 @@
           <ul class="footer-links">
             <li><a href="#/" id="footerRandomLink"><span data-i18n="footerRandom">🎲 随机好玩</span></a></li>
             <li><a href="#/category/all"><span data-i18n="footerAllGames">🎮 全部游戏库</span></a></li>
+            <li><a href="https://github.com/xinayida/fablegames" target="_blank" rel="noopener noreferrer"><span data-i18n="footerGithub">💻 GitHub 开源仓库</span></a></li>
             <li><a href="#/" id="footerPrivacyLink"><span data-i18n="footerPrivacy">🛡️ 隐私与安全</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title" data-i18n="footerColCredits">开源游戏出处 (Credits)</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/realcodebear/saltline-fable-5.2" target="_blank" rel="noopener noreferrer">⭐ Saltline (realcodebear)</a></li>
+            <li><a href="https://github.com/riba2534/claude-opus-5-5-demo" target="_blank" rel="noopener noreferrer">🏎️ QQ飞车 3D (riba2534)</a></li>
+            <li><a href="https://github.com/riba2534/claude-opus-5-5-demo" target="_blank" rel="noopener noreferrer">🎯 穿越火线 · 运输船 (riba2534)</a></li>
+            <li><a href="https://github.com/riba2534/claude-opus-5-5-demo" target="_blank" rel="noopener noreferrer">🚲 鹈鹕骑单车 (riba2534)</a></li>
+            <li><a href="https://github.com/oneoyn" target="_blank" rel="noopener noreferrer">🐒 黑神话 · 悟空 (oneoyn)</a></li>
+            <li><a href="https://github.com/hanyue" target="_blank" rel="noopener noreferrer">⚔️ 海克斯大乱斗 (hanyue)</a></li>
+            <li><a href="https://github.com/xinayida/fablegames" target="_blank" rel="noopener noreferrer">⚡ 元素法师 (xinayida)</a></li>
           </ul>
         </div>
       </div>
