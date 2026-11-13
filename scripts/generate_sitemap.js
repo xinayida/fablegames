@@ -79,43 +79,16 @@ function main() {
     }
   });
 
-  // 3. Portal Play Pages (?game=id)
-  games.forEach(g => {
-    xml += `  <url>\n`;
-    xml += `    <loc>${SITE_URL}/?game=${escapeXml(g.id)}</loc>\n`;
-    xml += `    <lastmod>${g.releaseDate || today}</lastmod>\n`;
-    xml += `    <changefreq>weekly</changefreq>\n`;
-    xml += `    <priority>0.85</priority>\n`;
-    xml += `    <xhtml:link rel="alternate" hreflang="zh-CN" href="${SITE_URL}/?game=${escapeXml(g.id)}&amp;lang=zh"/>\n`;
-    xml += `    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}/?game=${escapeXml(g.id)}&amp;lang=en"/>\n`;
-    if (g.cover) {
-      xml += `    <image:image>\n`;
-      xml += `      <image:loc>${SITE_URL}/${escapeXml(g.cover)}</image:loc>\n`;
-      xml += `      <image:title>${escapeXml(g.title)}</image:title>\n`;
-      if (g.summary) xml += `      <image:caption>${escapeXml(g.summary)}</image:caption>\n`;
-      xml += `    </image:image>\n`;
-    }
-    xml += `  </url>\n`;
-  });
-
-  // 4. Category Pages
-  const categories = [
-    { id: 'all', title: '全部游戏 / All Games' },
-    { id: 'action', title: '动作射击 / Action & Shooting' },
-    { id: 'racing', title: '竞速漂移 / Racing & Speed' },
-    { id: 'adventure', title: '3A冒险 / 3A Adventure' },
-    { id: 'rpg', title: '角色扮演 / RPG & MOBA' },
-    { id: 'casual', title: '休闲治愈 / Casual & Relaxing' },
-    { id: 'arcade', title: '经典街机 / Arcade Classics' }
-  ];
-  categories.forEach(cat => {
-    xml += `  <url>\n`;
-    xml += `    <loc>${SITE_URL}/#/category/${cat.id}</loc>\n`;
-    xml += `    <lastmod>${today}</lastmod>\n`;
-    xml += `    <changefreq>daily</changefreq>\n`;
-    xml += `    <priority>0.8</priority>\n`;
-    xml += `  </url>\n`;
-  });
+  // NOTE: Portal Play Pages (/?game=id, 60 URLs) and Category Pages
+  // (/#/category/*, 7 URLs) are intentionally NOT in the sitemap.
+  // index.html carries a single static canonical (https://fablegames.live/),
+  // so every /?game= URL canonicalizes to the homepage, and # fragments
+  // are never separate crawlable URLs. Listing them made Ahrefs flag
+  // "Non-canonical page in sitemap" on exactly those 67 URLs (2026-11-13
+  // crawl, Health Score 60). A sitemap must contain canonical URLs only:
+  // homepage + the 18 standalone /games/*.html pages below. The 42 games
+  // without a standalone file lose no indexability — they were never
+  // indexable as separate URLs and remain discoverable via the homepage.
 
   xml += `</urlset>\n`;
 
