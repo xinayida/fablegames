@@ -1,6 +1,6 @@
 # ==============================================================================
 # Robots.txt for Awesome Fable 5.2 Games
-# Website: https://fablegames.vercel.app/
+# Website: https://fablegames.live/
 # Description: Awesome Fable 5.2 Games - Next-Gen Native Web Mini-Games Aggregation Portal
 # ==============================================================================
 
@@ -77,4 +77,4 @@ Allow: /
 # ------------------------------------------------------------------------------
 # XML Sitemap Index
 # ------------------------------------------------------------------------------
-Sitemap: https://fablegames.vercel.app/sitemap.xml
+Sitemap: https://fablegames.live/sitemap.xml

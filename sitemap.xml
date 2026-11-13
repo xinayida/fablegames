@@ -3,1051 +3,1051 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://fablegames.vercel.app/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fablegames.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fablegames.live/"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/saltline.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/saltline.webp</image:loc>
       <image:title>Saltline · 盐线 (3A第一人称射击)</image:title>
       <image:caption>由 Claude Fable 5.2 全自动端到端编码生成的 3A 级写实光影码头第一人称射击游戏。</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/qq-speed-3d.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/qq-speed-3d.webp</image:loc>
       <image:title>QQ飞车 3D · 极速漂移</image:title>
       <image:caption>由 Claude Fable 5.2 制作的高保真 3D 竞速大作！纯 WebGL 还原 QQ飞车经典地图（11城、爱琴海、金字塔），支持漂移集气与双喷！</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/cf-transport-ship.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/cf-transport-ship.webp</image:loc>
       <image:title>穿越火线 · 运输船 3D</image:title>
       <image:caption>由 Claude Fable 5.2 打造的经典穿越火线「运输船」3D 原生复刻：团队竞技对决，保卫者 vs 潜伏者！</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/black-myth-wukong.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/black-myth-wukong.webp</image:loc>
       <image:title>黑神话 · 悟空 (天命人)</image:title>
       <image:caption>由 Claude Fable 5.2 打造的三维西游动作 RPG，扮演天命人，重温六卷西行路。劈棍连击与神通法术！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/qq-speed-3d.html</loc>
+    <loc>https://fablegames.live/games/qq-speed-3d.html</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/qq-speed-3d.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/qq-speed-3d.webp</image:loc>
       <image:title>QQ飞车 3D · 极速漂移</image:title>
       <image:caption>由 Claude Fable 5.2 制作的高保真 3D 竞速大作！纯 WebGL 还原 QQ飞车经典地图（11城、爱琴海、金字塔），支持漂移集气与双喷！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/cf-transport-ship.html</loc>
+    <loc>https://fablegames.live/games/cf-transport-ship.html</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/cf-transport-ship.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/cf-transport-ship.webp</image:loc>
       <image:title>穿越火线 · 运输船 3D</image:title>
       <image:caption>由 Claude Fable 5.2 打造的经典穿越火线「运输船」3D 原生复刻：团队竞技对决，保卫者 vs 潜伏者！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/pelican-bike.html</loc>
+    <loc>https://fablegames.live/games/pelican-bike.html</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/pelican-bike.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/pelican-bike.webp</image:loc>
       <image:title>鹈鹕骑单车 · 沿海追鱼</image:title>
       <image:caption>Claude Fable 5.2 打造的治愈系 3D 漫游作品！可爱白鹈鹕骑着复古单车在落日海岸线追逐鱼群！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/elemental-mage.html</loc>
+    <loc>https://fablegames.live/games/elemental-mage.html</loc>
     <lastmod>2024-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/elemental-mage.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/elemental-mage.webp</image:loc>
       <image:title>元素法师 · 火球与闪电</image:title>
       <image:caption>Claude Fable 5.2 独立制作的元素法师！在战场中交织轰击连珠火球与连锁闪电，全屏割草解压！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/doubao-dance.html</loc>
+    <loc>https://fablegames.live/games/doubao-dance.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/doubao-dance.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/doubao-dance.webp</image:loc>
       <image:title>豆包炫舞 · 3D节奏竞舞</image:title>
       <image:caption>Claude Fable 5.2 独立生成的 3D 劲舞节奏游戏！敲方向键踩重拍，和豆包一起登台PK！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/voxel-gta.html</loc>
+    <loc>https://fablegames.live/games/voxel-gta.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/voxel-gta.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/voxel-gta.webp</image:loc>
       <image:title>像素侠盗猎车手 · 城市漫游</image:title>
       <image:caption>Claude Fable 单提示词生成的体素版 GTA！驾驶车辆漫游积木都市，接受任务单挑市中心线人！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/frostline-kart.html</loc>
+    <loc>https://fablegames.live/games/frostline-kart.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/frostline-kart.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/frostline-kart.webp</image:loc>
       <image:title>霜线卡丁车 · 极地冰雪竞速</image:title>
       <image:caption>Claude Fable 独立构建的 3D 冰雪卡丁车！8 辆赛车同场角逐，弯道漂移超车夺冠！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/robo-tennis.html</loc>
+    <loc>https://fablegames.live/games/robo-tennis.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/robo-tennis.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/robo-tennis.webp</image:loc>
       <image:title>机器人网球 · 3D竞技场</image:title>
       <image:caption>第三人称 3D 机器人网球对决！掌控走位与击球时机，迎战身手敏捷的 CPU 选手！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/rail-rush.html</loc>
+    <loc>https://fablegames.live/games/rail-rush.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/rail-rush.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/rail-rush.webp</image:loc>
       <image:title>铁道跑酷 · 极速冲锋</image:title>
       <image:caption>致敬《地铁跑酷》的 3D 轨道冲刺！在呼啸疾驰的列车车顶翻滚跳跃，收集无尽金币！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/crossy-farm.html</loc>
+    <loc>https://fablegames.live/games/crossy-farm.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/crossy-farm.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/crossy-farm.webp</image:loc>
       <image:title>疯狂农场斑马线 · 冲出重围</image:title>
       <image:caption>反转版天天过马路！这次你是一辆小轿车，在遍布牛群与小鸡的田园乡道上疯狂穿行！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/mario-world.html</loc>
+    <loc>https://fablegames.live/games/mario-world.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/mario-world.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/mario-world.webp</image:loc>
       <image:title>超级马里奥 · 经典1-1关卡</image:title>
       <image:caption>Claude Fable 零素材单文件完美复刻红白机《超级马里奥兄弟》世界 1-1 关卡！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/hollowmere.html</loc>
+    <loc>https://fablegames.live/games/hollowmere.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/hollowmere.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/hollowmere.webp</image:loc>
       <image:title>空洞之境 · 泰拉瑞亚沙盒生存</image:title>
       <image:caption>致敬《泰拉瑞亚》的 2D 像素沙盒生存大作！自由挖掘地表地底、砍树筑造家园、召唤并击溃克苏鲁之眼！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/flappy-skies.html</loc>
+    <loc>https://fablegames.live/games/flappy-skies.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/flappy-skies.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/flappy-skies.webp</image:loc>
       <image:title>像素小鸟 · 晴空翱翔</image:title>
       <image:caption>高品质重制的经典像素小鸟！灵敏的物理气流重力判定，挑战穿梭绿水管的高分巅峰！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/vector-descent.html</loc>
+    <loc>https://fablegames.live/games/vector-descent.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/vector-descent.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/vector-descent.webp</image:loc>
       <image:title>矢量月球着陆器 · 1970复古CRT</image:title>
       <image:caption>Claude Fable 5.2 生成的 70 年代 CRT 矢量发光示波管硬核月球着陆器模拟！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/sorrow-rock.html</loc>
+    <loc>https://fablegames.live/games/sorrow-rock.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/sorrow-rock.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/sorrow-rock.webp</image:loc>
       <image:title>悲伤岩灯塔守夜人 · 怒海孤舟</image:title>
       <image:caption>深具沉浸感的灯塔孤礁生存游戏！在雷暴与狂涛中添柴加油、转动巨大透镜，指引迷航船队归航！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/ariadnes-thread.html</loc>
+    <loc>https://fablegames.live/games/ariadnes-thread.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/ariadnes-thread.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/ariadnes-thread.webp</image:loc>
       <image:title>阿里阿德涅之线 · 希腊陶画迷宫</image:title>
       <image:caption>绝美古希腊黑绘陶器艺术风格！深入克里特同心圆迷宫惊醒米诺陶，沿着红色丝线绝命脱逃！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/the-combination.html</loc>
+    <loc>https://fablegames.live/games/the-combination.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/the-combination.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/the-combination.webp</image:loc>
       <image:title>密室金库破译 · 听声辨位开锁</image:title>
       <image:caption>1920年代重型铸铁保险箱听音解码！微弱齿轮卡簧声效，精密手感拨盘破译密码！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/games/gelato-tower.html</loc>
+    <loc>https://fablegames.live/games/gelato-tower.html</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/gelato-tower.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/gelato-tower.webp</image:loc>
       <image:title>意式雪糕叠叠乐 · 一键高塔</image:title>
       <image:caption>高弹性物理碰撞的单键冰淇淋堆叠游戏！开心果、覆盆子、海盐焦糖，打造耸入云霄的雪糕塔！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=saltline</loc>
+    <loc>https://fablegames.live/?game=saltline</loc>
     <lastmod>2024-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=saltline&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=saltline&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=saltline&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=saltline&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/saltline.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/saltline.webp</image:loc>
       <image:title>Saltline · 盐线 (3A第一人称射击)</image:title>
       <image:caption>由 Claude Fable 5.2 全自动端到端编码生成的 3A 级写实光影码头第一人称射击游戏。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=qq-speed-3d</loc>
+    <loc>https://fablegames.live/?game=qq-speed-3d</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=qq-speed-3d&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=qq-speed-3d&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=qq-speed-3d&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=qq-speed-3d&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/qq-speed-3d.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/qq-speed-3d.webp</image:loc>
       <image:title>QQ飞车 3D · 极速漂移</image:title>
       <image:caption>由 Claude Fable 5.2 制作的高保真 3D 竞速大作！纯 WebGL 还原 QQ飞车经典地图（11城、爱琴海、金字塔），支持漂移集气与双喷！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=cf-transport-ship</loc>
+    <loc>https://fablegames.live/?game=cf-transport-ship</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=cf-transport-ship&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=cf-transport-ship&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=cf-transport-ship&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=cf-transport-ship&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/cf-transport-ship.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/cf-transport-ship.webp</image:loc>
       <image:title>穿越火线 · 运输船 3D</image:title>
       <image:caption>由 Claude Fable 5.2 打造的经典穿越火线「运输船」3D 原生复刻：团队竞技对决，保卫者 vs 潜伏者！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=black-myth-wukong</loc>
+    <loc>https://fablegames.live/?game=black-myth-wukong</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=black-myth-wukong&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=black-myth-wukong&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=black-myth-wukong&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=black-myth-wukong&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/black-myth-wukong.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/black-myth-wukong.webp</image:loc>
       <image:title>黑神话 · 悟空 (天命人)</image:title>
       <image:caption>由 Claude Fable 5.2 打造的三维西游动作 RPG，扮演天命人，重温六卷西行路。劈棍连击与神通法术！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=black-myth-guanyu</loc>
+    <loc>https://fablegames.live/?game=black-myth-guanyu</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=black-myth-guanyu&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=black-myth-guanyu&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=black-myth-guanyu&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=black-myth-guanyu&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/black-myth-guanyu.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/black-myth-guanyu.webp</image:loc>
       <image:title>黑神话 · 关羽</image:title>
       <image:caption>Claude Fable 5.2 制作的三国武圣关羽写实动作独立微游戏，手握青龙偃月刀，施展破风刀气与龙魂斩击！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=lol-aram</loc>
+    <loc>https://fablegames.live/?game=lol-aram</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=lol-aram&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=lol-aram&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=lol-aram&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=lol-aram&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/lol-aram.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/lol-aram.webp</image:loc>
       <image:title>英雄联盟 · 海克斯大乱斗</image:title>
       <image:caption>Claude Fable 5.2 制作的嚎哭深渊极地大乱斗！自选英雄、神话装备搭配、抽取海克斯强化符文，极速推塔！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=pelican-bike</loc>
+    <loc>https://fablegames.live/?game=pelican-bike</loc>
     <lastmod>2024-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=pelican-bike&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=pelican-bike&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=pelican-bike&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=pelican-bike&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/pelican-bike.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/pelican-bike.webp</image:loc>
       <image:title>鹈鹕骑单车 · 沿海追鱼</image:title>
       <image:caption>Claude Fable 5.2 打造的治愈系 3D 漫游作品！可爱白鹈鹕骑着复古单车在落日海岸线追逐鱼群！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=elemental-mage</loc>
+    <loc>https://fablegames.live/?game=elemental-mage</loc>
     <lastmod>2024-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=elemental-mage&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=elemental-mage&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=elemental-mage&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=elemental-mage&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/elemental-mage.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/elemental-mage.webp</image:loc>
       <image:title>元素法师 · 火球与闪电</image:title>
       <image:caption>Claude Fable 5.2 独立制作的元素法师！在战场中交织轰击连珠火球与连锁闪电，全屏割草解压！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=doubao-dance</loc>
+    <loc>https://fablegames.live/?game=doubao-dance</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=doubao-dance&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=doubao-dance&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=doubao-dance&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=doubao-dance&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/doubao-dance.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/doubao-dance.webp</image:loc>
       <image:title>豆包炫舞 · 3D节奏竞舞</image:title>
       <image:caption>Claude Fable 5.2 独立生成的 3D 劲舞节奏游戏！敲方向键踩重拍，和豆包一起登台PK！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=voxel-gta</loc>
+    <loc>https://fablegames.live/?game=voxel-gta</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=voxel-gta&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=voxel-gta&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=voxel-gta&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=voxel-gta&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/voxel-gta.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/voxel-gta.webp</image:loc>
       <image:title>像素侠盗猎车手 · 城市漫游</image:title>
       <image:caption>Claude Fable 单提示词生成的体素版 GTA！驾驶车辆漫游积木都市，接受任务单挑市中心线人！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=frostline-kart</loc>
+    <loc>https://fablegames.live/?game=frostline-kart</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=frostline-kart&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=frostline-kart&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=frostline-kart&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=frostline-kart&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/frostline-kart.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/frostline-kart.webp</image:loc>
       <image:title>霜线卡丁车 · 极地冰雪竞速</image:title>
       <image:caption>Claude Fable 独立构建的 3D 冰雪卡丁车！8 辆赛车同场角逐，弯道漂移超车夺冠！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=robo-tennis</loc>
+    <loc>https://fablegames.live/?game=robo-tennis</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=robo-tennis&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=robo-tennis&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=robo-tennis&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=robo-tennis&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/robo-tennis.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/robo-tennis.webp</image:loc>
       <image:title>机器人网球 · 3D竞技场</image:title>
       <image:caption>第三人称 3D 机器人网球对决！掌控走位与击球时机，迎战身手敏捷的 CPU 选手！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=rail-rush</loc>
+    <loc>https://fablegames.live/?game=rail-rush</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=rail-rush&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=rail-rush&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=rail-rush&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=rail-rush&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/rail-rush.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/rail-rush.webp</image:loc>
       <image:title>铁道跑酷 · 极速冲锋</image:title>
       <image:caption>致敬《地铁跑酷》的 3D 轨道冲刺！在呼啸疾驰的列车车顶翻滚跳跃，收集无尽金币！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=crossy-farm</loc>
+    <loc>https://fablegames.live/?game=crossy-farm</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=crossy-farm&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=crossy-farm&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=crossy-farm&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=crossy-farm&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/crossy-farm.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/crossy-farm.webp</image:loc>
       <image:title>疯狂农场斑马线 · 冲出重围</image:title>
       <image:caption>反转版天天过马路！这次你是一辆小轿车，在遍布牛群与小鸡的田园乡道上疯狂穿行！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=mario-world</loc>
+    <loc>https://fablegames.live/?game=mario-world</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=mario-world&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=mario-world&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=mario-world&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=mario-world&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/mario-world.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/mario-world.webp</image:loc>
       <image:title>超级马里奥 · 经典1-1关卡</image:title>
       <image:caption>Claude Fable 零素材单文件完美复刻红白机《超级马里奥兄弟》世界 1-1 关卡！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=hollowmere</loc>
+    <loc>https://fablegames.live/?game=hollowmere</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=hollowmere&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=hollowmere&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=hollowmere&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=hollowmere&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/hollowmere.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/hollowmere.webp</image:loc>
       <image:title>空洞之境 · 泰拉瑞亚沙盒生存</image:title>
       <image:caption>致敬《泰拉瑞亚》的 2D 像素沙盒生存大作！自由挖掘地表地底、砍树筑造家园、召唤并击溃克苏鲁之眼！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=flappy-skies</loc>
+    <loc>https://fablegames.live/?game=flappy-skies</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=flappy-skies&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=flappy-skies&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=flappy-skies&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=flappy-skies&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/flappy-skies.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/flappy-skies.webp</image:loc>
       <image:title>像素小鸟 · 晴空翱翔</image:title>
       <image:caption>高品质重制的经典像素小鸟！灵敏的物理气流重力判定，挑战穿梭绿水管的高分巅峰！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=vector-descent</loc>
+    <loc>https://fablegames.live/?game=vector-descent</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=vector-descent&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=vector-descent&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=vector-descent&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=vector-descent&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/vector-descent.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/vector-descent.webp</image:loc>
       <image:title>矢量月球着陆器 · 1970复古CRT</image:title>
       <image:caption>Claude Fable 5.2 生成的 70 年代 CRT 矢量发光示波管硬核月球着陆器模拟！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=sorrow-rock</loc>
+    <loc>https://fablegames.live/?game=sorrow-rock</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=sorrow-rock&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=sorrow-rock&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=sorrow-rock&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=sorrow-rock&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/sorrow-rock.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/sorrow-rock.webp</image:loc>
       <image:title>悲伤岩灯塔守夜人 · 怒海孤舟</image:title>
       <image:caption>深具沉浸感的灯塔孤礁生存游戏！在雷暴与狂涛中添柴加油、转动巨大透镜，指引迷航船队归航！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=ariadnes-thread</loc>
+    <loc>https://fablegames.live/?game=ariadnes-thread</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=ariadnes-thread&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=ariadnes-thread&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=ariadnes-thread&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=ariadnes-thread&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/ariadnes-thread.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/ariadnes-thread.webp</image:loc>
       <image:title>阿里阿德涅之线 · 希腊陶画迷宫</image:title>
       <image:caption>绝美古希腊黑绘陶器艺术风格！深入克里特同心圆迷宫惊醒米诺陶，沿着红色丝线绝命脱逃！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=the-combination</loc>
+    <loc>https://fablegames.live/?game=the-combination</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=the-combination&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=the-combination&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=the-combination&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=the-combination&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/the-combination.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/the-combination.webp</image:loc>
       <image:title>密室金库破译 · 听声辨位开锁</image:title>
       <image:caption>1920年代重型铸铁保险箱听音解码！微弱齿轮卡簧声效，精密手感拨盘破译密码！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=gelato-tower</loc>
+    <loc>https://fablegames.live/?game=gelato-tower</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=gelato-tower&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=gelato-tower&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=gelato-tower&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=gelato-tower&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/gelato-tower.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/gelato-tower.webp</image:loc>
       <image:title>意式雪糕叠叠乐 · 一键高塔</image:title>
       <image:caption>高弹性物理碰撞的单键冰淇淋堆叠游戏！开心果、覆盆子、海盐焦糖，打造耸入云霄的雪糕塔！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=three-games</loc>
+    <loc>https://fablegames.live/?game=three-games</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=three-games&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=three-games&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=three-games&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=three-games&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/three-games.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/three-games.webp</image:loc>
       <image:title>Three Games · 三合一神作合集 (Saltline / 钟表匠 / Tidewright)</image:title>
       <image:caption>Felix Rieseberg 发布的传奇合集：包含 Saltline、钟表匠之心与 Tidewright 三款零人工反馈初稿作品。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=mirror-earth</loc>
+    <loc>https://fablegames.live/?game=mirror-earth</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=mirror-earth&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=mirror-earth&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=mirror-earth&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=mirror-earth&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/mirror-earth.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/mirror-earth.webp</image:loc>
       <image:title>Mirror Earth · 镜像地球 (实时天气全境破坏模拟)</image:title>
       <image:caption>以整个真实地球为沙盒：全境地表可自由穿梭与摧毁，天气数据与现实世界全球实时同步。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=voxel-engine</loc>
+    <loc>https://fablegames.live/?game=voxel-engine</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=voxel-engine&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=voxel-engine&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=voxel-engine&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=voxel-engine&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/voxel-engine.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/voxel-engine.webp</image:loc>
       <image:title>Voxel Engine · 纯原生 3D 体素方块沙盒</image:title>
       <image:caption>由 Fable 5.2 生成的纯网页体素渲染引擎，支持程序化地形生成、动态光照与实时方块搭建拆除。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=hogwarts-royale</loc>
+    <loc>https://fablegames.live/?game=hogwarts-royale</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=hogwarts-royale&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=hogwarts-royale&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=hogwarts-royale&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=hogwarts-royale&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/hogwarts-royale.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/hogwarts-royale.webp</image:loc>
       <image:title>Hogwarts Royale · 霍格沃茨魔法吃鸡大逃杀</image:title>
       <image:caption>手持魔杖的 3D 大逃杀竞技场：毒圈不断收缩，收集全图上古魔咒与飞天扫帚，决战至最后一巫师！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=portals-worlds</loc>
+    <loc>https://fablegames.live/?game=portals-worlds</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=portals-worlds&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=portals-worlds&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=portals-worlds&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=portals-worlds&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/portals-worlds.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/portals-worlds.webp</image:loc>
       <image:title>Portals: Endless Worlds · 传送门无尽异界穿梭</image:title>
       <image:caption>由沃顿商学院教授 Ethan Mollick 提示词促成：步入一道道传送门，无缝跨越数十个奇幻的程序化生成异维度。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=scooby-reverse</loc>
+    <loc>https://fablegames.live/?game=scooby-reverse</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=scooby-reverse&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=scooby-reverse&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=scooby-reverse&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=scooby-reverse&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/scooby-reverse.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/scooby-reverse.webp</image:loc>
       <image:title>I Would Have Gotten Away · 逆向解谜捉迷藏侦探</image:title>
       <image:caption>经典史酷比侦探剧的反转：这次你扮演幽灵反派，必须在爱管闲事的小分队揭露真相前精心布置机关！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=what-water-keeps</loc>
+    <loc>https://fablegames.live/?game=what-water-keeps</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=what-water-keeps&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=what-water-keeps&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=what-water-keeps&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=what-water-keeps&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/what-water-keeps.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/what-water-keeps.webp</image:loc>
       <image:title>What the Water Keeps · 水之秘境深渊叙事冒险</image:title>
       <image:caption>Kevin Ngo 潜心打造的深水互动艺术之作：在幽暗水域潜行，打捞沉睡在深渊之底的记忆回响。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=turbo-tails</loc>
+    <loc>https://fablegames.live/?game=turbo-tails</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=turbo-tails&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=turbo-tails&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=turbo-tails&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=turbo-tails&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/turbo-tails.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/turbo-tails.webp</image:loc>
       <image:title>Turbo Tails · 涡轮尾迹狂飙竞速</image:title>
       <image:caption>由 Peter Yang 制作的超爽快 3D 街机竞速：喷射彩色粒子尾迹，在弯道连续极限漂移蓄满氮气！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=rug-racer</loc>
+    <loc>https://fablegames.live/?game=rug-racer</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=rug-racer&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=rug-racer&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=rug-racer&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=rug-racer&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/rug-racer.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/rug-racer.webp</image:loc>
       <image:title>Childhood Rug Racer · 地毯童年小汽车怀旧竞速</image:title>
       <image:caption>让全世界网友瞬间泪目的创意之作：在小时候房间里印着道路和房屋的经典交通游戏地毯上开车！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=rambo-dino</loc>
+    <loc>https://fablegames.live/?game=rambo-dino</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=rambo-dino&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=rambo-dino&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=rambo-dino&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=rambo-dino&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/rambo-dino.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/rambo-dino.webp</image:loc>
       <image:title>Rambo Dino · 兰博恐龙热血横版街机扫射</image:title>
       <image:caption>一只身绑红色头巾、手提重型加特林机枪的霸王龙横扫战场，重温合金弹头般的爽快突突突！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=frontline-warfare</loc>
+    <loc>https://fablegames.live/?game=frontline-warfare</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=frontline-warfare&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=frontline-warfare&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=frontline-warfare&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=frontline-warfare&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/frontline-warfare.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/frontline-warfare.webp</image:loc>
       <image:title>Frontline Warfare · 前线战争殊死对决</image:title>
       <image:caption>沉浸式 3D 团队死斗对抗：在饱受炮火洗礼的工业阵地穿梭，依靠战术掩体与精准点射击退敌军。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=feed-backrooms</loc>
+    <loc>https://fablegames.live/?game=feed-backrooms</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=feed-backrooms&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=feed-backrooms&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=feed-backrooms&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=feed-backrooms&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/feed-backrooms.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/feed-backrooms.webp</image:loc>
       <image:title>Feed the Backrooms · 喂养后室恐怖逃脱</image:title>
       <image:caption>迷失在无限泛黄墙纸与日光灯蜂鸣声的&apos;后室&apos;中，收集祭品喂养游荡的潜伏实体，寻找逃出生天的出口！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=cloud-stunt-3d</loc>
+    <loc>https://fablegames.live/?game=cloud-stunt-3d</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=cloud-stunt-3d&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=cloud-stunt-3d&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=cloud-stunt-3d&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=cloud-stunt-3d&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/cloud-stunt-3d.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/cloud-stunt-3d.webp</image:loc>
       <image:title>Cloud Stunt 3D · 云端特技飞行竞速</image:title>
       <image:caption>驾驶高机动特技单翼机在壮阔云海穿行：穿越浮空光环，完成桶滚与失速俯冲挑战极速纪录！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=worm-rider</loc>
+    <loc>https://fablegames.live/?game=worm-rider</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=worm-rider&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=worm-rider&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=worm-rider&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=worm-rider&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/worm-rider.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/worm-rider.webp</image:loc>
       <image:title>Worm Rider · 沙虫骑手沙漠冒险</image:title>
       <image:caption>致敬《沙丘》的史诗级沙漠狂飙：召唤并驾驭百米长的远古巨型沙虫，在漫天黄沙中穿梭征服荒原！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=roost-moto</loc>
+    <loc>https://fablegames.live/?game=roost-moto</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=roost-moto&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=roost-moto&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=roost-moto&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=roost-moto&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/roost-moto.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/roost-moto.webp</image:loc>
       <image:title>Roost · 泥地越野摩托冲刺</image:title>
       <image:caption>轰鸣的二冲程引擎与泥浆四溅的越野赛道：驾驭轻量级越野摩托，在起伏土坡完成超高难度的腾空翻转！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=stray-cat</loc>
+    <loc>https://fablegames.live/?game=stray-cat</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=stray-cat&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=stray-cat&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=stray-cat&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=stray-cat&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/stray-cat.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/stray-cat.webp</image:loc>
       <image:title>Stray Cat · 流浪猫城市模拟</image:title>
       <image:caption>化身一只敏捷小猫穿梭在现代都市的屋顶与小巷：跳上空调外机、打翻桌上水杯，享受悠闲猫生！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=tilt-labyrinth</loc>
+    <loc>https://fablegames.live/?game=tilt-labyrinth</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=tilt-labyrinth&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=tilt-labyrinth&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=tilt-labyrinth&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=tilt-labyrinth&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/tilt-labyrinth.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/tilt-labyrinth.webp</image:loc>
       <image:title>Tilt Labyrinth · 重力倾斜迷宫</image:title>
       <image:caption>经典物理木盘滚珠桌游重现：倾斜盘面控制钢珠精准避开密密麻麻的深坑陷阱，平稳滚入终点星标！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=silicon-seduction</loc>
+    <loc>https://fablegames.live/?game=silicon-seduction</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=silicon-seduction&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=silicon-seduction&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=silicon-seduction&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=silicon-seduction&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/silicon-seduction.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/silicon-seduction.webp</image:loc>
       <image:title>Silicon Seduction · 硅基诱惑黑客RPG</image:title>
       <image:caption>霓虹雨夜下的赛博朋克黑客角色扮演：潜入巨型财阀核心数据库，在道德边缘抉择人类与 AI 的未来！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=vippi-fps</loc>
+    <loc>https://fablegames.live/?game=vippi-fps</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=vippi-fps&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=vippi-fps&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=vippi-fps&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=vippi-fps&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/vippi-fps.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/vippi-fps.webp</image:loc>
       <image:title>Vippi · 极简霓虹快节奏射击</image:title>
       <image:caption>灵感源自经典几何战争的快节奏竞技场射击：纯黑背景与璀璨发光霓虹线框，在密集弹幕中瞬间闪避消灭敌人！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=voice-fighter</loc>
+    <loc>https://fablegames.live/?game=voice-fighter</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=voice-fighter&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=voice-fighter&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=voice-fighter&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=voice-fighter&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/voice-fighter.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/voice-fighter.webp</image:loc>
       <image:title>Four-character Fight · 声控格斗四字乱斗</image:title>
       <image:caption>由 Promoden Studio 打造的硬派 2D 街机格斗：四位身怀绝技的武术宗师，支持经典按键搓招与连击必杀！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=vowlorn-rpg</loc>
+    <loc>https://fablegames.live/?game=vowlorn-rpg</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=vowlorn-rpg&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=vowlorn-rpg&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=vowlorn-rpg&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=vowlorn-rpg&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/vowlorn-rpg.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/vowlorn-rpg.webp</image:loc>
       <image:title>VOWLORN · 破誓者全代码奇幻RPG</image:title>
       <image:caption>Higgsfield 团队全网刷屏的里程碑之作：100% 纯代码由 Fable 5.2 生成，深度暗黑奇幻地下城冒险与装备构筑！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=oil-paint-game</loc>
+    <loc>https://fablegames.live/?game=oil-paint-game</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=oil-paint-game&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=oil-paint-game&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=oil-paint-game&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=oil-paint-game&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/oil-paint-game.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/oil-paint-game.webp</image:loc>
       <image:title>Oil Paint · 油画质感沉浸探索</image:title>
       <image:caption>宛如漫步在印象派大师画布之中的艺术游戏：厚涂油彩笔触随微风起伏，探寻画布背后的生命诗篇！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=crosstown-nyc</loc>
+    <loc>https://fablegames.live/?game=crosstown-nyc</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=crosstown-nyc&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=crosstown-nyc&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=crosstown-nyc&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=crosstown-nyc&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/crosstown-nyc.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/crosstown-nyc.webp</image:loc>
       <image:title>CROSSTOWN · 纽约开放世界极速穿行</image:title>
       <image:caption>Matt Shumer 轰动推特的&apos;7天挑战&apos;巨制：程序化纽约曼哈顿高楼林立，在车流穿梭中体验次世代开放都市！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=evensong-souls</loc>
+    <loc>https://fablegames.live/?game=evensong-souls</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=evensong-souls&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=evensong-souls&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=evensong-souls&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=evensong-souls&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/evensong-souls.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/evensong-souls.webp</image:loc>
       <image:title>Evensong · 暮歌暗黑魂系地牢</image:title>
       <image:caption>Kevin Ngo 倾力打磨的硬核魂系动作神作：点燃幽暗营火，精准弹反首领重击，在绝望中寻找破晓微光！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=gilt-and-gutter</loc>
+    <loc>https://fablegames.live/?game=gilt-and-gutter</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=gilt-and-gutter&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=gilt-and-gutter&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=gilt-and-gutter&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=gilt-and-gutter&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/gilt-and-gutter.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/gilt-and-gutter.webp</image:loc>
       <image:title>Gilt &amp; Gutter · 镀金与阴沟黑帮巷战</image:title>
       <image:caption>1940 年代黑白诺瓦尔黑色电影风格：在雨夜迷离的罪恶小巷中，手持汤姆逊冲锋枪展开殊死对决！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=lanternfall</loc>
+    <loc>https://fablegames.live/?game=lanternfall</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=lanternfall&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=lanternfall&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=lanternfall&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=lanternfall&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/lanternfall.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/lanternfall.webp</image:loc>
       <image:title>LANTERNFALL · 提灯骤降暗影生存</image:title>
       <image:caption>Loktar00 呈现的幽闭暗影生存神作：提灯是你唯一的生命依托，在无尽黑夜中添油续命，躲避阴影生物！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=rooftop-rally</loc>
+    <loc>https://fablegames.live/?game=rooftop-rally</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=rooftop-rally&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=rooftop-rally&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=rooftop-rally&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=rooftop-rally&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/rooftop-rally.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/rooftop-rally.webp</image:loc>
       <image:title>Rooftop Rally · 屋顶匹克球竞技</image:title>
       <image:caption>在摩天大楼天台打当下最火爆的匹克球！精准切球、强力扣杀，在开阔云海全景下与强劲 AI 争夺天台球王！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=dread-district</loc>
+    <loc>https://fablegames.live/?game=dread-district</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=dread-district&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=dread-district&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=dread-district&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=dread-district&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/dread-district.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/dread-district.webp</image:loc>
       <image:title>Dread &amp; District · 恐惧街区悬疑解谜</image:title>
       <image:caption>穿行在雾气弥漫的维多利亚式老街区：搜集散落物证、破解机关锁扣，拼凑出隐藏在黑夜背后的惊人谜案！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=mist-mountain-gate</loc>
+    <loc>https://fablegames.live/?game=mist-mountain-gate</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=mist-mountain-gate&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=mist-mountain-gate&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=mist-mountain-gate&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=mist-mountain-gate&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/mist-mountain-gate.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/mist-mountain-gate.webp</image:loc>
       <image:title>Mist-Locked Mountain · 雾锁山门国风硬核3D动作</image:title>
       <image:caption>国内顶尖技术博主 op7418 耗费 45 亿 Token 打造：单 HTML 文件打包 30MB 完整国风硬核动作游戏，模型动作光影惊艳！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=waking-river</loc>
+    <loc>https://fablegames.live/?game=waking-river</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=waking-river&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=waking-river&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=waking-river&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=waking-river&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/waking-river.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/waking-river.webp</image:loc>
       <image:title>The Waking River · 苏醒之河唯美漂流之旅</image:title>
       <image:caption>乘一叶扁舟顺流而下：倾听两岸潺潺流水与鸟鸣，在晨曦与星光交替间体验一场洗涤心灵的唯美漂流。</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=first-crush</loc>
+    <loc>https://fablegames.live/?game=first-crush</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=first-crush&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=first-crush&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=first-crush&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=first-crush&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/first-crush.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/first-crush.webp</image:loc>
       <image:title>First Crush · 初见心动青春互动模拟</image:title>
       <image:caption>重温校园时代的青涩与悸动：细腻的心情互动分支，每一个微小眼神与话语选择都将决定好感度的走向！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=starry-nightrider</loc>
+    <loc>https://fablegames.live/?game=starry-nightrider</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=starry-nightrider&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=starry-nightrider&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=starry-nightrider&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=starry-nightrider&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/starry-nightrider.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/starry-nightrider.webp</image:loc>
       <image:title>Starry Nightrider · 星夜骑士赛博巡航</image:title>
       <image:caption>Ebbyamir 打造的 Synthwave 赛博巡航：驾驶改装跑车穿行在紫金色调的星空高速，沉醉于合成器电音！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=yardclash</loc>
+    <loc>https://fablegames.live/?game=yardclash</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=yardclash&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=yardclash&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=yardclash&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=yardclash&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/yardclash.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/yardclash.webp</image:loc>
       <image:title>YARDCLASH · 庭院冲突多人对撞</image:title>
       <image:caption>后院派对大乱斗：操纵软趴趴的布娃娃角色，捡起割草机、烧烤架和充气泳池玩具将对手撞飞出场地！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=fable52-fps-repro</loc>
+    <loc>https://fablegames.live/?game=fable52-fps-repro</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=fable52-fps-repro&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=fable52-fps-repro&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=fable52-fps-repro&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=fable52-fps-repro&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/fable52-fps-repro.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/fable52-fps-repro.webp</image:loc>
       <image:title>Fable 5.2 FPS Repro · 工业射击纯净复现</image:title>
       <image:caption>开发者 wquguru 对官方发布会经典 FPS 演示的纯净完整复现：独立还原光影集装箱码头与完整射击管线！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=lumina-zombies</loc>
+    <loc>https://fablegames.live/?game=lumina-zombies</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=lumina-zombies&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=lumina-zombies&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=lumina-zombies&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=lumina-zombies&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/lumina-zombies.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/lumina-zombies.webp</image:loc>
       <image:title>Lumina Zombies · 卢米娜丧尸无尽狂潮</image:title>
       <image:caption>由 LuminaBench 呈现的黑夜丧尸生存大潮：在四面涌来的无尽丧尸尸潮中杀出血路，升级军火库坚守黎明！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=skywake-flight</loc>
+    <loc>https://fablegames.live/?game=skywake-flight</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=skywake-flight&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=skywake-flight&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=skywake-flight&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=skywake-flight&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/skywake-flight.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/skywake-flight.webp</image:loc>
       <image:title>SKYWAKE · 天际尾流战斗飞行</image:title>
       <image:caption>由 Aniket 打造的现代空战狗斗传奇：驾驭第五代隐形战机冲破音障，在万米高空锁定敌机发射响尾蛇导弹！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=ringfall-fps</loc>
+    <loc>https://fablegames.live/?game=ringfall-fps</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=ringfall-fps&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=ringfall-fps&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=ringfall-fps&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=ringfall-fps&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/ringfall-fps.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/ringfall-fps.webp</image:loc>
       <image:title>Ringfall · 环形陨落太空射击</image:title>
       <image:caption>Rehan Shei 构筑的巨型太空环世界枪战：在失重的轨道环形甲板跳跃穿梭，用光子等离子枪击碎机械叛军！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/?game=chairmageddon</loc>
+    <loc>https://fablegames.live/?game=chairmageddon</loc>
     <lastmod>2024-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.vercel.app/?game=chairmageddon&amp;lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.vercel.app/?game=chairmageddon&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?game=chairmageddon&amp;lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?game=chairmageddon&amp;lang=en"/>
     <image:image>
-      <image:loc>https://fablegames.vercel.app/assets/covers/chairmageddon.webp</image:loc>
+      <image:loc>https://fablegames.live/assets/covers/chairmageddon.webp</image:loc>
       <image:title>Chairmageddon · 椅子大狂欢物理浩劫</image:title>
       <image:caption>Fowl Labs 出品的终极办公室解压神器：成百上千把旋转办公椅如同海啸般多米诺连锁撞击，彻底摧毁无聊！</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/#/category/all</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/#/category/all</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/#/category/action</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/#/category/action</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/#/category/racing</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/#/category/racing</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/#/category/adventure</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/#/category/adventure</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/#/category/rpg</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/#/category/rpg</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/#/category/casual</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/#/category/casual</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fablegames.vercel.app/#/category/arcade</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://fablegames.live/#/category/arcade</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
