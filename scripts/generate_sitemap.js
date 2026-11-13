@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SITE_URL = 'https://fablegames.vercel.app';
+const SITE_URL = 'https://fablegames.live';
 const BASE_DIR = path.resolve(__dirname, '..');
 const GAMES_DATA_PATH = path.join(BASE_DIR, 'js', 'games-data.js');
 const SITEMAP_OUTPUT_PATH = path.join(BASE_DIR, 'sitemap.xml');
