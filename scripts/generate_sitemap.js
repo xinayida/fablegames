@@ -46,9 +46,9 @@ function main() {
   xml += `    <lastmod>${today}</lastmod>\n`;
   xml += `    <changefreq>daily</changefreq>\n`;
   xml += `    <priority>1.0</priority>\n`;
-  xml += `    <xhtml:link rel="alternate" hreflang="zh-CN" href="${SITE_URL}/?lang=zh"/>\n`;
-  xml += `    <xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}/?lang=en"/>\n`;
-  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/"/>\n`;
+  // No hreflang alternates: ?lang=zh / ?lang=en are the same page with a JS
+  // language override, not separate indexable URLs; the homepage canonical is
+  // ${SITE_URL}/ (Ahrefs: "hreflang to non-canonical page").
   games.slice(0, 4).forEach(g => {
     if (g.cover) {
       xml += `    <image:image>\n`;
