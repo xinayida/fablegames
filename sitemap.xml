@@ -4,12 +4,9 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fablegames.live/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://fablegames.live/?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://fablegames.live/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://fablegames.live/"/>
     <image:image>
       <image:loc>https://fablegames.live/assets/covers/saltline.webp</image:loc>
       <image:title>Saltline · 盐线 (3A第一人称射击)</image:title>
